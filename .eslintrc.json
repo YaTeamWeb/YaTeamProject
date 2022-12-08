@@ -1,4 +1,10 @@
 {
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": ["**/node_modules/*.{js, jsx}", "**/dist/*.{js, jsx}"],
     "env": {
         "browser": true,
         "es2021": true
