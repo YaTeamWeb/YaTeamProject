@@ -40,6 +40,8 @@
     color: #000000;
 
     width: 100%;
+
+    margin-bottom: 15px;
 }
 
 .AboutInfoBlockList li {
@@ -57,4 +59,8 @@
     gap: 10px;
 
     width: 100%;
+}
+
+.AboutInfoBlockList {
+    margin-bottom: 15px;
 }

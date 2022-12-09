@@ -10,7 +10,7 @@ export const About = () => {
         <div className={classnames(styles.AboutInfoBlock) + " box-border"}>
 
             <h2 className={styles.AboutInfoBlockTitle + ' subpixel-antialiased'}>Не каждый способен на смелые решения.</h2>
-            <p className={styles.AboutInfoBlockTextElement + ' subpixel-antialiased'}>Каждое наше действие продумывается заранее, каждая строчка кода приводит к успеху.</p>
+            <p className={styles.AboutInfoBlockTextElement_1 + ' ' + styles.AboutInfoBlockTextElement + ' subpixel-antialiased'}>Каждое наше действие продумывается заранее, каждая строчка кода приводит к успеху.</p>
 
             <ul className={styles.AboutInfoBlockList}>
                 <li className='subpixel-antialiased'><SvgIcon name={'listCheck'} size={25} />Мы всегда работаем в команде.</li>
@@ -18,7 +18,7 @@ export const About = () => {
                 <li className='subpixel-antialiased'><SvgIcon name={'listCheck'} size={25} />Мы сосредоточены на работе.</li>
             </ul>
 
-            <p className={styles.AboutInfoBlockTextElement + ' subpixel-antialiased'}>Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда скромная студия из Саратова способна свернуть горы.</p>
+            <p className={styles.AboutInfoBlockTextElement_2 + ' ' + styles.AboutInfoBlockTextElement + ' subpixel-antialiased'}>Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда скромная студия из Саратова способна свернуть горы.</p>
         
         </div>
 
