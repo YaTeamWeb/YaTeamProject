@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/*.{js,jsx}\"",
-    "deploy": "eslint \"src/*.{js,jsx}\" && npm run build"
+    "lint": "eslint \"src/*.{js,jsx}\" --fix",
+    "deploy": "eslint \"src/*.{js,jsx}\" --fix && npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
