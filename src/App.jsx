@@ -6,12 +6,16 @@ import { Header } from './components/Header/Header.jsx';
 function App() {
 	return (
 		<BrowserRouter>
-			<div>
+
+			
 				<Header />
+
+			<main className="App">
+
 				<Routes>
 					<Route path="/" element={<MainPage />} />
 				</Routes>
-			</div>
+			</main>
 		</BrowserRouter>
 	);
 }
