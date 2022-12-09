@@ -1,8 +1,8 @@
 import React from 'react';
 import Sprites from '../../../assets/images/sprite.svg';
 
-export const SvgIcon = ({ name, color, size, className }) => (
-	<svg className={className} fill={color} width={size} height={size}>
+export const SvgIcon = ({ name, size, className }) => (
+	<svg className={className} width={size} height={size}>
 		<use href={`${Sprites}#sprite-${name}`} />
 	</svg>
 );
@@ -10,6 +10,5 @@ export const SvgIcon = ({ name, color, size, className }) => (
 // Настройки по умолчанию
 SvgIcon.defaultProps = {
 	size: 30,
-	color: 'black',
-	className: '',
+	className: 'fill-dark',
 };
