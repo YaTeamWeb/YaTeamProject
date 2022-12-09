@@ -1,10 +1,13 @@
 import React from 'react';
 import MainPage from './pages/MainPage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Header } from './components/Header/Header.jsx';
+
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="App flex flex-col items-center justify-center min-h-screen">
+			<div>
+				<Header />
 				<Routes>
 					<Route path="/" element={<MainPage />} />
 				</Routes>
