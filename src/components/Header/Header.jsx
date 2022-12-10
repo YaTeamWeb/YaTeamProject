@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { SvgIcon } from '../UI/index.jsx';
 import logo from '../../assets/images/MainPageImages/logo.png';
 
@@ -27,6 +28,7 @@ export const Header = () => {
 					</a>
 				</section>
 				<section>
+
 					<a href={'#'} className={'hover:text-primary ' + classnames(styles.NavigationLink)}>
 						Сервисы
 					</a>
