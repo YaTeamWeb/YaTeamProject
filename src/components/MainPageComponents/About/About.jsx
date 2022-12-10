@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 export const About = () => {
 
-	return <div className={'About flex gap-30 justify-between w-full h-screen bg-white box-border ' + classnames(styles.About)}>
+	return <div className={'About flex gap-30 justify-between w-full h-screen bg-white box-border ' + classnames(styles.About)} id='about'>
         <div className={classnames(styles.AboutInfoBlock) + " box-border"}>
 
             <h2 className={styles.AboutInfoBlockTitle + ' subpixel-antialiased'}>Не каждый способен на смелые решения.</h2>

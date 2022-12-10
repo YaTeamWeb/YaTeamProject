@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.NavigationLink {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+.LogoLink {
+    color: white;
+}
+
+.Logo {
+    width: 31px;
+    height: 41px;
+
+    margin-right: calc(450 * (100vw / 1440));
+}
