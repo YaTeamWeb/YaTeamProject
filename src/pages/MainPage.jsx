@@ -1,10 +1,16 @@
 import React from 'react';
+
+import { Hero } from '../components/MainPageComponents/Hero/Hero';
+
 import { SvgIcon } from '../components/UI/index.jsx';
+
 import { About } from '../components/MainPageComponents/About/About';
 
 const MainPage = () => {
 	return (
 		<div>
+
+			<Hero />
 			<About/>
 			{/*<ul className="flex items-center justify-center">
 				<li>
@@ -17,6 +23,7 @@ const MainPage = () => {
 					<SvgIcon name={'design'} size={40} />
 				</li>
 			</ul>*/}
+
 		</div>
 	);
 };
