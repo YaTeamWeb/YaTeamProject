@@ -1,9 +1,9 @@
 import aboutMainPage from '../../../assets/images/MainPageImages/aboutMainPage.png';
-import { SvgIcon } from '../../UI/index.jsx';
 import React from 'react';
 import classnames from 'classnames';
 
 import styles from './styles.module.css';
+import { SvgIcon } from '../../UI/SvgIcon/index.jsx';
 
 export const About = () => {
 	return (

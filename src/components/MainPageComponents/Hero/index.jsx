@@ -1,7 +1,7 @@
 import React from 'react';
-import { SvgIcon } from '../../UI/index.jsx';
 import classnames from 'classnames';
 import styles from './styles.module.css';
+import { SvgIcon } from '../../UI/SvgIcon/index.jsx';
 
 export const Hero = () => {
 	return (
