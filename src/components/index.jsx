@@ -1,2 +1,2 @@
 // Re-Exports
-export * from './AnotherComponent';
+export * from './Header';
