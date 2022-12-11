@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Hero } from '../components/MainPageComponents/index.jsx';
+import { About, Hero } from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
