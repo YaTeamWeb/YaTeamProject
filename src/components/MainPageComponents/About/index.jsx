@@ -1,61 +1,47 @@
 import aboutMainPage from '../../../assets/images/MainPageImages/aboutMainPage.png';
 import React from 'react';
 import classnames from 'classnames';
-
 import styles from './styles.module.css';
 import { SvgIcon } from '../../UI/SvgIcon/index.jsx';
+import { Heading2 } from '../../UI/Heading2';
+import { Body } from '../../UI/Body.jsx';
 
 export const About = () => {
 	return (
 		<div
-			className={
-				'About flex gap-30 justify-between w-full h-screen bg-white box-border ' +
-				classnames(styles.About)
-			}
+			className="py-24 flex gap-30 justify-between bg-white container"
 			id="about"
 		>
-			<div className={classnames(styles.AboutInfoBlock) + ' box-border'}>
-				<h2 className={styles.AboutInfoBlockTitle + ' subpixel-antialiased'}>
-					Не каждый способен на смелые решения.
-				</h2>
-				<p
-					className={
-						styles.AboutInfoBlockTextElement_1 +
-						' ' +
-						styles.AboutInfoBlockTextElement +
-						' subpixel-antialiased'
-					}
+			<div className="max-w-[650px]">
+				<Heading2
+					className={classnames(styles.AboutInfoBlockTitle, 'leading-10')}
 				>
+					Не каждый способен на смелые решения.
+				</Heading2>
+				<Body className={styles.AboutInfoBlockTextElement}>
 					Каждое наше действие продумывается заранее, каждая строчка кода
 					приводит к успеху.
-				</p>
+				</Body>
 
 				<ul className={styles.AboutInfoBlockList}>
-					<li className="subpixel-antialiased">
+					<li className="mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						Мы всегда работаем в команде.
+						<Body>Мы всегда работаем в команде.</Body>
 					</li>
-					<li className="subpixel-antialiased">
+					<li className="mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						Мы прислушиваемся к мнению друг друга.
+						<Body>Мы прислушиваемся к мнению друг друга.</Body>
 					</li>
-					<li className="subpixel-antialiased">
+					<li className="mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						Мы сосредоточены на работе.
+						<Body>Мы сосредоточены на работе.</Body>
 					</li>
 				</ul>
 
-				<p
-					className={
-						styles.AboutInfoBlockTextElement_2 +
-						' ' +
-						styles.AboutInfoBlockTextElement +
-						' subpixel-antialiased'
-					}
-				>
+				<Body className={styles.AboutInfoBlockTextElement}>
 					Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда
 					скромная студия из Саратова способна свернуть горы.
-				</p>
+				</Body>
 			</div>
 
 			<img src={aboutMainPage} alt="Команда"></img>
