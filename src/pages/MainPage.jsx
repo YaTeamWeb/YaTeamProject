@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Clients, Hero } from '../components/index.jsx';
+import { About, Benefits, Clients, Hero } from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
@@ -7,6 +7,7 @@ const MainPage = () => {
 			<Hero />
 			<About />
 			<Clients />
+			<Benefits />
 			{/*<ul className="flex items-center justify-center">
 				<li>
 					<SvgIcon className="fill-primary" name={'speed'} size={40} />
