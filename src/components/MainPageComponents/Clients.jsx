@@ -27,7 +27,7 @@ export const Clients = () => {
 					paginationDisabledClass: 'swiper-pagination-bullet-disabled',
 				}}
 				autoplay={{
-					delay: 1000,
+					delay: 2000,
 				}}
 				slidesPerView={4}
 				speed={1000}
