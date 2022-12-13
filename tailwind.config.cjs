@@ -27,7 +27,8 @@ module.exports = {
             ...defaultTheme.fontFamily.sans
         ],
         "Poppins": [
-            'Poppins'
+            'Poppins',
+            ...defaultTheme.fontFamily.sans
         ],
         "OpenSans": [
             'Open Sans',

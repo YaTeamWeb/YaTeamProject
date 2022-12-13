@@ -1,11 +1,12 @@
 import React from 'react';
-import { About, Hero } from '../components/index.jsx';
+import { About, Clients, Hero } from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
 		<div>
 			<Hero />
 			<About />
+			<Clients />
 			{/*<ul className="flex items-center justify-center">
 				<li>
 					<SvgIcon className="fill-primary" name={'speed'} size={40} />

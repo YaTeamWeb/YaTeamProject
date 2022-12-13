@@ -9,3 +9,4 @@ export * from './UI/Body.jsx';
 export * from './UI/Body2.jsx';
 export * from './MainPageComponents/Hero';
 export * from './MainPageComponents/About';
+export * from './MainPageComponents/Clients.jsx';
