@@ -1,10 +1,8 @@
-import aboutMainPage from '../../../assets/images/MainPageImages/aboutMainPage.png';
+import aboutMainPage from '../../assets/images/MainPageImages/aboutMainPage.png';
 import React from 'react';
-import classnames from 'classnames';
-import styles from './styles.module.css';
-import { SvgIcon } from '../../UI/SvgIcon/index.jsx';
-import { Heading2 } from '../../UI/Heading2';
-import { Body } from '../../UI/Body.jsx';
+import { SvgIcon } from '../UI/SvgIcon/index.jsx';
+import { Heading2 } from '../UI/Heading2.jsx';
+import { Body } from '../UI/Body.jsx';
 
 export const About = () => {
 	return (
@@ -13,32 +11,32 @@ export const About = () => {
 			id="about"
 		>
 			<div className="max-w-[650px]">
-				<Heading2
-					className={classnames(styles.AboutInfoBlockTitle, 'leading-10')}
-				>
+				<Heading2 className={'mb-4 leading-10'}>
 					Не каждый способен на смелые решения.
 				</Heading2>
-				<Body className={styles.AboutInfoBlockTextElement}>
+				<Body className="mb-3.5">
 					Каждое наше действие продумывается заранее, каждая строчка кода
 					приводит к успеху.
 				</Body>
 
-				<ul className={styles.AboutInfoBlockList}>
-					<li className="mb-1.5">
+				<ul>
+					<li className="flex items-center mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						<Body>Мы всегда работаем в команде.</Body>
+						<Body className="ml-2.5">Мы всегда работаем в команде.</Body>
 					</li>
-					<li className="mb-1.5">
+					<li className="flex items-center mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						<Body>Мы прислушиваемся к мнению друг друга.</Body>
+						<Body className="ml-2.5">
+							Мы прислушиваемся к мнению друг друга.
+						</Body>
 					</li>
-					<li className="mb-1.5">
+					<li className="flex items-center mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						<Body>Мы сосредоточены на работе.</Body>
+						<Body className="ml-2.5">Мы сосредоточены на работе.</Body>
 					</li>
 				</ul>
 
-				<Body className={styles.AboutInfoBlockTextElement}>
+				<Body>
 					Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда
 					скромная студия из Саратова способна свернуть горы.
 				</Body>
