@@ -10,3 +10,4 @@ export * from './UI/Body2.jsx';
 export * from './MainPageComponents/Hero.jsx';
 export * from './MainPageComponents/About.jsx';
 export * from './MainPageComponents/Clients.jsx';
+export * from './MainPageComponents/Benefits.jsx';
