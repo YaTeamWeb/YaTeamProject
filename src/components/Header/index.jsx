@@ -7,7 +7,7 @@ export const Header = () => {
 	return (
 		<header
 			className={
-				'fixed top-0 left-0 flex items-center justify-between w-full bg-black text-light px-8 h-16'
+				'fixed z-50 top-0 left-0 flex items-center justify-between w-full bg-black text-light px-8 h-16'
 			}
 		>
 			<a href="/">

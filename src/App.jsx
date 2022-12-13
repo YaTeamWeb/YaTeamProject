@@ -7,7 +7,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Header />
-			<main className="App">
+			<main className="App subpixel-antialiased">
 				<Routes>
 					<Route path="/" element={<MainPage />} />
 				</Routes>

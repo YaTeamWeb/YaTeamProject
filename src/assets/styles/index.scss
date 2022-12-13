@@ -1,5 +1,4 @@
 @import "fonts";
-@import "variables";
 
 @tailwind base;
 @tailwind components;
@@ -9,3 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
