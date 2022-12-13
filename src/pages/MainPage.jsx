@@ -3,7 +3,7 @@ import { About, Clients, Hero } from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
-		<div>
+		<>
 			<Hero />
 			<About />
 			<Clients />
@@ -18,7 +18,7 @@ const MainPage = () => {
 					<SvgIcon name={'design'} size={40} />
 				</li>
 			</ul>*/}
-		</div>
+		</>
 	);
 };
 
