@@ -1,7 +1,7 @@
 import React from 'react';
 import MainPage from './pages/MainPage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Header } from './components/index.jsx';
+import { BackTop, Header } from './components/index.jsx';
 
 function App() {
 	return (
@@ -12,6 +12,7 @@ function App() {
 					<Route path="/" element={<MainPage />} />
 				</Routes>
 			</main>
+			<BackTop className="fixed bottom-3 right-3" />
 		</BrowserRouter>
 	);
 }
