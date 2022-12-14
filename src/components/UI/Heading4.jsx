@@ -5,7 +5,7 @@ export const Heading4 = ({ className, children }) => {
 	return (
 		<h4
 			className={classnames(
-				'font-Raleway font-bold text-dark text-xl',
+				'font-Raleway font-semibold text-xl',
 				className
 			)}
 		>

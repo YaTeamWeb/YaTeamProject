@@ -12,11 +12,11 @@ export const CTA = () => {
 			}
             id="cta"
 		>
-			<Heading3 className="text-white">
+			<Heading3 className="text-light">
                 Свяжитесь с нами!
 			</Heading3>
 
-            <Heading4 className="text-white text-center max-w-[960px]">
+            <Heading4 className="text-light text-center max-w-[960px]">
                 Не нужно ждать — нужно действовать! Закажи разработку сайта прямо сейчас и не переживай об удобстве клиентов.
 			</Heading4>
 
