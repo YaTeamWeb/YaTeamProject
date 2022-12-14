@@ -1,14 +1,17 @@
 import React from 'react';
 import MainPage from './pages/MainPage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Header } from './components/index.jsx';
+
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="App flex flex-col items-center justify-center min-h-screen">
+			<Header />
+			<main className="App subpixel-antialiased">
 				<Routes>
 					<Route path="/" element={<MainPage />} />
 				</Routes>
-			</div>
+			</main>
 		</BrowserRouter>
 	);
 }
