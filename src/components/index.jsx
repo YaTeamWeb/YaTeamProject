@@ -11,3 +11,4 @@ export * from './MainPageComponents/Hero.jsx';
 export * from './MainPageComponents/About.jsx';
 export * from './MainPageComponents/Clients.jsx';
 export * from './MainPageComponents/Benefits.jsx';
+export * from './MainPageComponents/Services.jsx';
