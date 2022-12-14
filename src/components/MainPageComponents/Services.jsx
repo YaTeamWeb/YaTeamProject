@@ -7,7 +7,7 @@ import { Body2 } from '../UI/Body2.jsx';
 
 export const Services = () => {
 	return (
-		<section className="container py-16">
+		<section id="services" className="container py-16">
 			<SupTitle>Сервисы</SupTitle>
 			<Heading2 className="mb-10">
 				Услуги, которые предоставляет наша компания

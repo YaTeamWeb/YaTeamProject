@@ -1,5 +1,6 @@
 // Re-Exports
 export * from './Header.jsx';
+export * from './BackTop.jsx';
 export * from './UI/SvgIcon';
 export * from './UI/SupTitle.jsx';
 export * from './UI/Heading.jsx';
