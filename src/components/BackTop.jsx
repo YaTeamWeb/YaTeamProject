@@ -9,7 +9,10 @@ export const BackTop = ({ className }) => {
 	return (
 		<LinkAnchor
 			onClick={() => scroll.scrollToTop()}
-			className={classnames(className, 'cursor-pointer bg-primary p-4 rounded')}
+			className={classnames(
+				className,
+				'cursor-pointer bg-primary p-2.5 rounded'
+			)}
 			to="top"
 		>
 			<SvgIcon name={'arrowTop'} size={20} />
