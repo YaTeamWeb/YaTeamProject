@@ -1,5 +1,11 @@
 import React from 'react';
-import { About, Benefits, Clients, Hero } from '../components/index.jsx';
+import {
+	About,
+	Benefits,
+	Clients,
+	Hero,
+	Services,
+} from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
@@ -8,6 +14,7 @@ const MainPage = () => {
 			<About />
 			<Clients />
 			<Benefits />
+			<Services />
 			{/*<ul className="flex items-center justify-center">
 				<li>
 					<SvgIcon className="fill-primary" name={'speed'} size={40} />
