@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
+import * as Scroll from 'react-scroll';
 
 export const Header = () => {
+	const LinkAnchor = Scroll.Link;
+
 	return (
 		<header
 			className={
@@ -12,30 +15,42 @@ export const Header = () => {
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>
 			<nav className={'w-[470px] flex justify-between items-center'}>
-				<a
-					href={'#hero'}
+				<LinkAnchor
+					to="hero"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
 					className={
-						'ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
 					Домой
-				</a>
-				<a
-					href={'#about'}
+				</LinkAnchor>
+				<LinkAnchor
+					to="about"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
 					className={
-						'ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
 					О нас
-				</a>
-				<a
-					href={'#'}
+				</LinkAnchor>
+				<LinkAnchor
+					to="services"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
 					className={
-						'ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light'
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
 					Сервисы
-				</a>
+				</LinkAnchor>
 			</nav>
 			<div className={'flex flex-col'}>
 				<button className="text-right">Переключить тему</button>

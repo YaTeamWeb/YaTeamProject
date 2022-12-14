@@ -10,13 +10,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script type="text/javascript">
-        $("body").on('click', '[href*="#"]', function(e){
-          var fixed_offset = 40;
-          $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
-          e.preventDefault();
-        });
-      </script>
   </body>
 </html>
