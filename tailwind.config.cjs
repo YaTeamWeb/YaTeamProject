@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('/src/assets/images/MainPageImages/hero.png')",
+        'cta': "url('/src/assets/images/MainPageImages/cta.png')",
       },
       colors: {
         'light': '#fff',

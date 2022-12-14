@@ -5,6 +5,7 @@ import {
 	Clients,
 	Hero,
 	Services,
+	CTA,
 } from '../components/index.jsx';
 
 const MainPage = () => {
@@ -15,17 +16,7 @@ const MainPage = () => {
 			<Clients />
 			<Benefits />
 			<Services />
-			{/*<ul className="flex items-center justify-center">
-				<li>
-					<SvgIcon className="fill-primary" name={'speed'} size={40} />
-				</li>
-				<li>
-					<SvgIcon name={'medal'} size={40} />
-				</li>
-				<li>
-					<SvgIcon name={'design'} size={40} />
-				</li>
-			</ul>*/}
+			<CTA />
 		</>
 	);
 };
