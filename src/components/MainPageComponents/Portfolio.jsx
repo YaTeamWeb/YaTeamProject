@@ -6,6 +6,7 @@ import project_2 from '../../assets/images/MainPageImages/portfolio-2.jpg';
 import project_3 from '../../assets/images/MainPageImages/portfolio-3.jpg';
 import project_4 from '../../assets/images/MainPageImages/portfolio-4.jpg';
 import { Button } from '../UI/Button';
+
 export const Portfolio = () => {
 	return (
 		<section className="container py-16">

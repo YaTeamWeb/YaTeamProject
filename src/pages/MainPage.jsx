@@ -3,10 +3,10 @@ import {
 	About,
 	Benefits,
 	Clients,
-	Hero,
-	Services,
 	CTA,
+	Hero,
 	Portfolio,
+	Services,
 } from '../components/index.jsx';
 
 const MainPage = () => {
