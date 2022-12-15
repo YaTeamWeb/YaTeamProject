@@ -53,7 +53,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					Сервисы
 				</LinkAnchor>
 			</nav>
-			<div className={'flex flex-col'}>
+			<div className={'flex'}>
 				<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
 				<button className={'text-right'}>Сменить язык</button>
 			</div>
