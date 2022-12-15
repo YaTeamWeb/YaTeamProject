@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import classnames from 'classnames';
 
 const onClickWrapper = (onClickMethod, isDark, event) => {
 	const bodyRect = document.body.getBoundingClientRect();
@@ -27,11 +28,14 @@ const DarkModeToggle = ({ isDark, onClickMethod }) => (
 		type="button"
 		aria-label="Dark Mode Toggle"
 		onClick={(event) => onClickWrapper(onClickMethod, !isDark, event)}
-		className={`${
-			isDark ? 'w-[30px] h-[30px] bg-primary' : 'w-[30px] h-[30px] bg-primary'
-		} `}
+		className={'mr-2.5 relative w-8 h-8 bg-primary rounded-full'}
 	>
-		<div className={'w-[30px] h-[30px] bg-primary'} />
+		<div
+			className={classnames(
+				isDark ? 'scale-100' : 'w-6 h-6 scale-0',
+				'absolute w-6 h-6 left-2.5 bottom-2.5 rounded-full z-50 bg-dark ease-in-out duration-300'
+			)}
+		/>
 	</button>
 );
 
