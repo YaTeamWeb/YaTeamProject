@@ -13,9 +13,9 @@ export const Hero = () => {
 			<div className="container flex flex-col items-center">
 				<article className={'text-center mb-24 max-w-[860px]'}>
 					<Heading className="text-light">Лучшие решения для Вашего бизнеса от YaTeam</Heading>
-					<h2 className={'font-medium text-4xl leading-normal'}>
+					<p className={'font-medium text-4xl leading-normal'}>
 						Мы команда талантливых специалистов
-					</h2>
+					</p>
 				</article>
 				<ul className="flex items-center justify-center font-bold text-3xl gap-x-16">
 					<li
