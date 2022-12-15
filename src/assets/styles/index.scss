@@ -12,3 +12,13 @@ body {
     max-width: 1240px;
     margin: 0 auto;
 }
+
+.size {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background: #111;
+    top: 0;
+    left: 0;
+}
