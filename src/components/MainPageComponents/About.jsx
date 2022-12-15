@@ -6,10 +6,7 @@ import { Body } from '../UI/Body.jsx';
 
 export const About = () => {
 	return (
-		<div
-			className="py-24 flex gap-30 justify-between bg-white container"
-			id="about"
-		>
+		<div className="py-24 flex gap-30 justify-between container" id="about">
 			<div className="max-w-[650px]">
 				<Heading2 className={'mb-4 leading-10'}>
 					Не каждый способен на смелые решения.

@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
 import * as Scroll from 'react-scroll';
+import DarkModeToggle from './DarkMode/DarkModeToggle.jsx';
 
-export const Header = () => {
+export const Header = ({ setDarkMode, darkMode }) => {
 	const LinkAnchor = Scroll.Link;
 
 	return (
@@ -53,7 +54,7 @@ export const Header = () => {
 				</LinkAnchor>
 			</nav>
 			<div className={'flex flex-col'}>
-				<button className="text-right">Переключить тему</button>
+				<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
 				<button className={'text-right'}>Сменить язык</button>
 			</div>
 		</header>
