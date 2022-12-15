@@ -6,6 +6,7 @@ import {
 	Hero,
 	Services,
 	CTA,
+	Portfolio,
 } from '../components/index.jsx';
 
 const MainPage = () => {
@@ -17,6 +18,7 @@ const MainPage = () => {
 			<Benefits />
 			<Services />
 			<CTA />
+			<Portfolio />
 		</>
 	);
 };
