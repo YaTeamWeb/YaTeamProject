@@ -17,7 +17,7 @@ export const Portfolio = () => {
 					<figure className="group flex justify-center flex-col items-center">
 						<div className="group p-5 border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 							<img
-								className="rounded-lg"
+								className="rounded-xl"
 								src={project_1}
 								alt="Интернет-магазин"
 							/>
@@ -31,7 +31,7 @@ export const Portfolio = () => {
 					<figure className="group flex justify-center flex-col items-center">
 						<div className="group p-5 border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 							<img
-								className="rounded-lg"
+								className="rounded-xl"
 								src={project_2}
 								alt="Интернет-магазин"
 							/>
@@ -45,7 +45,7 @@ export const Portfolio = () => {
 					<figure className="group flex justify-center flex-col items-center">
 						<div className="group p-5 border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 							<img
-								className="rounded-lg"
+								className="rounded-xl"
 								src={project_3}
 								alt="Интернет-магазин"
 							/>
@@ -59,7 +59,7 @@ export const Portfolio = () => {
 					<figure className="group flex justify-center flex-col items-center">
 						<div className="group p-5 border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 							<img
-								className="rounded-lg"
+								className="rounded-xl"
 								src={project_4}
 								alt="Интернет-магазин"
 							/>
