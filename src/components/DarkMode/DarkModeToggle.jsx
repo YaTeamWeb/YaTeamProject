@@ -3,8 +3,11 @@ import React from 'react';
 import classnames from 'classnames';
 
 const onClickWrapper = (onClickMethod, isDark, event) => {
-	let html = document.querySelector('html');
-	if (html.classList.contains('dark')) {
+	const html = document.querySelector('html');
+	if (
+		JSON.parse(localStorage.getItem('theme')) === true ||
+		html.classList.contains('dark')
+	) {
 		html.classList.remove('dark');
 	} else {
 		html.classList.add('dark');
@@ -26,6 +29,7 @@ const onClickWrapper = (onClickMethod, isDark, event) => {
 		detail: customEventState,
 	});
 	onClickMethod(isDark);
+	localStorage.setItem('theme', isDark);
 	dispatchEvent(darkModeToggleEvent);
 };
 
