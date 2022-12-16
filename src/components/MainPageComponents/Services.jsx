@@ -39,10 +39,14 @@ export const Services = () => {
 					const brect = element.getBoundingClientRect();
 					const bx = x - brect.left;
 					const by = y - brect.top;
-					if (!element.style.borderImage)
+					if (!element.style.borderImage && theme)
 						element.style.borderImage = `radial-gradient(${offset * 2}px ${
 							offset * 2
 						}px at ${bx}px ${by}px ,rgba(255,255,255,0.7),rgba(255,255,255,0.1),transparent ) 9 / 1px / 0px stretch `;
+					if (!element.style.borderImage && !theme)
+						element.style.borderImage = `radial-gradient(${offset * 2}px ${
+							offset * 2
+						}px at ${bx}px ${by}px ,rgba(221, 221, 221, 1),rgba(221, 221, 221, 1),transparent ) 9 / 1px / 0px stretch `;
 					return [...acc, element];
 				}
 			}
@@ -52,8 +56,8 @@ export const Services = () => {
 
 	return (
 		<section
-			onMouseLeave={theme ? clearNearBy : null}
-			onMouseMove={theme ? onMouseMove : null}
+			onMouseLeave={clearNearBy}
+			onMouseMove={onMouseMove}
 			id="services"
 			className="container py-16"
 		>
