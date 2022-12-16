@@ -4,6 +4,7 @@ import { Heading2 } from '../UI/Heading2';
 import { ServicesItem } from './ServicesItem';
 import { useSelector } from 'react-redux';
 import { selectTheme } from '../../store/slices/theme/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 const offset = 69;
 const angles = [];
@@ -11,6 +12,7 @@ let nearBy = [];
 
 export const Services = () => {
 	const theme = useSelector(selectTheme);
+	const { services } = useSelector(selectLangItems);
 	useEffect(() => {
 		for (let i = 0; i <= 360; i += 45) {
 			angles.push((i * Math.PI) / 180);
@@ -57,50 +59,50 @@ export const Services = () => {
 			id="services"
 			className="container py-16"
 		>
-			<SupTitle>Сервисы</SupTitle>
+			<SupTitle>{services.suptitle}</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">
-				Услуги, которые предоставляет наша компания
+				{services.title}
 			</Heading2>
 			<ul className="text-center gap-5 grid grid-cols-12">
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Сайт под ключ'}
-					description={'Разработаем вам сайт от идеи до запуска в интернете'}
+					title={services.cards[0].title}
+					description={services.cards[0].description}
 					svgName={'key'}
 					id={'1'}
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Вёрстка с макета'}
-					description={'Сверстаем сайт по готовому макету'}
+					title={services.cards[1].title}
+					description={services.cards[1].description}
 					svgName={'layout'}
 					id={'2'}
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Поддержка сайта'}
-					description={'Поддердим уже готовый сайт'}
+					title={services.cards[2].title}
+					description={services.cards[2].description}
 					svgName={'browser'}
 					id={'3'}
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Сайт под ключ'}
-					description={'Разработаем вам сайт от идеи до запуска в интернете'}
+					title={services.cards[3].title}
+					description={services.cards[3].description}
 					svgName={'key'}
 					id={'4'}
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Вёрстка с макета'}
-					description={'Сверстаем сайт по готовому макету'}
+					title={services.cards[4].title}
+					description={services.cards[4].description}
 					svgName={'layout'}
 					id={'5'}
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
-					title={'Поддержка сайта'}
-					description={'Поддердим уже готовый сайт'}
+					title={services.cards[5].title}
+					description={services.cards[5].description}
 					svgName={'browser'}
 					id={'6'}
 				/>

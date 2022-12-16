@@ -11,7 +11,10 @@ import microsoft from '../../assets/images/MainPageImages/clients-2.png';
 import apple from '../../assets/images/MainPageImages/clients-3.png';
 import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.png';
 import yandex from '../../assets/images/MainPageImages/clients-4.png';
+import { useSelector } from 'react-redux';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 export const Clients = () => {
+	const { clients } = useSelector(selectLangItems);
 	return (
 		<section
 			className="container py-16"
@@ -20,9 +23,9 @@ export const Clients = () => {
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
 			}}
 		>
-			<SupTitle>Клиенты</SupTitle>
+			<SupTitle>{clients.suptitle}</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">
-				Наши клиенты — мировые корпорации
+				{clients.title}
 			</Heading2>
 			<Swiper
 				modules={[Pagination, Autoplay]}
