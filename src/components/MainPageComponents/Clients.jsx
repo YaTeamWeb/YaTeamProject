@@ -13,7 +13,13 @@ import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.p
 import yandex from '../../assets/images/MainPageImages/clients-4.png';
 export const Clients = () => {
 	return (
-		<section className="container py-16">
+		<section className="container py-16" style={{}/*
+			{
+				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
+				'--swiper-pagination-bullet-inactive-opacity': '100%',
+			}
+		*/}
+		>
 			<SupTitle>Клиенты</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">Наши клиенты — мировые корпорации</Heading2>
 			<Swiper
