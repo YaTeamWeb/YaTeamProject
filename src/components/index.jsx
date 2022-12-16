@@ -17,6 +17,7 @@ export * from './MainPageComponents/About.jsx';
 export * from './MainPageComponents/Clients.jsx';
 export * from './MainPageComponents/Benefits.jsx';
 export * from './MainPageComponents/Services.jsx';
+export * from './MainPageComponents/ServicesItem.jsx';
 export * from './MainPageComponents/CTA.jsx';
 export * from './MainPageComponents/Portfolio.jsx';
 export * from './MainPageComponents/Counts.jsx';
