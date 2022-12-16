@@ -10,7 +10,6 @@ import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation
 function App() {
 	const isDark = useSelector(selectTheme);
 	const dispatch = useDispatch();
-
 	useEffect(() => {
 		const html = document.querySelector('html');
 		if (JSON.parse(localStorage.getItem('theme')) === true) {
