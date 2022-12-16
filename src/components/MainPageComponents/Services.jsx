@@ -9,7 +9,7 @@ export const Services = () => {
 	return (
 		<section id="services" className="container py-16">
 			<SupTitle>Сервисы</SupTitle>
-			<Heading2 className="mb-10">
+			<Heading2 className="mb-10 dark:text-light duration-500">
 				Услуги, которые предоставляет наша компания
 			</Heading2>
 			<ul className="text-center gap-5 grid grid-cols-12">
@@ -20,7 +20,7 @@ export const Services = () => {
 						size={70}
 					/>
 
-					<Heading3 className=" block ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="block ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Сайт под ключ
 					</Heading3>
 					<Body2 className="block">
@@ -33,7 +33,7 @@ export const Services = () => {
 						name="layout"
 						size={70}
 					/>
-					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Вёрстка с макета
 					</Heading3>
 					<Body2>Сверстаем сайт по готовому макету</Body2>
@@ -44,7 +44,7 @@ export const Services = () => {
 						name="browser"
 						size={70}
 					/>
-					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Поддержка сайта
 					</Heading3>
 					<Body2>Поддержим уже готовый сайт</Body2>
@@ -56,7 +56,7 @@ export const Services = () => {
 						size={70}
 					/>
 
-					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Сайт под ключ
 					</Heading3>
 					<Body2>Разработаем вам сайт от идеи до запуска в интернете</Body2>
@@ -67,7 +67,7 @@ export const Services = () => {
 						name="layout"
 						size={70}
 					/>
-					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Вёрстка с макета
 					</Heading3>
 					<Body2>Сверстаем сайт по готовому макету</Body2>
@@ -78,7 +78,7 @@ export const Services = () => {
 						name="browser"
 						size={70}
 					/>
-					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5">
+					<Heading3 className="ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
 						Поддержка сайта
 					</Heading3>
 					<Body2>Поддержим уже готовый сайт</Body2>
