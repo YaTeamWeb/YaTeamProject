@@ -1,8 +1,12 @@
 import React from 'react';
 import { SvgIcon } from '../UI/SvgIcon/index.jsx';
 import { Heading } from '../UI/Heading.jsx';
+import { useSelector } from 'react-redux';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 export const Hero = () => {
+	const { hero } = useSelector(selectLangItems);
+
 	return (
 		<section
 			className={
@@ -12,9 +16,9 @@ export const Hero = () => {
 		>
 			<div className="container flex flex-col items-center">
 				<article className={'text-center mb-24 max-w-[860px]'}>
-					<Heading className="text-light">Лучшие решения для Вашего бизнеса от YaTeam</Heading>
+					<Heading className="text-light">{hero.title}</Heading>
 					<p className={'font-medium text-4xl leading-normal'}>
-						Мы команда талантливых специалистов
+						{hero.description}
 					</p>
 				</article>
 				<ul className="flex items-center justify-center font-bold text-3xl gap-x-16">
@@ -25,7 +29,7 @@ export const Hero = () => {
 					>
 						<SvgIcon className="fill-primary" name={'speed'} size={40} />
 						<p className="ease-in duration-150 cursor-pointer hover:text-primary">
-							Скорость
+							{hero.cards[0].name}
 						</p>
 					</li>
 					<li
@@ -35,7 +39,7 @@ export const Hero = () => {
 					>
 						<SvgIcon className="fill-primary" name={'medal'} size={40} />
 						<p className="ease-in duration-150 cursor-pointer hover:text-primary">
-							Качество
+							{hero.cards[1].name}
 						</p>
 					</li>
 					<li
@@ -45,7 +49,7 @@ export const Hero = () => {
 					>
 						<SvgIcon className="fill-primary" name={'design'} size={40} />
 						<p className="ease-in duration-150 cursor-pointer hover:text-primary">
-							Дизайн
+							{hero.cards[2].name}
 						</p>
 					</li>
 				</ul>
