@@ -10,6 +10,8 @@ export * from './UI/Body.jsx';
 export * from './UI/Body2.jsx';
 export * from './UI/Body3.jsx';
 export * from './UI/Button.jsx';
+export * from './DarkMode/GrowingCircleAnimation.jsx';
+export * from './DarkMode/DarkModeToggle.jsx';
 export * from './MainPageComponents/Hero.jsx';
 export * from './MainPageComponents/About.jsx';
 export * from './MainPageComponents/Clients.jsx';

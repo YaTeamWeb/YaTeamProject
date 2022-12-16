@@ -2,10 +2,10 @@ import React from 'react';
 import MainPage from './pages/MainPage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Header } from './components/index.jsx';
-import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from './store/slices/theme/index.js';
+import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation.jsx';
 
 function App() {
 	const isDark = useSelector(selectTheme);
