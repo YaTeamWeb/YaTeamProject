@@ -3,9 +3,11 @@ import {
 	About,
 	Benefits,
 	Clients,
-	Hero,
-	Services,
 	CTA,
+	Hero,
+	Portfolio,
+	Services,
+	Counts,
 } from '../components/index.jsx';
 
 const MainPage = () => {
@@ -17,6 +19,8 @@ const MainPage = () => {
 			<Benefits />
 			<Services />
 			<CTA />
+			<Portfolio />
+			<Counts />
 		</>
 	);
 };
