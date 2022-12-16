@@ -79,7 +79,7 @@ export const Services = () => {
 				<ServicesItem
 					clearNearBy={clearNearBy}
 					title={'Поддержка сайта'}
-					description={'Поддердим уже готовый сайт'}
+					description={'Поддержим уже готовый сайт'}
 					svgName={'browser'}
 					id={'3'}
 				/>
@@ -100,7 +100,7 @@ export const Services = () => {
 				<ServicesItem
 					clearNearBy={clearNearBy}
 					title={'Поддержка сайта'}
-					description={'Поддердим уже готовый сайт'}
+					description={'Поддержим уже готовый сайт'}
 					svgName={'browser'}
 					id={'6'}
 				/>
