@@ -13,15 +13,17 @@ import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.p
 import yandex from '../../assets/images/MainPageImages/clients-4.png';
 export const Clients = () => {
 	return (
-		<section className="container py-16" style={{}/*
-			{
+		<section
+			className="container py-16"
+			style={{
 				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
-			}
-		*/}
+			}}
 		>
 			<SupTitle>Клиенты</SupTitle>
-			<Heading2 className="mb-10 dark:text-light duration-500">Наши клиенты — мировые корпорации</Heading2>
+			<Heading2 className="mb-10 dark:text-light duration-500">
+				Наши клиенты — мировые корпорации
+			</Heading2>
 			<Swiper
 				modules={[Pagination, Autoplay]}
 				spaceBetween={159}
@@ -54,23 +56,23 @@ export const Clients = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img 
+					<img
 						className="max-h-12 object-cover dark:invert duration-500"
-						src={apple} 
+						src={apple}
 						alt="Apple"
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img 
-						className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute" 
-						src={darkMode_yandex} 
+					<img
+						className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute"
+						src={darkMode_yandex}
 						alt="Yandex"
 					/>
-					<img 
-						className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500" 
-						src={yandex} 
+					<img
+						className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500"
+						src={yandex}
 						alt="Yandex"
-				 	/>
+					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img

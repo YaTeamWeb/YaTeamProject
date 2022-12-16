@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MainPage from './pages/MainPage.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Header } from './components/index.jsx';
@@ -10,6 +10,13 @@ import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation
 function App() {
 	const isDark = useSelector(selectTheme);
 	const dispatch = useDispatch();
+
+	useEffect(() => {
+		const html = document.querySelector('html');
+		if (JSON.parse(localStorage.getItem('theme')) === true) {
+			html.classList.add('dark');
+		}
+	}, []);
 
 	return (
 		<BrowserRouter>
