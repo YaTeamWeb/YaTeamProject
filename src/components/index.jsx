@@ -19,3 +19,4 @@ export * from './MainPageComponents/Benefits.jsx';
 export * from './MainPageComponents/Services.jsx';
 export * from './MainPageComponents/CTA.jsx';
 export * from './MainPageComponents/Portfolio.jsx';
+export * from './MainPageComponents/Counts.jsx';

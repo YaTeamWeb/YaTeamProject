@@ -3,6 +3,12 @@ import React from 'react';
 import classnames from 'classnames';
 
 const onClickWrapper = (onClickMethod, isDark, event) => {
+	let html = document.querySelector('html');
+	if (html.classList.contains('dark')) {
+		html.classList.remove('dark');
+	} else {
+		html.classList.add('dark');
+	}
 	const bodyRect = document.body.getBoundingClientRect();
 	const elemRect = event.target.getBoundingClientRect();
 	const offsetTop = elemRect.top - bodyRect.top;
