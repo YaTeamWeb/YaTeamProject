@@ -39,6 +39,7 @@ module.exports = {
       container: false
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
 
