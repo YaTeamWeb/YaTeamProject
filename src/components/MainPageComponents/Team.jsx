@@ -77,8 +77,8 @@ export const Team = () => {
 				<TeamItem
 					clearNearBy={clearNearBy}
 					id={'1'}
-					initial={team.people[0].initial}
-					role={team.people[0].role}
+					initial={team.people[0].name}
+					role={team.people[0].job}
 					photo={renat}
 					backGround={
 						'bg-[radial-gradient(29.64%_29.64%_at_49.87%_29.64%,#9D4EDD_0%,rgba(213,162,255,0.5)_100%),linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
@@ -90,8 +90,8 @@ export const Team = () => {
 				<TeamItem
 					clearNearBy={clearNearBy}
 					id={'2'}
-					initial={team.people[1].initial}
-					role={team.people[1].role}
+					initial={team.people[1].name}
+					role={team.people[1].job}
 					photo={insaf}
 					backGround={
 						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
@@ -103,8 +103,8 @@ export const Team = () => {
 				<TeamItem
 					clearNearBy={clearNearBy}
 					id={'3'}
-					initial={team.people[2].initial}
-					role={team.people[2].role}
+					initial={team.people[2].name}
+					role={team.people[2].job}
 					photo={dmitriy}
 					backGround={
 						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
@@ -116,8 +116,8 @@ export const Team = () => {
 				<TeamItem
 					clearNearBy={clearNearBy}
 					id={'4'}
-					initial={team.people[3].initial}
-					role={team.people[3].role}
+					initial={team.people[3].name}
+					role={team.people[3].job}
 					photo={stepan}
 					backGround={
 						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
