@@ -10,8 +10,8 @@ export const About = () => {
 	const { about } = useSelector(selectLangItems);
 
 	return (
-		<div className="py-24 flex gap-30 justify-between container" id="about" data-aos="fade-up" data-aos-delay="100" data-aos-offset="400">
-			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="100">
+		<div className="py-24 flex gap-30 justify-between container" id="about" data-aos="fade-up" data-aos-delay="0" data-aos-offset="400">
+			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="0">
 				<Heading2 className='mb-4 leading-10 dark:text-light duration-500'>
 					{about.title}
 				</Heading2>
@@ -45,7 +45,7 @@ export const About = () => {
 				</Body>
 			</div>
 
-			<img src={aboutMainPage} alt="Команда" data-aos="fade-left" data-aos-delay="100"></img>
+			<img src={aboutMainPage} alt="Команда" data-aos="fade-left" data-aos-delay="0"></img>
 		</div>
 	);
 };

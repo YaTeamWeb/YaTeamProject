@@ -75,7 +75,7 @@ export const Services = () => {
 					svgName={'key'}
 					id={'1'}
 					dataAos="zoom-in"
-					dataAosDelay="100"
+					dataAosDelay="0"
 					dataAosOffset="600"
 					
 				/>
@@ -86,7 +86,7 @@ export const Services = () => {
 					svgName={'layout'}
 					id={'2'}
 					dataAos="zoom-in"
-					dataAosDelay="300"
+					dataAosDelay="200"
 					dataAosOffset="600"
 					
 				/>
@@ -97,7 +97,7 @@ export const Services = () => {
 					svgName={'browser'}
 					id={'3'}
 					dataAos="zoom-in"
-					dataAosDelay="500"
+					dataAosDelay="400"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -107,7 +107,7 @@ export const Services = () => {
 					svgName={'key'}
 					id={'4'}
 					dataAos="zoom-in"
-					dataAosDelay="100"
+					dataAosDelay="0"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -117,7 +117,7 @@ export const Services = () => {
 					svgName={'layout'}
 					id={'5'}
 					dataAos="zoom-in"
-					dataAosDelay="300"
+					dataAosDelay="200"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -127,7 +127,7 @@ export const Services = () => {
 					svgName={'browser'}
 					id={'6'}
 					dataAos="zoom-in"
-					dataAosDelay="500"
+					dataAosDelay="400"
 					dataAosOffset="600"
 				/>
 			</ul>

@@ -21,3 +21,4 @@ export * from './MainPageComponents/ServicesItem.jsx';
 export * from './MainPageComponents/CTA.jsx';
 export * from './MainPageComponents/Portfolio.jsx';
 export * from './MainPageComponents/Counts.jsx';
+export * from './MainPageComponents/Contact.jsx';

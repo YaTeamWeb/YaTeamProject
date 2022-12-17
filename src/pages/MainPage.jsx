@@ -10,6 +10,7 @@ import {
 	Portfolio,
 	Services,
 	Counts,
+	Contact
 } from '../components/index.jsx';
 
 const MainPage = () => {
@@ -23,6 +24,7 @@ const MainPage = () => {
 			<CTA />
 			<Portfolio />
 			<Counts />
+			<Contact />
 		</>
 	);
 };
