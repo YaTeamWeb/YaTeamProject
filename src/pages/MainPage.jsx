@@ -1,15 +1,14 @@
 import React from 'react';
 
-
 import {
 	About,
 	Benefits,
 	Clients,
+	Counts,
 	CTA,
 	Hero,
 	Portfolio,
 	Services,
-	Counts,
 } from '../components/index.jsx';
 
 const MainPage = () => {
