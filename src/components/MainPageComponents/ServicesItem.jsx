@@ -11,9 +11,9 @@ export const ServicesItem = ({
 	svgName,
 	description,
 	clearNearBy,
-	dataAos, 
+	dataAos,
 	dataAosDelay,
-	dataAosOffset
+	dataAosOffset,
 }) => {
 	const theme = useSelector(selectTheme);
 
@@ -34,23 +34,29 @@ export const ServicesItem = ({
 
 	return (
 		<li
-			onMouseLeave={theme ? onMouseLeave : null}
-			onMouseMove={theme ? onMouseMove : null}
-			onMouseEnter={theme ? clearNearBy : null}
-			className="item dark:hover:shadow-gray-300 dark:border-[#111] dark:shadow-lg border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 px-5 py-[89px] col-span-4 flex items-center flex-col justify-center"
-			id={id}
-			data-aos={dataAos} data-aos-delay={dataAosDelay} data-aos-offset={dataAosOffset}
+			data-aos={dataAos}
+			data-aos-delay={dataAosDelay}
+			data-aos-offset={dataAosOffset}
+			className={'col-span-4 '}
 		>
-			<SvgIcon
-				className="rounded mb-5 bg-primary p-5"
-				name={svgName}
-				size={70}
-			/>
+			<div
+				onMouseLeave={theme ? onMouseLeave : null}
+				onMouseMove={theme ? onMouseMove : null}
+				onMouseEnter={theme ? clearNearBy : null}
+				className="item h-full dark:hover:shadow-gray-300 dark:border-[#111] dark:shadow-lg border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 px-5 py-[89px]  flex items-center flex-col justify-center"
+				id={id}
+			>
+				<SvgIcon
+					className="rounded mb-5 bg-primary p-5"
+					name={svgName}
+					size={70}
+				/>
 
-			<Heading3 className="block ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
-				{title}
-			</Heading3>
-			<Body2 className="block">{description}</Body2>
+				<Heading3 className="block ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
+					{title}
+				</Heading3>
+				<Body2 className="block">{description}</Body2>
+			</div>
 		</li>
 	);
 };
