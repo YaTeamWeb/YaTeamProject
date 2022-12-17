@@ -23,7 +23,7 @@ export const Counts = () => {
 			id="cta"
 			data-aos="fade-up"
 			data-aos-duration="1000"
-			data-aos-delay="200"
+			data-aos-delay="0"
 			data-aos-offset="400"
 		>
 			<div className="flex gap-8 flex-row items-center justify-center w-[1200px] h-[520px]">
@@ -31,7 +31,7 @@ export const Counts = () => {
 					className="countsImage w-[397px] h-full"
 					data-aos="fade-right"
 					data-aos-duration="1000"
-					data-aos-delay="200"
+					data-aos-delay="0"
 				>
 					<img
 						src={notebook}
@@ -43,7 +43,8 @@ export const Counts = () => {
 					className="bg-transparent w-[772px] h-[339px]"
 					data-aos="fade-left"
 					data-aos-duration="1000"
-					data-aos-delay="200"
+					data-aos-delay="0"
+					data-aos-offset="350"
 				>
 					<Heading2 className="mb-[15px] dark:text-light duration-500">
 						{counts.title}
