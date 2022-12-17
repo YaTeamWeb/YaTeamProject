@@ -102,12 +102,10 @@ export const Portfolio = () => {
 					</figure>
 				</li>
 			</ul>
-
 			<div className="flex justify-center items-center mt-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-offset='500'>
 				<Button className="text-dark hover:text-light dark:text-light duration-500">
 					{portfolio.button}
 				</Button>
-
 			</div>
 		</section>
 	);
