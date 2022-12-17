@@ -4,7 +4,10 @@
         "header": [
             {"name": "Домой"},
             {"name": "О нас"},
-            {"name": "Сервисы"}
+            {"name": "Сервисы"},
+            {"name": "Портфолио"},
+            {"name": "Команда"},
+            {"name": "Связаться с нами"}
         ],
         "hero": {
             "title": "Лучшие решения для Вашего бизнеса от YaTeam",
@@ -133,7 +136,10 @@
         "header": [
             {"name": "Home"},
             {"name": "About us"},
-            {"name": "Services"}
+            {"name": "Services"},
+            {"name": "Portfolio"},
+            {"name": "Team"},
+            {"name": "Contact us"}
         ],
         "hero": {
             "title": "The best solutions for your business from YaTeam",

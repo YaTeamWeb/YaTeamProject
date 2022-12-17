@@ -34,7 +34,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 			<a className="block" href="/src/pages">
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>
-			<nav className={'w-[470px] flex justify-between items-center'}>
+			<nav className={'max-w-[1200px] flex gap-[80px] justify-between items-center'}>
 				<LinkAnchor
 					to="hero"
 					activeClass={'text-primary'}
@@ -70,6 +70,42 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					}
 				>
 					{header[2].name}
+				</LinkAnchor>
+				<LinkAnchor
+					to="portfolio"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
+					className={
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+					}
+				>
+					{header[3].name}
+				</LinkAnchor>
+				<LinkAnchor
+					to="team"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
+					className={
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+					}
+				>
+					{header[4].name}
+				</LinkAnchor>
+				<LinkAnchor
+					to="contact"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
+					className={
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+					}
+				>
+					{header[5].name}
 				</LinkAnchor>
 			</nav>
 			<div className={'flex items-center'}>

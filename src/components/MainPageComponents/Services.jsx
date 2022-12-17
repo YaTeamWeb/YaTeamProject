@@ -58,9 +58,9 @@ export const Services = () => {
 			onMouseMove={theme ? onMouseMove : null}
 			id="services"
 			className="container py-16"
-			data-aos="fade-up" data-aos-delay="500"
+			data-aos="fade-up" data-aos-delay="200"
 		>
-			<div data-aos="fade-up" data-aos-delay="500" data-aos-offset='450'>
+			<div data-aos="fade-up" data-aos-delay="200" data-aos-offset='450'>
 			<SupTitle>{services.suptitle}</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">
 				{services.title}
@@ -75,7 +75,7 @@ export const Services = () => {
 					svgName={'key'}
 					id={'1'}
 					dataAos="zoom-in"
-					dataAosDelay="300"
+					dataAosDelay="100"
 					dataAosOffset="600"
 					
 				/>
@@ -86,7 +86,7 @@ export const Services = () => {
 					svgName={'layout'}
 					id={'2'}
 					dataAos="zoom-in"
-					dataAosDelay="500"
+					dataAosDelay="300"
 					dataAosOffset="600"
 					
 				/>
@@ -97,7 +97,7 @@ export const Services = () => {
 					svgName={'browser'}
 					id={'3'}
 					dataAos="zoom-in"
-					dataAosDelay="700"
+					dataAosDelay="500"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -107,7 +107,7 @@ export const Services = () => {
 					svgName={'key'}
 					id={'4'}
 					dataAos="zoom-in"
-					dataAosDelay="300"
+					dataAosDelay="100"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -117,7 +117,7 @@ export const Services = () => {
 					svgName={'layout'}
 					id={'5'}
 					dataAos="zoom-in"
-					dataAosDelay="500"
+					dataAosDelay="300"
 					dataAosOffset="600"
 				/>
 				<ServicesItem
@@ -127,7 +127,7 @@ export const Services = () => {
 					svgName={'browser'}
 					id={'6'}
 					dataAos="zoom-in"
-					dataAosDelay="700"
+					dataAosDelay="500"
 					dataAosOffset="600"
 				/>
 			</ul>
