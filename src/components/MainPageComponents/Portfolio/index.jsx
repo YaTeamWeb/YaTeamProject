@@ -13,16 +13,12 @@ export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
 	return (
 		<section className="container py-16" id="portfolio">
-			<div
-				data-aos="fade-up"
-				data-aos-duration="1000"
-				data-aos-delay="300"
-				data-aos-offset="600"
-			>
-				<SupTitle>Портфолио</SupTitle>
-				<Heading2 className="mb-10 dark:text-light duration-500">
-					{portfolio.title}
-				</Heading2>
+
+
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-offset='600'>
+				<SupTitle>{portfolio.suptitle}</SupTitle>
+				<Heading2 className="mb-10 dark:text-light duration-500">{portfolio.title}</Heading2>
+
 			</div>
 			<ul className="grid gap-y-10 gap-x-5 grid-cols-12">
 				<li

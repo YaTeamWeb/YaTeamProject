@@ -9,7 +9,9 @@ import {
 	Portfolio,
 	Services,
 	Counts,
-	Contact
+	Contact,
+	Counts,
+	Team,
 } from '../components/index.jsx';
 
 const MainPage = () => {
@@ -24,6 +26,7 @@ const MainPage = () => {
 			<Portfolio />
 			<Counts />
 			<Contact />
+			<Team />
 		</>
 	);
 };
