@@ -9,8 +9,9 @@
   <body onScroll="
   document.querySelector('.BackToTopContainer').
   style=(((window.pageYOffset < document.documentElement.clientHeight) 
-  ? 'opacity: 0;' : 'opacity: 1;')
+  ? 'opacity: 0; visibility: hidden;' : 'opacity: 1; visibility: visible;')
    + 'transition: all 0.5s;');
+   
    ">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
