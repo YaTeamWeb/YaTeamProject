@@ -139,7 +139,7 @@
         "team": {
             "suptitle": "Команда",
             "title": "Наша команда профессионалов",
-            "cards": [
+            "people": [
                 {
                     "name": "Ренат Губайдуллин",
                     "job": "Тимлид, Дизайнер"
@@ -297,7 +297,7 @@
         "team": {
             "suptitle": "Team",
             "title": "Our team of professionals",
-            "cards": [
+            "people": [
                 {
                     "name": "Renat Gubaidullin",
                     "job": "Teamlead, Designer"

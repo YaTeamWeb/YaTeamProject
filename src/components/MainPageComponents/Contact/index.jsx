@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../../store/slices/lang/selectors.js';
 
 export const Contact = () => {
-	const { contact } = useSelector(selectLangItems);
+	const { contacts } = useSelector(selectLangItems);
 
 	return (
 		<section
@@ -20,10 +20,10 @@ export const Contact = () => {
 		>
 
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-			<SupTitle>{contact.suptitle}</SupTitle>
+			<SupTitle>{contacts.suptitle}</SupTitle>
 
 			<Heading2 className="mb-10 dark:text-light duration-500">
-				{contact.title}
+				{contacts.title}
 			</Heading2>
 			</div>
 
