@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heading2 } from '../UI/Heading2.jsx';
 import { Body } from '../UI/Body.jsx';
 import { Body2 } from '../UI/Body2.jsx';
@@ -6,9 +6,14 @@ import { SvgIcon } from '../UI/SvgIcon/index.jsx';
 import notebook from '../../assets/images/MainPageImages/counts.png';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import PureCounter from "@srexi/purecounterjs";
 
 export const Counts = () => {
 	const { counts } = useSelector(selectLangItems);
+
+	useEffect(() => {
+		var pure = new PureCounter();
+	  });
 
 	return (
 		<section
@@ -33,7 +38,7 @@ export const Counts = () => {
                         <div className='flex flex-row items-center justify-start gap-[30px] h-[102px]'>
                             <div className="w-51px h-51px"><SvgIcon className="fill-primary" name={'smile'} size={51} /></div>
                             <div className=''>
-                                <p className='font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>65</p>
+                                <span data-purecounter-duration="2.5" data-purecounter-end="65" className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>0</span>
                                 <Body2>
                                     {counts.items[0].textFirst}{' '}
                                     <span className="font-semibold text-dark dark:text-light duration-500">
@@ -48,9 +53,9 @@ export const Counts = () => {
 								<SvgIcon className="fill-primary" name={'projects'} size={50} />
 							</div>
 							<div className="">
-								<p className='font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
-									85
-								</p>
+								<span data-purecounter-duration="3" data-purecounter-end="85" className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
+									0
+								</span>
 								<Body2>
 									{counts.items[1].textFirst}{' '}
 									<span className="font-semibold text-dark dark:text-light duration-500">
@@ -70,9 +75,9 @@ export const Counts = () => {
 								/>
 							</div>
 							<div className="">
-								<p className='font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
-									10
-								</p>
+								<span data-purecounter-duration="1.5" data-purecounter-end="10" className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
+									0
+								</span>
 								<Body2>
 									{counts.items[2].textFirst}{' '}
 									<span className="font-semibold text-dark dark:text-light duration-500">
@@ -88,9 +93,9 @@ export const Counts = () => {
 								<SvgIcon className="fill-primary" name={'medal'} size={51} />
 							</div>
 							<div className="">
-								<p className='font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
-									20
-								</p>
+								<span data-purecounter-duration="2" data-purecounter-end="20" className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'>
+									0
+								</span>
 								<Body2>
 									{counts.items[3].textFirst}{' '}
 									<span className="font-semibold text-dark dark:text-light duration-500">
