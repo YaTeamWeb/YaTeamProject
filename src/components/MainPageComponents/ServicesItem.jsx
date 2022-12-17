@@ -11,6 +11,9 @@ export const ServicesItem = ({
 	svgName,
 	description,
 	clearNearBy,
+	dataAos, 
+	dataAosDelay,
+	dataAosOffset
 }) => {
 	const theme = useSelector(selectTheme);
 
@@ -36,6 +39,7 @@ export const ServicesItem = ({
 			onMouseEnter={theme ? clearNearBy : null}
 			className="item dark:hover:shadow-gray-300 dark:border-[#111] dark:shadow-lg border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 px-5 py-[89px] col-span-4 flex items-center flex-col justify-center"
 			id={id}
+			data-aos={dataAos} data-aos-delay={dataAosDelay} data-aos-offset={dataAosOffset}
 		>
 			<SvgIcon
 				className="rounded mb-5 bg-primary p-5"
