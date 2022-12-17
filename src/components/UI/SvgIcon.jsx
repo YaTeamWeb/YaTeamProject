@@ -1,5 +1,5 @@
 import React from 'react';
-import Sprites from '../../../assets/images/sprite.svg';
+import Sprites from '../../assets/images/sprite.svg';
 
 export const SvgIcon = ({ name, size, className }) => (
 	<svg className={className} width={size} height={size}>

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { SupTitle } from '../UI/SupTitle';
-import { Heading2 } from '../UI/Heading2';
-import { ServicesItem } from './ServicesItem';
+import { SupTitle } from '../../UI/SupTitle.jsx';
+import { Heading2 } from '../../UI/Heading2.jsx';
+import { ServicesItem } from '../ServicesItem.jsx';
 import { useSelector } from 'react-redux';
-import { selectTheme } from '../../store/slices/theme/selectors.js';
-import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import { selectTheme } from '../../../store/slices/theme/selectors.js';
+import { selectLangItems } from '../../../store/slices/lang/selectors.js';
 
 const offset = 69;
 const angles = [];
@@ -58,13 +58,14 @@ export const Services = () => {
 			onMouseMove={theme ? onMouseMove : null}
 			id="services"
 			className="container py-16"
-			data-aos="fade-up" data-aos-delay="200"
+			data-aos="fade-up"
+			data-aos-delay="500"
 		>
-			<div data-aos="fade-up" data-aos-delay="200" data-aos-offset='450'>
-			<SupTitle>{services.suptitle}</SupTitle>
-			<Heading2 className="mb-10 dark:text-light duration-500">
-				{services.title}
-			</Heading2>
+			<div data-aos="fade-up" data-aos-delay="200" data-aos-offset="450">
+				<SupTitle>{services.suptitle}</SupTitle>
+				<Heading2 className="mb-10 dark:text-light duration-500">
+					{services.title}
+				</Heading2>
 			</div>
 
 			<ul className="text-center gap-5 grid grid-cols-12">
@@ -77,7 +78,6 @@ export const Services = () => {
 					dataAos="zoom-in"
 					dataAosDelay="0"
 					dataAosOffset="600"
-					
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -88,7 +88,6 @@ export const Services = () => {
 					dataAos="zoom-in"
 					dataAosDelay="200"
 					dataAosOffset="600"
-					
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}

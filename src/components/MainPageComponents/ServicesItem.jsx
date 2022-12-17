@@ -1,5 +1,5 @@
 import React from 'react';
-import { SvgIcon } from '../UI/SvgIcon/index.jsx';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
 import { Heading3 } from '../UI/Heading3.jsx';
 import { Body2 } from '../UI/Body2.jsx';
 import { useSelector } from 'react-redux';
