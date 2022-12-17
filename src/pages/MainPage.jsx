@@ -4,12 +4,13 @@ import {
 	About,
 	Benefits,
 	Clients,
-	Counts,
 	CTA,
 	Hero,
 	Portfolio,
 	Services,
 	Contact,
+	Counts,
+	Team,
 
 } from '../components/index.jsx';
 
@@ -25,6 +26,8 @@ const MainPage = () => {
 			<Portfolio />
 			<Counts />
 			<Contact />
+			<Team />
+
 		</>
 	);
 };

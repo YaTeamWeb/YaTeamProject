@@ -30,4 +30,4 @@ export * from './MainPageComponents/Portfolio/PortfolioSkeleton.jsx';
 export * from './MainPageComponents/Counts/';
 export * from './MainPageComponents/Counts/CountsSkeleton.jsx';
 export * from './MainPageComponents/Contact.jsx';
-
+export * from './MainPageComponents/Team.jsx';

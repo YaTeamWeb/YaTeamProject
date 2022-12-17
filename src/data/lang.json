@@ -130,11 +130,26 @@
 
             ]
         },
-        "contact": {
-            "suptitle": "Связаться",
-            "title": "Свяжитесь с нами!",
-            "items": [
-                
+        "contacts": {
+            "suptitle": "Команда",
+            "title": "Наша команда профессионалов",
+            "cards": [
+                {
+                    "name": "Ренат Губайдуллин",
+                    "job": "Тимлид"
+                },
+                {
+                    "name": "Гарифуллин Инсаф",
+                    "job": "DevOps"
+                },
+                {
+                    "name": "Никитин Дмитрий",
+                    "job": "Разработчик"
+                },
+                {
+                    "name": "Степан Мельников",
+                    "job": "Разработчик"
+                }
             ]
         }
     },
@@ -268,11 +283,26 @@
 
             ]
         },
-        "contact": {
-            "suptitle": "Contact",
-            "title": "Contact to us!",
-            "items": [
-                
+        "contacts": {
+            "suptitle": "Team",
+            "title": "Our team of professionals",
+            "cards": [
+                {
+                    "name": "Renat Gubaidullin",
+                    "job": "Тимлид"
+                },
+                {
+                    "name": "Garifullin Insaf",
+                    "job": "DevOps"
+                },
+                {
+                    "name": "Nikitin Dmitriy",
+                    "job": "Разработчик"
+                },
+                {
+                    "name": "Stepan Melnikov",
+                    "job": "Разработчик"
+                }
             ]
         }
     }
