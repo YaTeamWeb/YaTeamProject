@@ -129,6 +129,13 @@
                 }
 
             ]
+        },
+        "contact": {
+            "suptitle": "Связаться",
+            "title": "Свяжитесь с нами!",
+            "items": [
+                
+            ]
         }
     },
     {
@@ -259,6 +266,13 @@
                     "keywords": "awards from prestigious awards"
                 }
 
+            ]
+        },
+        "contact": {
+            "suptitle": "Contact",
+            "title": "Contact to us!",
+            "items": [
+                
             ]
         }
     }
