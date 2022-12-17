@@ -1,10 +1,10 @@
-import aboutMainPage from '../../assets/images/MainPageImages/aboutMainPage.png';
+import aboutMainPage from '../../../assets/images/MainPageImages/aboutMainPage.png';
 import React from 'react';
-import { SvgIcon } from '../UI/SvgIcon/index.jsx';
-import { Heading2 } from '../UI/Heading2.jsx';
-import { SupTitle } from '../UI/SupTitle.jsx';
+import { SvgIcon } from '../../UI/SvgIcon.jsx';
+import { Heading2 } from '../../UI/Heading2.jsx';
+import { SupTitle } from '../../UI/SupTitle.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../../store/slices/lang/selectors.js';
 
 export const Contact = () => {
 	const { contact } = useSelector(selectLangItems);
