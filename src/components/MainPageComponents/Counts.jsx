@@ -21,17 +21,17 @@ export const Counts = () => {
 				'container flex flex-col items-center justify-center py-[60px]'
 			}
 			id="cta"
-            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset='600'
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset='400'
 		>
 			<div className='flex gap-8 flex-row items-center justify-center w-[1200px] h-[520px]'>
-                <div className='countsImage w-[397px] h-full' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" data-aos-offset='0'>
+                <div className='countsImage w-[397px] h-full' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                     <img
                       src={notebook}
                       className="object-cover w-full h-full"
                       alt={'Ноутбук'}
                     />
                 </div>
-                <div className='bg-transparent w-[772px] h-[339px]' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" data-aos-offset='0'>
+                <div className='bg-transparent w-[772px] h-[339px]' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <Heading2 className='mb-[15px] dark:text-light duration-500'>{counts.title}</Heading2>
                     <Body className='mb-[15px] dark:text-light duration-500'>{counts.description}</Body>
                     <div className='grid grid-rows-2 grid-cols-2 gap-x-[30px] gap-y-[16px] w-full h-[219px]'>
