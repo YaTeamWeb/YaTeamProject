@@ -3,39 +3,45 @@ import React from 'react';
 import { SvgIcon } from '../UI/SvgIcon/index.jsx';
 import { Heading2 } from '../UI/Heading2.jsx';
 import { Body } from '../UI/Body.jsx';
+import { useSelector } from 'react-redux';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 export const About = () => {
+	const { about } = useSelector(selectLangItems);
+
 	return (
 		<div className="py-24 flex gap-30 justify-between container" id="about" data-aos="fade-up" data-aos-delay="100">
 			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="100">
 				<Heading2 className='mb-4 leading-10 dark:text-light duration-500'>
-					Не каждый способен на смелые решения.
+					{about.title}
 				</Heading2>
 				<Body className="mb-3.5 dark:text-light duration-500">
-					Каждое наше действие продумывается заранее, каждая строчка кода
-					приводит к успеху.
+					{about.descriptions[0].text}
 				</Body>
 
 				<ul>
 					<li className="flex items-center mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						<Body className="ml-2.5 dark:text-light duration-500">Мы всегда работаем в команде.</Body>
-					</li>
-					<li className="flex items-center mb-1.5">
-						<SvgIcon name={'listCheck'} size={25} />
 						<Body className="ml-2.5 dark:text-light duration-500">
-							Мы прислушиваемся к мнению друг друга.
+							{about.benefits[0].text}
 						</Body>
 					</li>
 					<li className="flex items-center mb-1.5">
 						<SvgIcon name={'listCheck'} size={25} />
-						<Body className="ml-2.5 dark:text-light duration-500">Мы сосредоточены на работе.</Body>
+						<Body className="ml-2.5 dark:text-light duration-500">
+							{about.benefits[1].text}
+						</Body>
+					</li>
+					<li className="flex items-center mb-1.5">
+						<SvgIcon name={'listCheck'} size={25} />
+						<Body className="ml-2.5 dark:text-light duration-500">
+							{about.benefits[2].text}
+						</Body>
 					</li>
 				</ul>
 
-				<Body className='dark:text-light duration-500'>
-					Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда
-					скромная студия из Саратова способна свернуть горы.
+				<Body className="dark:text-light duration-500">
+					{about.descriptions[0].text}
 				</Body>
 			</div>
 

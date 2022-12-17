@@ -1,0 +1,261 @@
+[
+    {
+        "lang": "ru",
+        "header": [
+            {"name": "Домой"},
+            {"name": "О нас"},
+            {"name": "Сервисы"}
+        ],
+        "hero": {
+            "title": "Лучшие решения для Вашего бизнеса от YaTeam",
+            "description": "Мы команда талантливых специалистов",
+            "cards": [
+                {"name": "Скорость"},
+                {"name": "Качество"},
+                {"name": "Дизайн"}
+            ]
+        },
+        "about": {
+            "title": "Не каждый способен на смелые решения.",
+            "descriptions": [
+                {"text": "Каждое наше действие продумывается заранее, каждая строчка кода приводит к успеху."},
+                {"text": "Наша команда занимает лидирующие позиции в мировом рейтинге. Иногда скромная студия из Саратова способна свернуть горы."}
+            ],
+            "benefits": [
+                {"text": "Мы всегда работаем в команде."},
+                {"text": "Мы прислушиваемся к мнению друг друга."},
+                {"text": "Мы сосредоточены на работе."}
+            ]
+        },
+        "clients": {
+            "suptitle": "Клиенты",
+            "title": "Наши клиенты — мировые корпорации"
+        },
+        "benefits": {
+            "suptitle": "Преимущества",
+            "title": "Наша команда обладает множеством преимуществ",
+            "items": [
+                {
+                 "title": "Работаем как часы",
+                 "description": "Мы никогда не заставляем заказчика ждать"
+                },
+                {
+                    "title": "Чётко следуем ТЗ",
+                    "description": "Для нас нет невозвожного"
+                },
+                {
+                    "title": "Для нас нет невозвожного",
+                    "description": "Мы никогда не заставляем заказчика ждать"
+                },
+                {
+                    "title": "Работаем как часы",
+                    "description": "Мы никогда не заставляем заказчика ждать"
+                }
+
+            ]
+        },
+        "services": {
+            "suptitle": "Сервисы",
+            "title": "Услуги, которые предоставляет наша компания",
+            "cards": [
+                {
+                    "title": "Сайт под ключ",
+                    "description": "Разработаем вам сайт от идеи до запуска в интернете"
+                },
+                {
+                    "title": "Вёрстка с макета",
+                    "description": "Сверстаем сайт по готовому макету"
+                },             
+                {
+                    "title": "Поддержка сайта",
+                    "description": "Поддержим уже готовый сайт"
+                },         
+                {
+                    "title": "Сайт под ключ",
+                    "description": "Разработаем вам сайт от идеи до запуска в интернете"
+                },
+                {
+                    "title": "Вёрстка с макета",
+                    "description": "Сверстаем сайт по готовому макету"
+                },             
+                {
+                    "title": "Поддержка сайта",
+                    "description": "Поддержим уже готовый сайт"
+                }
+            ]
+        },
+        "contactToAs": {
+            "title": "Свяжитесь с нами!",
+            "description": "Не нужно ждать — нужно действовать! Закажи разработку сайта прямо сейчас и не переживай об удобстве клиентов.",
+            "button": "Связаться"
+        },
+        "portfolio": {
+            "suptitle": "Портфолио",
+            "title": "Примеры наших работ",
+            "cards": [
+                {"name": "Интернет-магазин"},
+                {"name": "Сайт-портфолио"},
+                {"name": "Сайт-портфолио"},
+                {"name": "Сайт-портфолио"}
+            ],
+            "button": "Посмотреть все проекты"
+        },
+        "counts": {
+            "title": "Мы в цифрах",
+            "description": "Посмотрите на наши успехи",
+            "items": [
+                {
+                    "textFirst": "Столько",
+                    "textSecond": "заказали у нас разрабрику сайта",
+                    "keywords": "счастливых клиентов"
+                },
+                {
+                    "textFirst": "Столько",
+                    "textSecond": "мы запустили",
+                    "keywords": "успешных проектов"
+                },
+                {
+                    "textFirst": "",
+                    "textSecond": "за нашими плечами",
+                    "keywords": "Лет опыта"
+                },
+                {
+                    "textFirst": "Наград от престижных премий",
+                    "textSecond": "",
+                    "keywords": "мы получили"
+                }
+
+            ]
+        }
+    },
+    {
+        "lang": "eng",
+        "header": [
+            {"name": "Home"},
+            {"name": "About us"},
+            {"name": "Services"}
+        ],
+        "hero": {
+            "title": "The best solutions for your business from YaTeam",
+            "description": "We are a team of talented specialists",
+            "cards": [
+                {"name": "Speed"},
+                {"name": "Quality"},
+                {"name": "Design"}
+            ]
+        },
+        "about": {
+            "title": "Not everyone is capable of bold decisions.",
+            "descriptions": [
+                {"text": "Each of our actions is thought out in advance, each line of code leads to success."},
+                {"text": "Our team occupies a leading position in the world ranking. Sometimes a modest studio from Saratov is able to move mountains."}
+            ],
+            "benefits": [
+                {"text": "We always work as a team."},
+                {"text": "We listen to each other's opinions."},
+                {"text": "We are focused on work."}
+            ]
+        },
+        "clients": {
+            "suptitle": "Customers",
+            "title": "Our clients are global corporations"
+        },
+        "benefits": {
+            "suptitle": "Advantages",
+            "title": "Our team has many advantages",
+            "items": [
+                {
+                 "title": "We work like clockwork",
+                 "description": "We never keep the customer waiting"
+                },
+                {
+                    "title": "We clearly follow the TOR",
+                    "description": "There is nothing irrevocable for us"
+                },
+                {
+                    "title": "There is nothing irrevocable for us",
+                    "description": "We never keep the customer waiting"
+                },
+                {
+                    "title": "We work like clockwork",
+                    "description": "We never keep the customer waiting"
+                }
+
+            ]
+        },
+        "services": {
+            "suptitle": "Services",
+            "title": "Services provided by our company",
+            "cards": [
+                {
+                    "title": "Turnkey website",
+                    "description": "We will develop a website for you from the idea to the launch on the Internet"
+                },
+                {
+                    "title": "Layout from the layout",
+                    "description": "We are building a website according to a ready-made layout"
+                },             
+                {
+                    "title": "Website support",
+                    "description": "We will support a ready-made website"
+                },     
+                {
+                    "title": "Turnkey website",
+                    "description": "We will develop a website for you from the idea to the launch on the Internet"
+                },
+                {
+                    "title": "Layout from the layout",
+                    "description": "We are building a website according to a ready-made layout"
+                },             
+                {
+                    "title": "Website support",
+                    "description": "We will support a ready-made website"
+                }
+            ]
+        },
+        "contactToAs": {
+            "title": "Contact us!",
+            "description": "No need to wait — you need to act! Order website development right now and don't worry about customer convenience.",
+            "button": "Contact"
+        },
+        "portfolio": {
+            "suptitle": "Portfolio",
+            "title": "Examples of our work",
+            "cards": [
+                {"name": "Online store"},
+                {"name": "Portfolio website"},
+                {"name": "Portfolio website"},
+                {"name": "Portfolio website"}
+            ],
+            "button": "View all projects"
+        },
+        "counts": {
+            "title": "We are in numbers",
+            "items": [
+                {
+                    "textFirst": "So many",
+                    "textSecond": "have ordered the site development from us",
+                    "keywords": "happy customers"
+                },
+                {
+                    "textFirst": "We have launched so many",
+                    "textSecond": "",
+                    "keywords": "successful projects"
+                },
+                {
+                    "textFirst": "",
+                    "textSecond": "of experience behind us",
+                    "keywords": "Years"
+                },
+                {
+                    "textFirst": "We have received awards from prestigious awards",
+                    "textSecond": "",
+                    "keywords": "awards from prestigious awards"
+                }
+
+            ]
+        }
+    }
+
+
+]
