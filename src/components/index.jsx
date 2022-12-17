@@ -31,3 +31,4 @@ export * from './MainPageComponents/Counts/';
 export * from './MainPageComponents/Counts/CountsSkeleton.jsx';
 export * from './MainPageComponents/Contact/';
 export * from './MainPageComponents/Contact/ContactSkeleton.jsx';
+export * from './MainPageComponents/Team.jsx';
