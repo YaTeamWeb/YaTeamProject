@@ -20,36 +20,36 @@ export const Benefits = () => {
 				<img src={benefits} alt="Печатание на клавиатуре" data-aos="fade-right" data-aos-delay="700" data-aos-offset="350"/>
 				<ul className="ml-7 max-w-[394px]">
 					<li className="flex mb-10" data-aos="fade-left" data-aos-delay="900" data-aos-offset="350">
-						<SvgIcon size={51} name="clock" className="fill-primary" />
+						<div><SvgIcon size={51} name="clock" className="fill-primary" /></div>
 						<div className="ml-5 flex flex-col">
 							<Heading3 className="mb-2.5 dark:text-light duration-500">Работаем как часы</Heading3>
 							<Body2>Мы никогда не заставляем заказчика ждать</Body2>
 						</div>
 					</li>
 					<li className="flex mb-10" data-aos="fade-left" data-aos-delay="900" data-aos-offset="350">
-						<SvgIcon size={51} name="copy" className="fill-primary" />
+						<div><SvgIcon size={51} name="copy" className="fill-primary" /></div>
 						<div className="ml-5 flex flex-col">
 							<Heading3 className="mb-2.5 dark:text-light duration-500">Чётко следуем ТЗ</Heading3>
 							<Body2>Для нас нет невозвожного</Body2>
 						</div>
 					</li>
 					<li className="flex mb-10" data-aos="fade-left" data-aos-delay="900" data-aos-offset="350">
-						<SvgIcon
+						<div><SvgIcon
 							size={48}
 							name="trophy"
 							className="fill-primary w-[51px]"
-						/>
+						/></div>
 						<div className="ml-5 flex flex-col">
 							<Heading3 className="mb-2.5 dark:text-light duration-500">Для нас нет невозвожного</Heading3>
 							<Body2>Мы никогда не заставляем заказчика ждать</Body2>
 						</div>
 					</li>
 					<li className="flex" data-aos="fade-left" data-aos-delay="900" data-aos-offset="350">
-						<SvgIcon
+						<div><SvgIcon
 							size={57}
 							name="alchemy"
 							className="fill-primary w-[51px]"
-						/>
+						/></div>
 						<div className="ml-5 flex flex-col">
 							<Heading3 className="mb-2.5 dark:text-light duration-500">Работаем как часы</Heading3>
 							<Body2>Мы никогда не заставляем заказчика ждать</Body2>
