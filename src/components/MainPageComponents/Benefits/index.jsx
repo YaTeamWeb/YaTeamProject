@@ -22,7 +22,7 @@ export const Benefits = () => {
 			<div
 				className="flex justify-between"
 				data-aos="fade-up"
-				data-aos-delay="700"
+				data-aos-delay="100"
 				data-aos-offset="350"
 			>
 				<img
@@ -36,7 +36,7 @@ export const Benefits = () => {
 					<li
 						className="flex mb-10"
 						data-aos="fade-left"
-						data-aos-delay="900"
+						data-aos-delay="100"
 						data-aos-offset="350"
 					>
 						<div>
@@ -52,7 +52,7 @@ export const Benefits = () => {
 					<li
 						className="flex mb-10"
 						data-aos="fade-left"
-						data-aos-delay="900"
+						data-aos-delay="100"
 						data-aos-offset="350"
 					>
 						<div>
@@ -68,7 +68,7 @@ export const Benefits = () => {
 					<li
 						className="flex mb-10"
 						data-aos="fade-left"
-						data-aos-delay="900"
+						data-aos-delay="100"
 						data-aos-offset="350"
 					>
 						<div>
@@ -88,7 +88,7 @@ export const Benefits = () => {
 					<li
 						className="flex"
 						data-aos="fade-left"
-						data-aos-delay="900"
+						data-aos-delay="100"
 						data-aos-offset="350"
 					>
 						<div>
