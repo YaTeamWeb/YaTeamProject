@@ -6,11 +6,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import sberbank from '../../assets/images/MainPageImages/clients-1.png';
+import sberbank from '../../assets/images/MainPageImages/clients-1.svg';
 import microsoft from '../../assets/images/MainPageImages/clients-2.png';
 import apple from '../../assets/images/MainPageImages/clients-3.png';
 import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.png';
 import yandex from '../../assets/images/MainPageImages/clients-4.png';
+import amazon from '../../assets/images/MainPageImages/clients-5.svg';
+import darkMode_amazon from '../../assets/images/MainPageImages/darkMode-clients-5.svg';
+import ozon from '../../assets/images/MainPageImages/clients-6.svg';
+import netflix from '../../assets/images/MainPageImages/clients-7.svg';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
 export const Clients = () => {
@@ -86,23 +90,28 @@ export const Clients = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
-						className="max-h-12 object-cover"
-						src={sberbank}
-						alt="Сбербанк"
+						className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute"
+						src={darkMode_amazon}
+						alt="Amazon"
+					/>
+					<img
+						className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500"
+						src={amazon}
+						alt="Amazon"
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
 						className="max-h-12 object-cover"
-						src={sberbank}
-						alt="Сбербанк"
+						src={ozon}
+						alt="Ozon"
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<img
 						className="max-h-12 object-cover"
-						src={sberbank}
-						alt="Сбербанк"
+						src={netflix}
+						alt="Netflix"
 					/>
 				</SwiperSlide>
 			</Swiper>
