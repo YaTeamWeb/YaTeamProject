@@ -96,7 +96,7 @@ export const Counts = () => {
 									<span className="font-semibold text-dark dark:text-light duration-500">
 										{counts.items[3].keywords}
 									</span>{' '}
-									{counts.items[3].textSecond} 
+									{counts.items[3].textSecond}
 								</Body2>
 							</div>
 						</div>
