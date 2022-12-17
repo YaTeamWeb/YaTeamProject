@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
 import * as Scroll from 'react-scroll';
 import DarkModeToggle from './DarkMode/DarkModeToggle.jsx';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectLang, selectLangItems } from '../store/slices/lang/selectors.js';
+import { setLang } from '../store/slices/lang/index.js';
+import globeGif from '../assets/images/MainPageImages/globe.gif';
+import globeSvg from '../assets/images/svg/globe.svg';
+import { debounce } from '../utils/Limitors.jsx';
 
 export const Header = ({ setDarkMode, darkMode }) => {
+	const dispatch = useDispatch();
+	const lang = useSelector(selectLang);
 	const LinkAnchor = Scroll.Link;
+	const { header } = useSelector(selectLangItems);
+	const [globeActive, setGlobeActive] = useState(false);
 
+	const onChangeLang = debounce(() => {
+		setGlobeActive(true);
+		setTimeout(() => {
+			setGlobeActive(false);
+		}, 1500),
+			dispatch(setLang(lang === 'ru' ? 'eng' : 'ru'));
+	}, 500);
 	return (
 		<header
 			className={
@@ -26,7 +43,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
-					Домой
+					{header[0].name}
 				</LinkAnchor>
 				<LinkAnchor
 					to="about"
@@ -38,7 +55,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
-					О нас
+					{header[1].name}
 				</LinkAnchor>
 				<LinkAnchor
 					to="services"
@@ -50,12 +67,18 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
 				>
-					Сервисы
+					{header[2].name}
 				</LinkAnchor>
 			</nav>
-			<div className={'flex'}>
-				<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode}/>
-				<button className={'text-right'}>Сменить язык</button>
+			<div className={'flex items-center'}>
+				<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
+				<button onClick={onChangeLang} className={'text-right'}>
+					{globeActive ? (
+						<img className={'w-[50px] h-[50px]'} src={globeGif} alt="Глобус" />
+					) : (
+						<img className={'w-[50px] h-[50px]'} src={globeSvg} alt="Глобус" />
+					)}
+				</button>
 			</div>
 		</header>
 	);

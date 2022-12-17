@@ -11,7 +11,10 @@ import microsoft from '../../assets/images/MainPageImages/clients-2.png';
 import apple from '../../assets/images/MainPageImages/clients-3.png';
 import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.png';
 import yandex from '../../assets/images/MainPageImages/clients-4.png';
+import { useSelector } from 'react-redux';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 export const Clients = () => {
+	const { clients } = useSelector(selectLangItems);
 	return (
 		<section
 			className="container py-16"
@@ -21,10 +24,12 @@ export const Clients = () => {
 			}}
 			data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="500"
 		>
+
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-			<SupTitle>Клиенты</SupTitle>
+			<SupTitle>{clients.suptitle}</SupTitle>
+
 			<Heading2 className="mb-10 dark:text-light duration-500">
-				Наши клиенты — мировые корпорации
+				{clients.title}
 			</Heading2>
 			</div>
 
