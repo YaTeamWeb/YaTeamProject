@@ -22,11 +22,18 @@ export const Clients = () => {
 				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
 			}}
+			data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="500"
 		>
+
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 			<SupTitle>{clients.suptitle}</SupTitle>
+
 			<Heading2 className="mb-10 dark:text-light duration-500">
 				{clients.title}
 			</Heading2>
+			</div>
+
+			<div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
 			<Swiper
 				modules={[Pagination, Autoplay]}
 				spaceBetween={159}
@@ -99,6 +106,7 @@ export const Clients = () => {
 					/>
 				</SwiperSlide>
 			</Swiper>
+			</div>
 		</section>
 	);
 };
