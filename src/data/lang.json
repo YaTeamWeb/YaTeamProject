@@ -131,12 +131,18 @@
             ]
         },
         "contacts": {
+            "suptitle": "Связаться",
+            "title": "Свяжитесь с нами!",
+            "items": [
+            ]
+        },
+        "team": {
             "suptitle": "Команда",
             "title": "Наша команда профессионалов",
             "cards": [
                 {
                     "name": "Ренат Губайдуллин",
-                    "job": "Тимлид"
+                    "job": "Тимлид, Дизайнер"
                 },
                 {
                     "name": "Гарифуллин Инсаф",
@@ -284,12 +290,17 @@
             ]
         },
         "contacts": {
+            "suptitle": "Contact",
+            "title": "Contact to us!",
+            "items": []
+        },
+        "team": {
             "suptitle": "Team",
             "title": "Our team of professionals",
             "cards": [
                 {
                     "name": "Renat Gubaidullin",
-                    "job": "Тимлид"
+                    "job": "Teamlead, Designer"
                 },
                 {
                     "name": "Garifullin Insaf",
@@ -297,11 +308,11 @@
                 },
                 {
                     "name": "Nikitin Dmitriy",
-                    "job": "Разработчик"
+                    "job": "Developer"
                 },
                 {
                     "name": "Stepan Melnikov",
-                    "job": "Разработчик"
+                    "job": "Developer"
                 }
             ]
         }
