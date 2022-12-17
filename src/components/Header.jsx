@@ -20,8 +20,10 @@ export const Header = ({ setDarkMode, darkMode }) => {
 		setGlobeActive(true);
 		setTimeout(() => {
 			setGlobeActive(false);
-		}, 1500),
-			dispatch(setLang(lang === 'ru' ? 'eng' : 'ru'));
+		}, 1500);
+		const currLang = lang === 'ru' ? 'eng' : 'ru';
+		dispatch(setLang(currLang));
+		localStorage.setItem('lang', currLang);
 	}, 500);
 	return (
 		<header

@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 import items from '../../../data/lang.json';
-const defaultLang = 'eng';
+const defaultLang = 'ru';
 const initialState = {
-	language: defaultLang,
+	language: localStorage.getItem('lang')
+		? localStorage.getItem('lang')
+		: defaultLang,
 	items: items,
 };
 
