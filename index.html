@@ -6,7 +6,12 @@
     <link rel="shortcut icon" href="/src/assets/images/logo.svg" type="image/x-icon">
     <title>YaTeam</title>
   </head>
-  <body>
+  <body onScroll="
+  document.querySelector('.BackToTopContainer').
+  style=(((window.pageYOffset < document.documentElement.clientHeight) 
+  ? 'opacity: 0;' : 'opacity: 1;')
+   + 'transition: all 0.5s;');
+   ">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

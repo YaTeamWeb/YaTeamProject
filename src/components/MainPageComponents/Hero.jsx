@@ -15,13 +15,13 @@ export const Hero = () => {
 			id="hero"
 		>
 			<div className="container flex flex-col items-center">
-				<article className={'text-center mb-24 max-w-[860px]'}>
+				<article className={'text-center mb-24 max-w-[860px]'}  data-aos="fade-up">
 					<Heading className="text-light">{hero.title}</Heading>
 					<p className={'font-medium text-4xl leading-normal'}>
 						{hero.description}
 					</p>
 				</article>
-				<ul className="flex items-center justify-center font-bold text-3xl gap-x-16">
+				<ul className="flex items-center justify-center font-bold text-3xl gap-x-16" data-aos="zoom-in-up">
 					<li
 						className={
 							'hover:border-primary ease-in duration-300 flex flex-col items-center justify-center gap-y-4 border border-border-hero w-60 h-48'

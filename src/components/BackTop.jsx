@@ -7,6 +7,7 @@ export const BackTop = ({ className }) => {
 	const LinkAnchor = Scroll.Link;
 	const scroll = Scroll.animateScroll;
 	return (
+		<div className='BackToTopContainer' style={{'opacity' : '0'}}>
 		<LinkAnchor
 			onClick={() => scroll.scrollToTop()}
 			className={classnames(
@@ -17,5 +18,6 @@ export const BackTop = ({ className }) => {
 		>
 			<SvgIcon name={'arrowTop'} size={20} />
 		</LinkAnchor>
+		</div>
 	);
 };

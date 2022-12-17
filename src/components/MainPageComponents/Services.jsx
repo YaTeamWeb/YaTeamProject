@@ -58,11 +58,15 @@ export const Services = () => {
 			onMouseMove={theme ? onMouseMove : null}
 			id="services"
 			className="container py-16"
+			data-aos="fade-up" data-aos-delay="500"
 		>
+			<div data-aos="fade-up" data-aos-delay="500" data-aos-offset='450'>
 			<SupTitle>{services.suptitle}</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">
 				{services.title}
 			</Heading2>
+			</div>
+
 			<ul className="text-center gap-5 grid grid-cols-12">
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -70,6 +74,10 @@ export const Services = () => {
 					description={services.cards[0].description}
 					svgName={'key'}
 					id={'1'}
+					dataAos="zoom-in"
+					dataAosDelay="300"
+					dataAosOffset="600"
+					
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -77,6 +85,10 @@ export const Services = () => {
 					description={services.cards[1].description}
 					svgName={'layout'}
 					id={'2'}
+					dataAos="zoom-in"
+					dataAosDelay="500"
+					dataAosOffset="600"
+					
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -84,6 +96,9 @@ export const Services = () => {
 					description={services.cards[2].description}
 					svgName={'browser'}
 					id={'3'}
+					dataAos="zoom-in"
+					dataAosDelay="700"
+					dataAosOffset="600"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -91,6 +106,9 @@ export const Services = () => {
 					description={services.cards[3].description}
 					svgName={'key'}
 					id={'4'}
+					dataAos="zoom-in"
+					dataAosDelay="300"
+					dataAosOffset="600"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -98,6 +116,9 @@ export const Services = () => {
 					description={services.cards[4].description}
 					svgName={'layout'}
 					id={'5'}
+					dataAos="zoom-in"
+					dataAosDelay="500"
+					dataAosOffset="600"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -105,6 +126,9 @@ export const Services = () => {
 					description={services.cards[5].description}
 					svgName={'browser'}
 					id={'6'}
+					dataAos="zoom-in"
+					dataAosDelay="700"
+					dataAosOffset="600"
 				/>
 			</ul>
 		</section>

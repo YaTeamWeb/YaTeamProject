@@ -11,17 +11,19 @@ export const CTA = () => {
 	return (
 		<section
 			className={
-				'bg-cta w-full h-[271px] bg-fixed bg-cover bg-no-repeat flex flex-col gap-[20px] py-[60px] items-center justify-center'
+				'bg-cta w-full h-[271px] bg-fixed bg-cover bg-no-repeat '
 			}
 			id="cta"
-		>
-			<Heading3 className="text-light">{contactToAs.title}!</Heading3>
+		>	
+			<div className='flex flex-col gap-[20px] py-[60px] items-center justify-center' data-aos="zoom-in" data-aos-delay='200' data-aos-offset='800'>
+			<Heading3 className="text-light">{contactToAs.title}</Heading3>
 
 			<Body3 className="text-light text-center max-w-[960px]">
 				{contactToAs.description}
 			</Body3>
 
 			<Button className="text-light">{contactToAs.button}</Button>
+			</div>
 		</section>
 	);
 };
