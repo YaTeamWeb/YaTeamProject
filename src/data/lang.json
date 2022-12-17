@@ -129,6 +129,28 @@
                 }
 
             ]
+        },
+        "team": {
+            "suptitle": "Команда",
+            "title": "Наша команда профессионалов",
+            "people": [
+                {
+                    "initial": "Ренат Гайбдулин",
+                    "role": "Тимлид"
+                },
+                {
+                    "initial": "Гарифуллин Инсаф",
+                    "role": "DevOps"
+                },
+                {
+                    "initial": "Никитин Дмитрий",
+                    "role": "Разработчик"
+                },
+                {
+                    "initial": "Степан Мельников",
+                    "role": "Разработчик"
+                }
+            ]
         }
     },
     {
@@ -259,6 +281,28 @@
                     "keywords": "awards from prestigious awards"
                 }
 
+            ]
+        },
+        "team": {
+            "suptitle": "Team",
+            "title": "Our team of professionals",
+            "people": [
+                {
+                    "initial": "Renat Gaibdulin",
+                    "role": "Team lead"
+                },
+                {
+                    "initial": "Garifullin Insaf",
+                    "role": "DevOps"
+                },
+                {
+                    "initial": "Nikitin Dmitry",
+                    "role": "Developer"
+                },
+                {
+                    "initial": "Stepan Melnicov",
+                    "role": "Developer"
+                }
             ]
         }
     }
