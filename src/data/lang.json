@@ -130,25 +130,31 @@
 
             ]
         },
+        "contacts": {
+            "suptitle": "Связаться",
+            "title": "Свяжитесь с нами!",
+            "items": [
+            ]
+        },
         "team": {
             "suptitle": "Команда",
             "title": "Наша команда профессионалов",
             "people": [
                 {
-                    "initial": "Ренат Гайбдулин",
-                    "role": "Тимлид"
+                    "name": "Ренат Губайдуллин",
+                    "job": "Тимлид, Дизайнер"
                 },
                 {
-                    "initial": "Гарифуллин Инсаф",
-                    "role": "DevOps"
+                    "name": "Гарифуллин Инсаф",
+                    "job": "DevOps"
                 },
                 {
-                    "initial": "Никитин Дмитрий",
-                    "role": "Разработчик"
+                    "name": "Никитин Дмитрий",
+                    "job": "Разработчик"
                 },
                 {
-                    "initial": "Степан Мельников",
-                    "role": "Разработчик"
+                    "name": "Степан Мельников",
+                    "job": "Разработчик"
                 }
             ]
         }
@@ -283,25 +289,30 @@
 
             ]
         },
+        "contacts": {
+            "suptitle": "Contact",
+            "title": "Contact to us!",
+            "items": []
+        },
         "team": {
             "suptitle": "Team",
             "title": "Our team of professionals",
             "people": [
                 {
-                    "initial": "Renat Gaibdulin",
-                    "role": "Team lead"
+                    "name": "Renat Gubaidullin",
+                    "job": "Teamlead, Designer"
                 },
                 {
-                    "initial": "Garifullin Insaf",
-                    "role": "DevOps"
+                    "name": "Garifullin Insaf",
+                    "job": "DevOps"
                 },
                 {
-                    "initial": "Nikitin Dmitry",
-                    "role": "Developer"
+                    "name": "Nikitin Dmitriy",
+                    "job": "Developer"
                 },
                 {
-                    "initial": "Stepan Melnicov",
-                    "role": "Developer"
+                    "name": "Stepan Melnikov",
+                    "job": "Developer"
                 }
             ]
         }
