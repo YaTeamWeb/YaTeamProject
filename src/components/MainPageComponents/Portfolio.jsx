@@ -9,6 +9,7 @@ import { ProjectCard } from '../UI/ProjectCard.jsx';
 import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
