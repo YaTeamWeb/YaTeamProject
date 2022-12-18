@@ -61,7 +61,7 @@ export const Team = () => {
 		<section
 			onMouseLeave={theme ? clearNearBy : null}
 			onMouseMove={theme ? onMouseMove : null}
-			id="services"
+			id="team"
 			className="container py-16"
 			data-aos="fade-up"
 			data-aos-delay="500"

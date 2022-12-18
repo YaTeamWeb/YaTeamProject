@@ -13,6 +13,7 @@ export const Contact = () => {
 		<section
 			className="container"
 			data-aos="fade-up" data-aos-delay="0"
+			id='contacts'
 		>
 
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
