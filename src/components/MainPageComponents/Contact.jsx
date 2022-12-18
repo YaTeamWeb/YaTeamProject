@@ -48,7 +48,7 @@ export const Contact = () => {
 							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[0].title}
 							</p>
-							<p className='font-normal text-base text-gray-300 font-["Open_Sans"]'>
+							<p className="font-normal text-base text-gray-300 font-OpenSans">
 								{contacts.items[0].description}
 							</p>
 						</div>
@@ -61,9 +61,12 @@ export const Contact = () => {
 							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[1].title}
 							</p>
-							<p className='font-normal text-base text-gray-300 font-["Open_Sans"]'>
+							<a
+								href={'mailto:info@yateam.site'}
+								className="font-normal text-base text-gray-300 hover:text-primary duration-300 font-OpenSans"
+							>
 								{contacts.items[1].description}
-							</p>
+							</a>
 						</div>
 					</li>
 					<li className="flex flex-row gap-5 justify-start items-center">
@@ -74,9 +77,12 @@ export const Contact = () => {
 							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[2].title}
 							</p>
-							<p className='font-normal text-base text-gray-300 font-["Open_Sans"]'>
+							<a
+								href={'tel:78005553535'}
+								className="font-normal hover:text-primary duration-300 text-base text-gray-300 font-OpenSans font-400"
+							>
 								{contacts.items[2].description}
-							</p>
+							</a>
 						</div>
 					</li>
 				</ul>
@@ -92,28 +98,28 @@ export const Contact = () => {
 							type="text"
 							name="name"
 							placeholder="Ваше имя"
-							className='h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-["Open_Sans"] placeholder:text-gray-300
-							border-solid border-2 border-border-input'
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
+							border-solid border-2 border-border-input"
 						></input>
 						<input
 							type="email"
 							name="email"
 							placeholder="Ваш email"
-							className='h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-["Open_Sans"] placeholder:text-gray-300
-							border-solid border-2 border-border-input'
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
+							border-solid border-2 border-border-input"
 						></input>
 						<input
 							type="text"
 							name="theme"
 							placeholder="Тема"
-							className='h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-["Open_Sans"] placeholder:text-gray-300 col-span-2
-							border-solid border-2 border-border-input'
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans  placeholder:text-gray-300 col-span-2
+							border-solid border-2 border-border-input"
 						></input>
 						<textarea
 							name="message"
 							placeholder="Сообщение"
-							className='h-[137px] resize-none p-[10px] rounded-[5px] outline-none font-normal text-sm font-["Open_Sans"] placeholder:text-gray-300 col-span-2
-							border-solid border-2 border-border-input'
+							className="h-[137px] resize-none p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300 col-span-2
+							border-solid border-2 border-border-input"
 						></textarea>
 					</div>
 					<div
