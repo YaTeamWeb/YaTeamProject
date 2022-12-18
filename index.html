@@ -5,15 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/src/assets/images/logo.svg" type="image/x-icon">
     <title>YaTeam</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .text-light {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+       .bg-no-repeat {
+         background-repeat: no-repeat;
+       }
+       .bg-fixed {
+         background-attachment: fixed;
+       }
+       .bg-cover {
+         background-size: cover;
+       }
+       .bg-dark {
+         --tw-bg-opacity: 1;
+         background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+       }
+       .justify-center {
+         justify-content: center;
+       }
+       .items-center {
+         align-items: center;
+       }
+       .flex-col {
+         flex-direction: column;
+       }
+       .w-full {
+         width: 100%;
+       }
+       .h-screen {
+         height: 100vh;
+       }
+       .flex {
+         display: flex;
+       }
+      .bg-fixed {
+      }
+      .bg-dark {
+        background: #000;
+      }
+    </style>
   </head>
   <body onScroll="
   document.querySelector('.BackToTopContainer').
   style=(((window.pageYOffset < document.documentElement.clientHeight) 
   ? 'opacity: 0; visibility: hidden;' : 'opacity: 1; visibility: visible;')
    + 'transition: all 0.5s;');
-   
-   ">
-    <div id="root"></div>
+
+   "
+  >
+    <div id="root">
+      <div class="bg-dark bg-fixed w-full h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center text-light "><svg aria-labelledby="dz3h5ho-aria" role="img" width="1240" height="522" viewBox="0 0 1240 522"><title id="dz3h5ho-aria">Loading...</title><rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#dz3h5ho-diff)" style="fill: url(#dz3h5ho-animated-diff);"></rect><defs><clipPath id="dz3h5ho-diff"><rect x="190" y="0" rx="15" ry="15" width="860" height="138"></rect><rect x="190" y="164" rx="15" ry="15" width="860" height="54"></rect><rect x="190" y="330" rx="0" ry="0" width="240" height="192"></rect><rect x="495" y="330" rx="0" ry="0" width="240" height="192"></rect><rect x="800" y="330" rx="0" ry="0" width="240" height="192"></rect></clipPath><linearGradient id="dz3h5ho-animated-diff"><stop offset="0%" stop-color="#EBEBEB " stop-opacity="1"><animate attributeName="offset" values="-2; -2; 1" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate></stop><stop offset="50%" stop-color="#333" stop-opacity="1"><animate attributeName="offset" values="-1; -1; 2" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate></stop><stop offset="100%" stop-color="#EBEBEB " stop-opacity="1"><animate attributeName="offset" values="0; 0; 3" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate></stop></linearGradient></defs></svg></div>    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
