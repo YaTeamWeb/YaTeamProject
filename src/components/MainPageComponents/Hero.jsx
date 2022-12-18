@@ -1,8 +1,8 @@
 import React from 'react';
-import { SvgIcon } from '../../UI/SvgIcon.jsx';
-import { Heading } from '../../UI/Heading.jsx';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
+import { Heading } from '../UI/Heading.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 export const Hero = () => {
 	const { hero } = useSelector(selectLangItems);
@@ -10,7 +10,7 @@ export const Hero = () => {
 	return (
 		<section
 			className={
-				'bg-hero bg-fixed w-full h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center text-light '
+				'bg-hero bg-dark bg-fixed w-full h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center text-light '
 			}
 			id="hero"
 		>
