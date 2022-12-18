@@ -1,4 +1,4 @@
-import React, { lazy, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Header } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
