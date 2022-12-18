@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { Heading2 } from '../../UI/Heading2.jsx';
-import { Body } from '../../UI/Body.jsx';
-import { Body2 } from '../../UI/Body2.jsx';
-import { SvgIcon } from '../../UI/SvgIcon.jsx';
-import notebook from '../../../assets/images/MainPageImages/counts.png';
+import { Heading2 } from '../UI/Heading2.jsx';
+import { Body } from '../UI/Body.jsx';
+import { Body2 } from '../UI/Body2.jsx';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
+import notebook from '../../assets/images/MainPageImages/counts.png';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import PureCounter from '@srexi/purecounterjs';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 

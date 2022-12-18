@@ -1,9 +1,9 @@
 import React from 'react';
-import { Heading3 } from '../../UI/Heading3.jsx';
-import { Body3 } from '../../UI/Body3.jsx';
-import { Button } from '../../UI/Button.jsx';
+import { Heading3 } from '../UI/Heading3.jsx';
+import { Body3 } from '../UI/Body3.jsx';
+import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 export const CTA = () => {
 	const { contactToAs } = useSelector(selectLangItems);

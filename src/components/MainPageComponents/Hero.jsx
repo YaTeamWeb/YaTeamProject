@@ -1,8 +1,8 @@
 import React from 'react';
-import { SvgIcon } from '../../UI/SvgIcon.jsx';
-import { Heading } from '../../UI/Heading.jsx';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
+import { Heading } from '../UI/Heading.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 
 export const Hero = () => {
 	const { hero } = useSelector(selectLangItems);
