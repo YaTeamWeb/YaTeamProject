@@ -13,14 +13,14 @@ export const Benefits = () => {
 
 	return (
 		<section className="container py-16">
-			<div data-aos="fade-up" data-aos-offset='450' data-aos-delay='500'>
+			<div data-aos="fade-up" data-aos-delay='0'>
 			<SupTitle>{benefits.suptitle}</SupTitle>
 			<Heading2 className="mb-10 dark:text-light duration-500">
 				{benefits.title}
 			</Heading2>
 			</div>
 			<div className="flex justify-between" data-aos="fade-up" data-aos-delay="0" data-aos-offset="350">
-				<img src={work} alt="Печатание на клавиатуре" data-aos="fade-right" data-aos-delay="700" data-aos-offset="350"/>
+				<img src={work} alt="Печатание на клавиатуре" data-aos="fade-right" data-aos-delay="10" data-aos-offset="350"/>
 				<ul className="ml-7 max-w-[394px]">
 					<li className="flex mb-10" data-aos="fade-left" data-aos-delay="0" data-aos-offset="350">
 						<div><SvgIcon size={51} name="clock" className="fill-primary" /></div>

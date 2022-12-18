@@ -34,10 +34,10 @@ export const Clients = () => {
 				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
 			}}
-			data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="100"
+			data-aos="fade-up" data-aos-delay="0"
 		>
 
-			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 			<SupTitle>{clients.suptitle}</SupTitle>
 
 			<Heading2 className="mb-10 dark:text-light duration-500">
@@ -45,7 +45,7 @@ export const Clients = () => {
 			</Heading2>
 			</div>
 
-			<div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+			<div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
 			<Swiper
 				modules={[Pagination, Autoplay]}
 				spaceBetween={159}
