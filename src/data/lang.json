@@ -32,7 +32,8 @@
         },
         "clients": {
             "suptitle": "Клиенты",
-            "title": "Наши клиенты — мировые корпорации"
+            "title": "Наши клиенты — мировые корпорации",
+            "isRus": true
         },
         "benefits": {
             "suptitle": "Преимущества",
@@ -204,7 +205,8 @@
         },
         "clients": {
             "suptitle": "Customers",
-            "title": "Our clients are global corporations"
+            "title": "Our clients are global corporations",
+            "isRus": false
         },
         "benefits": {
             "suptitle": "Advantages",
