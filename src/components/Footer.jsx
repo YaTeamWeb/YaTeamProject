@@ -10,7 +10,7 @@ export const Footer = () => {
 	const { footer } = useSelector(selectLangItems);
 	return (
 		<footer className={'bg-dark'}>
-			<div className={'bg-gray-400'}>
+			<div className={'bg-gray-400 dark:bg-dark duration-300'}>
 				<div className={'container py-16 relative flex justify-between '}>
 					<ul className={'w-[255px]'}>
 						<li className={'mb-7'}>
@@ -85,10 +85,10 @@ export const Footer = () => {
 						</li>
 					</ul>
 					<ul>
-						<li className={'mb-5 font-Raleway font-bold text-light'}>
+						<li className={'mb-5 text-xl\t font-Raleway font-bold text-light'}>
 							{footer.firstList.title}
 						</li>
-						<li className={'mb-5 font-Raleway font-bold text-light '}>
+						<li className={'mb-5 text-light '}>
 							<LinkAnchor
 								to="hero"
 								activeClass={'text-primary'}
@@ -96,7 +96,7 @@ export const Footer = () => {
 								hashSpy={true}
 								duration={1000}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -106,7 +106,9 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.firstList.items[0].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[0].text}
+								</p>
 							</LinkAnchor>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
@@ -117,7 +119,7 @@ export const Footer = () => {
 								hashSpy={true}
 								duration={1000}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -127,7 +129,9 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.firstList.items[1].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[1].text}
+								</p>
 							</LinkAnchor>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
@@ -138,7 +142,7 @@ export const Footer = () => {
 								hashSpy={true}
 								duration={1000}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -148,7 +152,9 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.firstList.items[2].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[2].text}
+								</p>
 							</LinkAnchor>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
@@ -159,7 +165,7 @@ export const Footer = () => {
 								hashSpy={true}
 								duration={1000}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -169,7 +175,9 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.firstList.items[3].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[3].text}
+								</p>
 							</LinkAnchor>
 						</li>
 						<li className={'font-Raleway font-bold text-light '}>
@@ -180,7 +188,7 @@ export const Footer = () => {
 								hashSpy={true}
 								duration={1000}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -190,19 +198,21 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.firstList.items[4].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[4].text}
+								</p>
 							</LinkAnchor>
 						</li>
 					</ul>
 					<ul>
-						<li className={'mb-5 font-Raleway font-bold text-light'}>
+						<li className={'mb-5 font-Raleway text-xl font-bold text-light'}>
 							{footer.secondList.title}
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -212,14 +222,16 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.secondList.items[0].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.secondList.items[0].text}
+								</p>
 							</a>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -229,14 +241,16 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.secondList.items[1].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.secondList.items[1].text}
+								</p>
 							</a>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -246,14 +260,16 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.secondList.items[2].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.secondList.items[2].text}
+								</p>
 							</a>
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -263,14 +279,16 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.secondList.items[3].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.secondList.items[3].text}
+								</p>
 							</a>
 						</li>
-						<li className={'font-Raleway font-bold text-light '}>
+						<li className={' text-light '}>
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  text-base text-light'
 								}
 							>
 								<SvgIcon
@@ -280,7 +298,9 @@ export const Footer = () => {
 										'fill-primary group-hover:translate-x-1 duration-300'
 									}
 								/>
-								<p className={'ml-1.5'}>{footer.secondList.items[4].text}</p>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.secondList.items[4].text}
+								</p>
 							</a>
 						</li>
 					</ul>
