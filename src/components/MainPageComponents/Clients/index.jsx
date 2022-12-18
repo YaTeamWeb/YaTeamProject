@@ -65,8 +65,8 @@ export const Clients = () => {
 			>
 				<SwiperSlide>
 					<img
-						className="max-h-12 object-cover"
-						src={sberbank}
+						className="h-12 object-cover"
+						src={clients.isRus ? sberbank : sberbankEng}
 						alt="Сбербанк"
 					/>
 				</SwiperSlide>
@@ -87,12 +87,12 @@ export const Clients = () => {
 				<SwiperSlide>
 					<img
 						className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute"
-						src={darkMode_yandex}
+						src={clients.isRus ? darkMode_yandex : darkMode_yandexEng}
 						alt="Yandex"
 					/>
 					<img
 						className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500"
-						src={yandex}
+						src={clients.isRus ? yandex : yandexEng}
 						alt="Yandex"
 					/>
 				</SwiperSlide>
