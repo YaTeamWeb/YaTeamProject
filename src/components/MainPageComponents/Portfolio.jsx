@@ -1,13 +1,13 @@
 import React from 'react';
-import { SupTitle } from '../../UI/SupTitle.jsx';
-import { Heading2 } from '../../UI/Heading2.jsx';
-import project_1 from '../../../assets/images/MainPageImages/portfolio-1.png';
-import project_2 from '../../../assets/images/MainPageImages/portfolio-2.jpg';
-import project_3 from '../../../assets/images/MainPageImages/portfolio-3.png';
-import project_4 from '../../../assets/images/MainPageImages/portfolio-4.jpg';
-import { Button } from '../../UI/Button.jsx';
+import { SupTitle } from '../UI/SupTitle.jsx';
+import { Heading2 } from '../UI/Heading2.jsx';
+import project_1 from '../../assets/images/MainPageImages/portfolio-1.png';
+import project_2 from '../../assets/images/MainPageImages/portfolio-2.jpg';
+import project_3 from '../../assets/images/MainPageImages/portfolio-3.png';
+import project_4 from '../../assets/images/MainPageImages/portfolio-4.jpg';
+import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Portfolio = () => {

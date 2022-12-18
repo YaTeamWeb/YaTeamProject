@@ -1,13 +1,13 @@
 import React from 'react';
-import { SupTitle } from '../../UI/SupTitle.jsx';
-import { Heading2 } from '../../UI/Heading2.jsx';
-import work from '../../../assets/images/MainPageImages/benefits.png';
-import { SvgIcon } from '../../UI/SvgIcon.jsx';
-import { Heading3 } from '../../UI/Heading3.jsx';
-import { Body2 } from '../../UI/Body2.jsx';
+import { SupTitle } from '../UI/SupTitle.jsx';
+import { Heading2 } from '../UI/Heading2.jsx';
+import work from '../../assets/images/MainPageImages/benefits.png';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
+import { Heading3 } from '../UI/Heading3.jsx';
+import { Body2 } from '../UI/Body2.jsx';
 
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export const Benefits = () => {
 	const { benefits } = useSelector(selectLangItems);
