@@ -2,6 +2,7 @@ import React from 'react';
 import { Heading3 } from '../UI/Heading3.jsx';
 import { Body2 } from '../UI/Body2.jsx';
 import classnames from 'classnames';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const TeamItem = ({
 	id,
@@ -38,21 +39,24 @@ export const TeamItem = ({
 			data-aos-offset={dataAosOffset}
 			className={''}
 		>
-			<div className="rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
+			<div className="dark:border-[#111] dark:shadow-lg rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
 				<div
 					className={classnames(
 						backGround,
 						'relative w-full h-full rounded-t-xl'
 					)}
 				>
-					<img
-						className={'item relative z-20  w-full h-full  object-cover'}
+					<LazyLoadImage
+						className={'item relative z-20 w-full h-full object-cover'}
 						src={photo}
 						alt={initial}
 						onMouseLeave={onMouseLeave}
 						onMouseMove={onMouseMove}
 						onMouseEnter={clearNearBy}
 						id={id}
+						width={291}
+						height={'100%'}
+						effect={'blur'}
 					/>
 					<div
 						className={classnames(

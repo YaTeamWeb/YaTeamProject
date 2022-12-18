@@ -18,38 +18,36 @@ import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HeroSkeleton from './components/MainPageComponents/Hero/HeroSkeleton.jsx';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const MainPage = lazy(() => import('./pages/MainPage.jsx'));
-
-AOS.init({
-	// Global settings:
-	disable: false,
-	startEvent: 'load',
-	initClassName: 'aos-init',
-	animatedClassName: 'aos-animate',
-	useClassNames: false,
-	disableMutationObserver: false,
-	debounceDelay: 50,
-	throttleDelay: 200,
-	offset: 400,
-	delay: 0,
-	duration: 1000,
-	easing: 'ease-in-out',
-	once: true,
-	mirror: false,
-	anchorPlacement: 'top-bottom',
-});
 
 function App() {
 	const isDark = useSelector(selectTheme);
 	const dispatch = useDispatch();
 	useEffect(() => {
-		console.log();
-		window.onload;
 		const html = document.querySelector('html');
 		if (JSON.parse(localStorage.getItem('theme')) === true) {
 			html.classList.add('dark');
 		}
+		AOS.init({
+			// Global settings:
+			disable: false,
+			startEvent: 'load',
+			initClassName: 'aos-init',
+			animatedClassName: 'aos-animate',
+			useClassNames: false,
+			disableMutationObserver: false,
+			debounceDelay: 50,
+			throttleDelay: 200,
+			offset: 400,
+			delay: 0,
+			duration: 1000,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false,
+			anchorPlacement: 'top-bottom',
+		});
 	}, []);
 
 	return (

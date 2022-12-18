@@ -7,6 +7,7 @@ import notebook from '../../../assets/images/MainPageImages/counts.png';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../../store/slices/lang/selectors.js';
 import PureCounter from '@srexi/purecounterjs';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Counts = () => {
 	const { counts } = useSelector(selectLangItems);
@@ -33,10 +34,13 @@ export const Counts = () => {
 					data-aos-duration="1000"
 					data-aos-delay="0"
 				>
-					<img
+					<LazyLoadImage
 						src={notebook}
 						className="object-cover w-full h-full"
 						alt={'Ноутбук'}
+						effect={'blur'}
+						width={397}
+						height={520}
 					/>
 				</div>
 				<div
