@@ -1,8 +1,6 @@
 import React from 'react';
 import { Heading3 } from '../UI/Heading3.jsx';
 import { Body2 } from '../UI/Body2.jsx';
-import { useSelector } from 'react-redux';
-import { selectTheme } from '../../store/slices/theme/selectors.js';
 import classnames from 'classnames';
 
 export const TeamItem = ({
@@ -16,23 +14,21 @@ export const TeamItem = ({
 	dataAosDelay,
 	dataAosOffset,
 }) => {
-	const theme = useSelector(selectTheme);
-
 	const onMouseLeave = (e) => {
-		return e;
-		// e.currentTarget.style.background = 'transparent';
-		// e.currentTarget.style.backgroundImage = null;
-		// e.currentTarget.border = '1px solid transparent';
+		e.currentTarget.style.background = 'transparent';
+		e.currentTarget.style.backgroundImage = null;
+		e.currentTarget.border = '1px solid transparent';
 	};
 
 	const onMouseMove = (e) => {
-		return e;
-		// e.currentTarget.border = '1px solid transparent';
-		// const rect = e.currentTarget.getBoundingClientRect();
-		// const x = e.clientX - rect.left;
-		// const y = e.clientY - rect.top;
-		// e.currentTarget.style.background = `radial-gradient(circle at ${x}px ${y}px , rgba(255,255,255,0.25),rgba(255,255,255,0) )`;
-		// e.currentTarget.style.borderImage = `radial-gradient(29.64% 29.64% at ${x}px ${y}px ,rgba(255,255,255,0.7),rgba(255,255,255,0.7),rgba(255,255,255,0.1) ) 9 / 2px / 0px stretch `;
+		e.currentTarget.border = '1px solid transparent';
+		const rect = e.currentTarget.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		e.currentTarget.style.background = `radial-gradient(circle at ${x}px ${y}px , rgba(157, 78, 221, 0.9),rgba(157, 78, 221,0) )`;
+		e.currentTarget.style.borderTopLeftRadius = `12px`;
+		e.currentTarget.style.borderTopRightRadius = `12px`;
+		e.currentTarget.style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px ,rgba(157, 78, 221,0.7),rgba(157, 78, 221,0.7),rgba(157, 78, 221,0.1) ) 9 / 2px / 0px stretch `;
 	};
 
 	return (
@@ -42,22 +38,29 @@ export const TeamItem = ({
 			data-aos-offset={dataAosOffset}
 			className={''}
 		>
-			<div
-				onMouseLeave={theme ? onMouseLeave : null}
-				onMouseMove={theme ? onMouseMove : null}
-				onMouseEnter={theme ? clearNearBy : null}
-				className="item rounded-xl h-full dark:hover:shadow-gray-300 dark:border-[#111] dark:shadow-lg border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center"
-				id={id}
-			>
-				<img
+			<div className="rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
+				<div
 					className={classnames(
-						'rounded-t-xl w-full h-full object-cover',
-						backGround
+						backGround,
+						'relative w-full h-full rounded-t-xl'
 					)}
-					src={photo}
-					alt={initial}
-				/>
-
+				>
+					<img
+						className={'item relative z-20  w-full h-full  object-cover'}
+						src={photo}
+						alt={initial}
+						onMouseLeave={onMouseLeave}
+						onMouseMove={onMouseMove}
+						onMouseEnter={clearNearBy}
+						id={id}
+					/>
+					<div
+						className={classnames(
+							backGround,
+							'rounded-t-xl absolute top-0 left-0 z-10'
+						)}
+					></div>
+				</div>
 				<Heading3 className="block ease-linear duration-300 hover:text-primary cursor-pointer px-5 py-2 dark:text-light dark:hover:text-primary">
 					{initial}
 				</Heading3>
