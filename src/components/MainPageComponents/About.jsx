@@ -1,10 +1,10 @@
-import aboutMainPage from '../../../assets/images/MainPageImages/aboutMainPage.png';
+import aboutMainPage from '../../assets/images/MainPageImages/aboutMainPage.png';
 import React from 'react';
-import { SvgIcon } from '../../UI/SvgIcon.jsx';
-import { Heading2 } from '../../UI/Heading2.jsx';
-import { Body } from '../../UI/Body.jsx';
+import { SvgIcon } from '../UI/SvgIcon.jsx';
+import { Heading2 } from '../UI/Heading2.jsx';
+import { Body } from '../UI/Body.jsx';
 import { useSelector } from 'react-redux';
-import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const About = () => {
