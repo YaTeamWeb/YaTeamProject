@@ -5,10 +5,10 @@ import project_1 from '../../assets/images/MainPageImages/portfolio-1.png';
 import project_2 from '../../assets/images/MainPageImages/portfolio-2.jpg';
 import project_3 from '../../assets/images/MainPageImages/portfolio-3.png';
 import project_4 from '../../assets/images/MainPageImages/portfolio-4.jpg';
+import { ProjectCard } from '../UI/ProjectCard.jsx';
 import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
@@ -33,19 +33,11 @@ export const Portfolio = () => {
 					data-aos-delay="0"
 					data-aos-offset="400"
 				>
-					<figure className="group flex justify-center flex-col items-center">
-						<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
-							<LazyLoadImage
-								className="rounded-xl object-cover w-full h-full"
-								src={project_1}
-								alt="Интернет-магазин"
-								effect={'blur'}
-							/>
-						</div>
-						<figcaption className="group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light">
-							{portfolio.cards[0].name}
-						</figcaption>
-					</figure>
+					<ProjectCard
+					imageAlt='Интернет-магазин'
+					project={project_1}
+					imageFigcaption={portfolio.cards[0].name}
+					/>
 				</li>
 				<li
 					className="col-span-6  "
@@ -54,19 +46,11 @@ export const Portfolio = () => {
 					data-aos-delay="0"
 					data-aos-offset="400"
 				>
-					<figure className="group flex justify-center flex-col items-center">
-						<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
-							<LazyLoadImage
-								className="rounded-xl object-cover w-full h-full"
-								src={project_2}
-								alt="Сайт-портфолио"
-								effect={'blur'}
-							/>
-						</div>
-						<figcaption className="group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light">
-							{portfolio.cards[1].name}
-						</figcaption>
-					</figure>
+					<ProjectCard
+					imageAlt='Сайт-портфолио'
+					project={project_2}
+					imageFigcaption={portfolio.cards[1].name}
+					/>
 				</li>
 				<li
 					className="col-span-6  "
@@ -75,19 +59,11 @@ export const Portfolio = () => {
 					data-aos-delay="0"
 					data-aos-offset="400"
 				>
-					<figure className="group flex justify-center flex-col items-center">
-						<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
-							<LazyLoadImage
-								className="rounded-xl object-cover w-full h-full"
-								src={project_3}
-								alt="Сайт-портфолио"
-								effect={'blur'}
-							/>
-						</div>
-						<figcaption className="group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light">
-							{portfolio.cards[2].name}
-						</figcaption>
-					</figure>
+					<ProjectCard
+					imageAlt='Сайт-портфолио'
+					project={project_3}
+					imageFigcaption={portfolio.cards[2].name}
+					/>
 				</li>
 				<li
 					className="col-span-6"
@@ -96,19 +72,11 @@ export const Portfolio = () => {
 					data-aos-delay="0"
 					data-aos-offset="400"
 				>
-					<figure className="group flex justify-center flex-col items-center">
-						<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
-							<LazyLoadImage
-								className="rounded-xl object-cover w-full h-full"
-								src={project_4}
-								alt="Сайт-портфолио"
-								effect={'blur'}
-							/>
-						</div>
-						<figcaption className="group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light">
-							{portfolio.cards[3].name}
-						</figcaption>
-					</figure>
+					<ProjectCard
+					imageAlt='Сайт-портфолио'
+					project={project_4}
+					imageFigcaption={portfolio.cards[3].name}
+					/>
 				</li>
 			</ul>
 			<div
