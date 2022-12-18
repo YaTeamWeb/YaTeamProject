@@ -20,6 +20,7 @@ module.exports = {
             100: '#DDDDDD',
             200: '#AAAAAA',
             300: '#848484',
+            400: '#151515',
         },
         'border-input': '#EBEBEB',
         'button-hover': '#AF70E2',

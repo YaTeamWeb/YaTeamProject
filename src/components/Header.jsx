@@ -31,7 +31,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				'fixed z-50 top-0 left-0 flex items-center justify-between w-full bg-black text-light px-7 h-16'
 			}
 		>
-			<a className="block" href="/src/pages">
+			<a className="block" href="/">
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>
 			<nav

@@ -11,50 +11,50 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import MainPage from './pages/MainPage.jsx';
 
 AOS.init({
-    // Global settings:
-    disable: false,
-    startEvent: 'load',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 200,
-    offset: 400,
-    delay: 0,
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
+	// Global settings:
+	disable: false,
+	startEvent: 'load',
+	initClassName: 'aos-init',
+	animatedClassName: 'aos-animate',
+	useClassNames: false,
+	disableMutationObserver: false,
+	debounceDelay: 50,
+	throttleDelay: 200,
+	offset: 400,
+	delay: 0,
+	duration: 1000,
+	easing: 'ease-in-out',
+	once: true,
+	mirror: false,
+	anchorPlacement: 'top-bottom',
 });
 
 function App() {
-    const isDark = useSelector(selectTheme);
-    const dispatch = useDispatch();
-    useEffect(() => {
-        console.log();
-        window.onload;
-        const html = document.querySelector('html');
-        if (JSON.parse(localStorage.getItem('theme')) === true) {
-            html.classList.add('dark');
-        }
-    }, []);
-    return (
-        <BrowserRouter>
-            <GrowingCircleAnimation isDark={isDark} />
-            <Header
-                setDarkMode={(theme) => dispatch(setTheme(theme))}
-                darkMode={isDark}
-            />
-            <main className="App subpixel-antialiased">
-                <Routes>
-                    <Route path="/" element={<MainPage />} />
-                </Routes>
-            </main>
-            <BackTop className="fixed bottom-3 right-3" />
-        </BrowserRouter>
-    );
+	const isDark = useSelector(selectTheme);
+	const dispatch = useDispatch();
+	useEffect(() => {
+		console.log();
+		window.onload;
+		const html = document.querySelector('html');
+		if (JSON.parse(localStorage.getItem('theme')) === true) {
+			html.classList.add('dark');
+		}
+	}, []);
+	return (
+		<BrowserRouter>
+			<GrowingCircleAnimation isDark={isDark} />
+			<Header
+				setDarkMode={(theme) => dispatch(setTheme(theme))}
+				darkMode={isDark}
+			/>
+			<main className="App subpixel-antialiased">
+				<Routes>
+					<Route path="/" element={<MainPage />} />
+				</Routes>
+			</main>
+			<BackTop className="fixed bottom-3 right-3" />
+		</BrowserRouter>
+	);
 }
 
 export default App;
