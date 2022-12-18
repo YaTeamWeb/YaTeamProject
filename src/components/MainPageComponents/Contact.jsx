@@ -25,7 +25,7 @@ export const Contact = () => {
 			</div>
 
 			<iframe
-				src="src/components/MainPageComponents/Contact.jsx?um=constructor%3A4b8ce5caeefc0863f905a7c7db4c4cea3a8d9e37252825f96627dd39152296e5&amp;source=constructor"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b8ce5caeefc0863f905a7c7db4c4cea3a8d9e37252825f96627dd39152296e5&amp;source=constructor"
 				width="100%"
 				height="400"
 				frameBorder="0"
@@ -36,7 +36,7 @@ export const Contact = () => {
 
 			<div className="flex flex-row pl-[10px] pt-5 pr-5 pb-5 gap-10">
 				<ul
-					className="flex flex-col gap-[30px] min-w-[334px] py-[10px]"
+					className="flex flex-col items-start gap-[30px] min-w-[334px] py-[10px]"
 					data-aos="fade-right"
 					data-aos-delay="0"
 					data-aos-offset="300"

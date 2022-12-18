@@ -43,7 +43,7 @@ export const ServicesItem = ({
 				onMouseLeave={theme ? onMouseLeave : null}
 				onMouseMove={theme ? onMouseMove : null}
 				onMouseEnter={theme ? clearNearBy : null}
-				className="item h-full dark:shadow-gray-300 dark:hover:shadow-none dark:border-[#111] dark:shadow-lg border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 px-5 py-[89px]  flex items-center flex-col justify-center"
+				className="item h-full dark:hover:shadow-gray-300 dark:hover:shadow-lg dark:border-[#111] dark:shadow-none border scale-[0.999] border-gray-100 ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 px-5 py-[89px]  flex items-center flex-col justify-center"
 				id={id}
 			>
 				<SvgIcon
