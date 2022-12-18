@@ -10,7 +10,7 @@ export const Hero = () => {
 	return (
 		<section
 			className={
-				'bg-hero bg-fixed w-full h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center text-light '
+				'bg-hero bg-dark bg-fixed w-full h-screen bg-cover bg-no-repeat flex flex-col items-center justify-center text-light '
 			}
 			id="hero"
 		>

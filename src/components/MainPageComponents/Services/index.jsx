@@ -45,7 +45,6 @@ export const Services = () => {
 						element.style.borderImage = `radial-gradient(${offset * 2}px ${
 							offset * 2
 						}px at ${bx}px ${by}px ,rgba(255,255,255,0.7),rgba(255,255,255,0.1),transparent ) 9 / 1px / 0px stretch `;
-					console.log(acc);
 					return [...acc, element];
 				}
 			}

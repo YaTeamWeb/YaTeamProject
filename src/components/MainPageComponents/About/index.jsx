@@ -5,6 +5,7 @@ import { Heading2 } from '../../UI/Heading2.jsx';
 import { Body } from '../../UI/Body.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../../store/slices/lang/selectors.js';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const About = () => {
 	const { about } = useSelector(selectLangItems);
@@ -50,8 +51,15 @@ export const About = () => {
 					{about.descriptions[0].text}
 				</Body>
 			</div>
-
-			<img src={aboutMainPage} alt="Команда" data-aos="fade-left" data-aos-delay="0"></img>
+			<LazyLoadImage
+				src={aboutMainPage}
+				alt="Команда"
+				data-aos="fade-left"
+				data-aos-delay="0"
+				effect="blur"
+				width={565}
+				height={832}
+			/>
 		</div>
 	);
 };
