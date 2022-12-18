@@ -17,7 +17,7 @@ export const About = () => {
 			data-aos-delay="0"
 			data-aos-offset="400"
 		>
-			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="100">
+			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="0">
 				<Heading2 className="mb-4 leading-10 dark:text-light duration-500">
 					{about.title}
 				</Heading2>

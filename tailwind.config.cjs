@@ -20,7 +20,9 @@ module.exports = {
             100: '#DDDDDD',
             200: '#AAAAAA',
             300: '#848484',
-        }
+        },
+        'border-input': '#EBEBEB',
+        'button-hover': '#AF70E2',
       },
       fontFamily: {
         "Raleway": [

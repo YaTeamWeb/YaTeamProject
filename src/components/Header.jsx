@@ -96,7 +96,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					{header[4].name}
 				</LinkAnchor>
 				<LinkAnchor
-					to="contact"
+					to="contacts"
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
