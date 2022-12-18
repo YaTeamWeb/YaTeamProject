@@ -35,7 +35,7 @@ export const Contact = () => {
 
 			<div className="flex flex-row pl-[10px] pt-5 pr-5 pb-5 gap-10">
 				<ul
-					className="flex flex-col gap-[30px] min-w-[334px] py-[10px]"
+					className="flex flex-col items-start gap-[30px] min-w-[334px] py-[10px]"
 					data-aos="fade-right"
 					data-aos-delay="0"
 					data-aos-offset="300"

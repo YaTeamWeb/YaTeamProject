@@ -21,6 +21,6 @@ export * from './MainPageComponents/Services.jsx';
 export * from './MainPageComponents/ServicesItem.jsx';
 export * from './MainPageComponents/CTA.jsx';
 export * from './MainPageComponents/Portfolio.jsx';
-export * from './MainPageComponents/Counts/';
-export * from './MainPageComponents/Contact/';
+export * from './MainPageComponents/Counts.jsx';
+export * from './MainPageComponents/Contact.jsx';
 export * from './MainPageComponents/Team.jsx';
