@@ -34,12 +34,17 @@ export const Header = ({ setDarkMode, darkMode }) => {
 			<a className="block" href="/src/pages">
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>
-			<nav className={'max-w-[1200px] flex gap-[80px] justify-between items-center'}>
+			<nav
+				className={
+					'max-w-[1200px] flex gap-[80px] justify-between items-center'
+				}
+			>
 				<LinkAnchor
 					to="hero"
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
+					hashSpy={true}
 					duration={1000}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
@@ -52,6 +57,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
+					hashSpy={true}
 					duration={1000}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
@@ -64,6 +70,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
+					hashSpy={true}
 					duration={1000}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
@@ -75,6 +82,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					to="portfolio"
 					activeClass={'text-primary'}
 					spy={true}
+					hashSpy={true}
 					smooth={true}
 					duration={1000}
 					className={
@@ -88,6 +96,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
+					hashSpy={true}
 					duration={1000}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
@@ -99,6 +108,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					to="contacts"
 					activeClass={'text-primary'}
 					spy={true}
+					hashSpy={true}
 					smooth={true}
 					duration={1000}
 					className={

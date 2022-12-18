@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Header } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
@@ -8,8 +8,7 @@ import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-const MainPage = lazy(() => import('./pages/MainPage.jsx'));
+import MainPage from './pages/MainPage.jsx';
 
 AOS.init({
     // Global settings:
@@ -41,7 +40,6 @@ function App() {
             html.classList.add('dark');
         }
     }, []);
-
     return (
         <BrowserRouter>
             <GrowingCircleAnimation isDark={isDark} />
