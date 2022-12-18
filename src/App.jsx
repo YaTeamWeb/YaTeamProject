@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { lazy, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Header } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
@@ -8,8 +8,7 @@ import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-const MainPage = lazy(() => import('./pages/MainPage.jsx'));
+import MainPage from './pages/MainPage.jsx';
 
 function App() {
 	const isDark = useSelector(selectTheme);
@@ -48,14 +47,7 @@ function App() {
 			/>
 			<main className="App subpixel-antialiased">
 				<Routes>
-					<Route
-						path="/"
-						element={
-							<Suspense fallback={<div className={'preloader'}></div>}>
-								<MainPage />
-							</Suspense>
-						}
-					/>
+					<Route path="/" element={<MainPage />} />
 				</Routes>
 			</main>
 			<BackTop className="fixed bottom-3 right-3" />
