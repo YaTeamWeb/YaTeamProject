@@ -134,6 +134,18 @@
             "suptitle": "Связаться",
             "title": "Свяжитесь с нами!",
             "items": [
+                {
+                    "title": "Расположение",
+                    "description": "Саратов, Славянская площадь, 2"
+                },
+                {
+                    "title": "Email",
+                    "description": "info@yateam.site"
+                },
+                {
+                    "title": "Телефон",
+                    "description": "+7 800 555 35 35"
+                }
             ]
         },
         "team": {
@@ -292,7 +304,20 @@
         "contacts": {
             "suptitle": "Contact",
             "title": "Contact to us!",
-            "items": []
+            "items": [
+                {
+                    "title": "Location",
+                    "description": "Saratov, Slavyanskaya square, 2"
+                },
+                {
+                    "title": "Email",
+                    "description": "info@yateam.site"
+                },
+                {
+                    "title": "Phone",
+                    "description": "+7 800 555 35 35"
+                }
+            ]
         },
         "team": {
             "suptitle": "Team",
