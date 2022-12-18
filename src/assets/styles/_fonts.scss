@@ -3,6 +3,7 @@
     src: url('../fonts/Poppins-Medium.woff2');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url('../fonts/Poppins-SemiBold.woff2');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     src: url('../fonts/Poppins-Bold.woff2');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -24,12 +27,14 @@
     src: url('../fonts/OpenSans-SemiBold.woff2');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Bold.woff2');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -37,10 +42,12 @@
     src: url('../fonts/Raleway-Medium.woff2');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-Bold.woff2');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
