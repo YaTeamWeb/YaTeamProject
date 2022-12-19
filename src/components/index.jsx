@@ -25,3 +25,4 @@ export * from './MainPageComponents/Portfolio.jsx';
 export * from './MainPageComponents/Counts.jsx';
 export * from './MainPageComponents/Contact.jsx';
 export * from './MainPageComponents/Team.jsx';
+export * from './UI/SuccessModal.jsx';
