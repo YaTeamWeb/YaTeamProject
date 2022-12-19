@@ -170,6 +170,31 @@
                     "job": "Разработчик"
                 }
             ]
+        },
+        "footer": {
+            "address": "Саратов, Славянская площадь, 2 Россия, 410031",
+            "phone": "Телефон",
+            "firstList": {
+                "title": "Полезные ссылки",
+                "items": [
+                    {"text":  "Домой"},
+                    {"text":  "О нас"},
+                    {"text":  "Сервисы"},
+                    {"text":  "Команда"},
+                    {"text":  "Связаться"}
+                ]
+            },
+            "secondList": {
+                "title": "Наши сервисы",
+                "items": [
+                    {"text":  "Вёрстка с макета"},
+                    {"text":  "Разработка под ключ"},
+                    {"text":  "Менеджмент"},
+                    {"text":  "Реклама"},
+                    {"text":  "Поддержка"}
+                ]
+            },
+            "license": "Все права защищены"
         }
     },
     {
@@ -342,6 +367,31 @@
                     "job": "Developer"
                 }
             ]
+        },
+        "footer": {
+            "address": "Saratov, Slavyanskaya Square, 2 Russia, 410031",
+            "phone": "Phone",
+            "firstList": {
+                "title": "Useful links",
+                "items": [
+                    {"text":  "Home"},
+                    {"text":  "About us"},
+                    {"text":  "Services"},
+                    {"text":  "Team"},
+                    {"text":  "Contact"}
+                ]
+            },
+            "secondList": {
+                "title": "Our services",
+                "items": [
+                    {"text":  "Layout from the layout"},
+                    {"text":  "Turnkey development"},
+                    {"text":  "Management"},
+                    {"text":  "Advertisement"},
+                    {"text":  "Support"}
+                ]
+            },
+            "license": "All rights reserved"
         }
     }
 
