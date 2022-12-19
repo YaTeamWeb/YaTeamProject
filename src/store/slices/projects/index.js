@@ -31,7 +31,11 @@ export const projectsSlice = createSlice({
 					return state.currentCategory !== 0
 						? item.category === state.currentCategory
 						: item;
-				if (item.translations[1].title.toLowerCase().includes(action.payload))
+				if (
+					item.translations[1].title
+						.toLowerCase()
+						.includes(action.payload.toLowerCase())
+				)
 					return state.currentCategory !== 0
 						? item.category === state.currentCategory
 						: item;

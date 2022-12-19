@@ -45,29 +45,13 @@ function App() {
 		<BrowserRouter>
 			<GrowingCircleAnimation isDark={isDark} />
 			<main className="App subpixel-antialiased">
+				<Header
+					setDarkMode={(theme) => dispatch(setTheme(theme))}
+					darkMode={isDark}
+				/>
 				<Routes>
-					<Route path="/" element={
-						<>
-							<Header
-								setDarkMode={(theme) => dispatch(setTheme(theme))}
-								darkMode={isDark}
-								page='main'
-							/>
-							<MainPage />
-						</>
-					}
-					/>
-					<Route path="/portfolio" element={
-						<>
-							<Header
-								setDarkMode={(theme) => dispatch(setTheme(theme))}
-								darkMode={isDark}
-								page='portfolio'
-							/>
-							<PortfolioPage />
-						</>
-					} 
-					/>
+					<Route path="/" element={<MainPage />} />
+					<Route path="/portfolio" element={<PortfolioPage />} />
 				</Routes>
 			</main>
 			<BackTop className="fixed bottom-3 right-3" />

@@ -75,10 +75,10 @@ const PortfolioPage = () => {
 						>
 							<SvgIcon
 								className={classnames(
-									'fill-dark dark:fill-light',
+									'fill-dark ',
 									open
 										? ''
-										: 'group-hover:fill-light dark:group-hover:fill-dark duration-300'
+										: 'group-hover:fill-light dark:group-hover:fill-dark duration-300 dark:fill-light'
 								)}
 								name={'search'}
 								size={21}
