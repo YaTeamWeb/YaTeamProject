@@ -47,25 +47,25 @@ function App() {
 			<main className="App subpixel-antialiased">
 				<Routes>
 					<Route path="/" element={
-					<>
-					<Header
-						setDarkMode={(theme) => dispatch(setTheme(theme))}
-						darkMode={isDark}
-						page='main'
-					/>
-					<MainPage />
-					</>
+						<>
+							<Header
+								setDarkMode={(theme) => dispatch(setTheme(theme))}
+								darkMode={isDark}
+								page='main'
+							/>
+							<MainPage />
+						</>
 					}
 					/>
 					<Route path="/portfolio" element={
-					<>
-					<Header
-						setDarkMode={(theme) => dispatch(setTheme(theme))}
-						darkMode={isDark}
-						page='portfolio'
-					/>
-					<PortfolioPage />
-					</>
+						<>
+							<Header
+								setDarkMode={(theme) => dispatch(setTheme(theme))}
+								darkMode={isDark}
+								page='portfolio'
+							/>
+							<PortfolioPage />
+						</>
 					} 
 					/>
 				</Routes>

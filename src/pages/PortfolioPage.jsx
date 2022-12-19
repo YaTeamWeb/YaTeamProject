@@ -92,9 +92,17 @@ const PortfolioPage = () => {
 						autoFocus={true}
 						className={`outline-none ${
 							open ? 'h-[42px] w-full relative ' : 'w-0 border-none invisible'
-						}  pr-2.5 border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 duration-1000 pl-[40px]`}
+						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 duration-1000 px-[40px]`}
 						placeholder={'Поиск'}
 					/>
+					{value && (
+						<button
+							onClick={() => setValue('')}
+							className={'absolute right-0 top-0 h-[42px] px-2.5'}
+						>
+							<SvgIcon size={20} name={'close'} />
+						</button>
+					)}
 				</form>
 
 				<div className={'flex items-center justify-center mb-10'}>
