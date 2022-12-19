@@ -35,7 +35,7 @@ const PortfolioPage = () => {
                 data-aos-duration="1000"
                 data-aos-delay="0"
                 data-aos-offset="400"
-            >Интернет-магазины</h3>
+                >{portfolio.portfolioPageSectionNames[0].name}</h3>
 			<ul className="grid gap-y-10 gap-x-5 grid-cols-12 mb-8">
 				<li
 					className="col-span-6"
@@ -70,7 +70,7 @@ const PortfolioPage = () => {
                 data-aos-duration="1000"
                 data-aos-delay="0"
                 data-aos-offset="400"
-            >Сайты-визитки</h3>
+            >{portfolio.portfolioPageSectionNames[1].name}</h3>
 			<ul className="grid gap-y-10 gap-x-5 grid-cols-12">
                 <li
 					className="col-span-6  "

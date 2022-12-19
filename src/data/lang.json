@@ -102,6 +102,10 @@
                 {"name": "Сайт-портфолио"},
                 {"name": "Сайт-портфолио"}
             ],
+            "portfolioPageSectionNames": [
+                {"name": "Интернет-магазины"},
+                {"name": "Сайты-визитки"}
+            ],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
             "button": "Посмотреть все проекты"
@@ -301,6 +305,10 @@
                 {"name": "Portfolio website"},
                 {"name": "Portfolio website"},
                 {"name": "Portfolio website"}
+            ],
+            "portfolioPageSectionNames": [
+                {"name": "Online stores"},
+                {"name": "Portfolio websites"}
             ],
             "overlay": "Check out",
             "portfolioPageButton": "View more",
