@@ -5,9 +5,9 @@
             {"name": "Домой"},
             {"name": "О нас"},
             {"name": "Сервисы"},
-            {"name": "Портфолио"},
-            {"name": "Команда"},
-            {"name": "Связаться с нами"}
+            {"name": "Страницы"},
+            {"name": "Главная"},
+            {"name": "Проекты"}
         ],
         "hero": {
             "title": "Лучшие решения для Вашего бизнеса от YaTeam",
@@ -209,9 +209,9 @@
             {"name": "Home"},
             {"name": "About us"},
             {"name": "Services"},
-            {"name": "Portfolio"},
-            {"name": "Team"},
-            {"name": "Contact us"}
+            {"name": "Pages"},
+            {"name": "Main"},
+            {"name": "Projects"}
         ],
         "hero": {
             "title": "The best solutions for your business from YaTeam",

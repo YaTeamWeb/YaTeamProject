@@ -7,9 +7,10 @@ import { selectLang, selectLangItems } from '../store/slices/lang/selectors.js';
 import { setLang } from '../store/slices/lang/index.js';
 import globeGif from '../assets/images/MainPageImages/globe.gif';
 import globeSvg from '../assets/images/svg/globe.svg';
+import { SvgIcon } from './UI/SvgIcon';
 import { debounce } from '../utils/Limitors.jsx';
 
-export const Header = ({ setDarkMode, darkMode }) => {
+export const Header = ({ setDarkMode, darkMode, page }) => {
 	const dispatch = useDispatch();
 	const lang = useSelector(selectLang);
 	const LinkAnchor = Scroll.Link;
@@ -25,6 +26,12 @@ export const Header = ({ setDarkMode, darkMode }) => {
 		dispatch(setLang(currLang));
 		localStorage.setItem('lang', currLang);
 	}, 500);
+
+	function dropClick() {
+		var drop = document.querySelector(".DropDownMenu"); 
+		drop.style.visibility = ((drop.style.visibility == 'hidden') ? "visible" : "hidden");
+		drop.style.opacity = ((drop.style.visibility == 'hidden') ? "0" : "1")
+	}
 	return (
 		<header
 			className={
@@ -78,45 +85,27 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				>
 					{header[2].name}
 				</LinkAnchor>
-				<LinkAnchor
-					to="portfolio"
-					activeClass={'text-primary'}
-					spy={true}
-					hashSpy={true}
-					smooth={true}
-					duration={1000}
-					className={
-						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
-					}
+				
+				<div
+				className='relative'
+				
 				>
-					{header[3].name}
-				</LinkAnchor>
-				<LinkAnchor
-					to="team"
-					activeClass={'text-primary'}
-					spy={true}
-					smooth={true}
-					hashSpy={true}
-					duration={1000}
-					className={
-						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
-					}
-				>
-					{header[4].name}
-				</LinkAnchor>
-				<LinkAnchor
-					to="contacts"
-					activeClass={'text-primary'}
-					spy={true}
-					hashSpy={true}
-					smooth={true}
-					duration={1000}
-					className={
-						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
-					}
-				>
-					{header[5].name}
-				</LinkAnchor>
+					<p 
+					className='cursor-pointer ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light group flex flex-row items-center justify-center'
+					onClick={dropClick}
+					>
+						{header[3].name}<SvgIcon name='header-arrow' className={'fill-light duration-300 group-hover:fill-primary w-[13px] h-[8px] ml-[5px]'}/>
+					</p>
+
+					<div style={{"visibility": "hidden", "opacity": "0"}} className='DropDownMenu absolute -left-[5px] top-[30px] w-[164px] py-[15px] bg-light flex flex-col gap-0 duration-500'>
+						<a href='/' className='w-full'>
+							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans ' + ((page=='main') ? 'bg-primary' : '')}>{header[4].name}</p>
+						</a>
+						<a href='/portfolio' className='w-full'>
+							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans ' + ((page=='portfolio') ? 'bg-primary' : '')}>{header[5].name}</p>
+						</a>
+					</div>
+				</div>
 			</nav>
 			<div className={'flex items-center'}>
 				<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
