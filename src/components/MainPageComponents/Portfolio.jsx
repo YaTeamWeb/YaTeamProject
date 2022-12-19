@@ -87,9 +87,11 @@ export const Portfolio = () => {
 				data-aos-delay="0"
 				data-aos-offset="500"
 			>
-				<Button className="text-dark hover:text-light dark:text-light duration-500">
-					{portfolio.button}
-				</Button>
+				<a href='/portfolio'>
+					<Button className="text-dark hover:text-light dark:text-light duration-500">
+						{portfolio.button}
+					</Button>
+				</a>
 			</div>
 		</section>
 	);

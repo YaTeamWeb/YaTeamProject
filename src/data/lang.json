@@ -102,6 +102,8 @@
                 {"name": "Сайт-портфолио"},
                 {"name": "Сайт-портфолио"}
             ],
+            "overlay": "Посмотреть",
+            "portfolioPageButton": "Загрузить ещё",
             "button": "Посмотреть все проекты"
         },
         "counts": {
@@ -300,6 +302,8 @@
                 {"name": "Portfolio website"},
                 {"name": "Portfolio website"}
             ],
+            "overlay": "Check out",
+            "portfolioPageButton": "View more",
             "button": "View all projects"
         },
         "counts": {

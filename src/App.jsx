@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import MainPage from './pages/MainPage.jsx';
+import PortfolioPage from './pages/PortfolioPage.jsx';
 
 AOS.init({
 	// Global settings:
@@ -50,6 +51,7 @@ function App() {
 			<main className="App subpixel-antialiased">
 				<Routes>
 					<Route path="/" element={<MainPage />} />
+					<Route path="/portfolio" element={<PortfolioPage />} />
 				</Routes>
 			</main>
 			<BackTop className="fixed bottom-3 right-3" />
