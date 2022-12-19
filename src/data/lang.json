@@ -97,15 +97,32 @@
             "suptitle": "Портфолио",
             "title": "Примеры наших работ",
             "cards": [
-                {"name": "Интернет-магазин"},
-                {"name": "Сайт-портфолио"},
-                {"name": "Сайт-портфолио"},
-                {"name": "Сайт-портфолио"}
+                {
+                    "category": "Интернет-магазины",
+                    "title": "Интернет-магазин книжек",
+                    "authors": ["Ренат Губайдуллин", "Никитин Дмитрий", "Гарифуллин Инсаф", "Степан Мельников"],
+                    "description": "Описание интернет-магазина"
+                },
+                {
+                    "category": "Сайты-визитки",
+                    "title": "Сайт-визитка Никитина Дмитрия",
+                    "authors": ["Никитин Дмитрий"],
+                    "description": "Описание сайта-визитки"
+                },
+                {
+                    "category": "Сайты-визитки",
+                    "title": "Сайт-визитка Гарифуллина Инсафа",
+                    "authors": ["Гарифуллин Инсаф"],
+                    "description": "Описание сайта-визитки"
+                },
+                {
+                    "category": "Сайты-визитки",
+                    "title": "Сайт-визитка Рената Губайдуллина",
+                    "authors": ["Ренат Губайдуллин"],
+                    "description": "Описание сайта-визитки"
+                }
             ],
-            "portfolioPageSectionNames": [
-                {"name": "Интернет-магазины"},
-                {"name": "Сайты-визитки"}
-            ],
+            "categories": ["Все", "Интернет-Магазины", "Сайты-Визитки"],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
             "button": "Посмотреть все проекты"
@@ -301,15 +318,32 @@
             "suptitle": "Portfolio",
             "title": "Examples of our work",
             "cards": [
-                {"name": "Online store"},
-                {"name": "Portfolio website"},
-                {"name": "Portfolio website"},
-                {"name": "Portfolio website"}
+                {
+                    "category": "Online stores",
+                    "title": "Online book store",
+                    "authors": ["Renat Gubaidullin", "Nikitin Dmitriy", "Garifullin Insaf", "Stepan Melnikov"],
+                    "description": "Description of the online store"
+                },
+                {
+                    "category": "Business card sites",
+                    "title": "Dmitriy Nikitin's business card website",
+                    "authors": ["Nikitin Dmitriy"],
+                    "description": "Description of the business card site"
+                },
+                {
+                    "category": "Business card sites",
+                    "title": "Garifullin Insaf's business card website",
+                    "authors": ["Garifullin Insaf"],
+                    "description": "Description of the business card site"
+                },
+                {
+                    "category": "Business card sites",
+                    "title": "Renat Gubaidullin's business card website",
+                    "authors": ["Renat Gubaidullin"],
+                    "description": "Description of the business card site"
+                }
             ],
-            "portfolioPageSectionNames": [
-                {"name": "Online stores"},
-                {"name": "Portfolio websites"}
-            ],
+            "categories": ["All", "Online stores", "Business card sites"],
             "overlay": "Check out",
             "portfolioPageButton": "View more",
             "button": "View all projects"
