@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SvgIcon } from '../UI/SvgIcon.jsx';
 import { Heading2 } from '../UI/Heading2.jsx';
 import { SupTitle } from '../UI/SupTitle.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import { SuccessModal } from '../UI/SuccessModal';
 
 export const Contact = () => {
 	const { contacts } = useSelector(selectLangItems);
+
+	const [show, setShow] = useState(false);
+
+	const ControlForm = (event) => {
+		const xmlHttp = new XMLHttpRequest();
+		xmlHttp.open('POST', 'http://localhost:5500/feedback', false);
+		xmlHttp.send(new FormData(event.target));
+		event.target.reset();
+		console.log(xmlHttp.status);
+		setShow(true);
+		setTimeout(() => setShow(false), 2000);
+		event.preventDefault();
+	};
 
 	return (
 		<section
@@ -15,6 +29,7 @@ export const Contact = () => {
 			data-aos-delay="0"
 			id="contacts"
 		>
+			<SuccessModal show={show} text={'Сообщение отправлено'} />
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 				<SupTitle>{contacts.suptitle}</SupTitle>
 
@@ -86,10 +101,10 @@ export const Contact = () => {
 						</div>
 					</li>
 				</ul>
-
 				<form
 					className="p-[10px] w-full flex flex-col gap-5"
 					data-aos="fade-left"
+					onSubmit={ControlForm}
 					data-aos-delay="0"
 					data-aos-offset="300"
 				>
@@ -98,12 +113,14 @@ export const Contact = () => {
 							type="text"
 							name="name"
 							placeholder="Ваше имя"
+							required
 							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
 							border-solid border-2 border-border-input"
 						></input>
 						<input
 							type="email"
 							name="email"
+							required
 							placeholder="Ваш email"
 							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
 							border-solid border-2 border-border-input"
@@ -111,6 +128,7 @@ export const Contact = () => {
 						<input
 							type="text"
 							name="theme"
+							required
 							placeholder="Тема"
 							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans  placeholder:text-gray-300 col-span-2
 							border-solid border-2 border-border-input"
@@ -118,6 +136,7 @@ export const Contact = () => {
 						<textarea
 							name="message"
 							placeholder="Сообщение"
+							required
 							className="h-[137px] resize-none p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300 col-span-2
 							border-solid border-2 border-border-input"
 						></textarea>
