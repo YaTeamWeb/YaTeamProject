@@ -24,6 +24,7 @@ module.exports = {
         },
         'border-input': '#EBEBEB',
         'button-hover': '#AF70E2',
+        'projectOverlay': "rgba(0, 0, 0, 0.8)",
       },
       fontFamily: {
         "Raleway": [
