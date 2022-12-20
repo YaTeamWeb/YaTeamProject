@@ -4,9 +4,11 @@ import { Body3 } from '../UI/Body3.jsx';
 import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
+import * as Scroll from 'react-scroll';
 
 export const CTA = () => {
 	const { contactToAs } = useSelector(selectLangItems);
+	const LinkAnchor = Scroll.Link;
 
 	return (
 		<section
@@ -26,8 +28,9 @@ export const CTA = () => {
 				<Body3 className="text-light text-center max-w-[960px]">
 					{contactToAs.description}
 				</Body3>
-
-				<Button className="text-light">{contactToAs.button}</Button>
+				<LinkAnchor to={'contacts'} smooth={true} duration={1000}>
+					<Button className="text-light">{contactToAs.button}</Button>
+				</LinkAnchor>
 			</div>
 		</section>
 	);

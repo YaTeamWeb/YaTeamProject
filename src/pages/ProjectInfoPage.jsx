@@ -1,9 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import project_1 from '../assets/images/ProjectsImages/portfolio-1.png';
-import project_2 from '../assets/images/ProjectsImages/portfolio-2.jpg';
-import project_3 from '../assets/images/ProjectsImages/portfolio-3.png';
-import project_4 from '../assets/images/ProjectsImages/portfolio-4.jpg';
 
 import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -18,28 +14,33 @@ import { selectProjectItem } from '../store/slices/projects/selectors.js';
 const ProjectInfoPage = () => {
 	const { portfolio } = useSelector(selectLangItems);
 	const { projectId } = useParams();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const item = useSelector(selectProjectItem(projectId));
 	if (!item) {
 		return (
-			<div className={'h-screen w-screen'}>
-				<div
-					className={
-						'absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center'
-					}
-				>
-					<h1 className={'text-6xl dark:text-light mb-2.5'}>
-						Ничего не найдено 😞
-					</h1>
-					<Link
-						to={'/'}
+			<main className={'overflow-hidden'}>
+				<div className={'h-screen w-screen '}>
+					<div
 						className={
-							'text-3xl dark:text-light hover:text-primary duration-300'
+							'absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center'
 						}
 					>
-						Вернуться
-					</Link>
+						<h1 className={'text-6xl dark:text-light mb-2.5'}>
+							Ничего не найдено 😞
+						</h1>
+						<Link
+							to={'/'}
+							className={
+								'text-3xl dark:text-light hover:text-primary duration-300'
+							}
+						>
+							Вернуться
+						</Link>
+					</div>
 				</div>
-			</div>
+			</main>
 		);
 	}
 	return (

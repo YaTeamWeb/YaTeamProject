@@ -98,13 +98,39 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				>
 					{header[2].name}
 				</LinkAnchor>
+				<LinkAnchor
+					to="team"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
+					onClick={() => scrollToAnchor('team')}
+					className={
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+					}
+				>
+					{header[3].name}
+				</LinkAnchor>
+				<LinkAnchor
+					to="contacts"
+					activeClass={'text-primary'}
+					spy={true}
+					smooth={true}
+					duration={1000}
+					onClick={() => scrollToAnchor('contacts')}
+					className={
+						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
+					}
+				>
+					{header[4].name}
+				</LinkAnchor>
 
 				<div className="relative">
 					<p
 						className="cursor-pointer ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light group flex flex-row items-center justify-center"
 						onClick={dropClick}
 					>
-						{header[3].name}
+						{header[5].name}
 						<SvgIcon
 							name="header-arrow"
 							className={
@@ -126,7 +152,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							onClick={dropClick}
 						>
 							<p className={'py-[8px] pl-[15px] font-OpenSans'}>
-								{header[4].name}
+								{header[6].name}
 							</p>
 						</NavLink>
 						<NavLink
@@ -137,7 +163,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							onClick={dropClick}
 						>
 							<p className={'py-[8px] pl-[15px] font-OpenSans'}>
-								{header[5].name}
+								{header[7].name}
 							</p>
 						</NavLink>
 					</div>
