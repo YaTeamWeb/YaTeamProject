@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
 import * as Scroll from 'react-scroll';
 import DarkModeToggle from './DarkMode/DarkModeToggle.jsx';
@@ -9,14 +9,16 @@ import globeGif from '../assets/images/MainPageImages/globe.gif';
 import globeSvg from '../assets/images/svg/globe.svg';
 import { SvgIcon } from './UI/SvgIcon';
 import { debounce } from '../utils/Limitors.jsx';
+import { Link, NavLink } from 'react-router-dom';
 
-export const Header = ({ setDarkMode, darkMode, page }) => {
+export const Header = ({ setDarkMode, darkMode }) => {
 	const dispatch = useDispatch();
 	const lang = useSelector(selectLang);
 	const LinkAnchor = Scroll.Link;
 	const { header } = useSelector(selectLangItems);
 	const [globeActive, setGlobeActive] = useState(false);
 
+	const ref = useRef(null);
 	const onChangeLang = debounce(() => {
 		setGlobeActive(true);
 		setTimeout(() => {
@@ -28,9 +30,10 @@ export const Header = ({ setDarkMode, darkMode, page }) => {
 	}, 500);
 
 	function dropClick() {
-		var drop = document.querySelector(".DropDownMenu"); 
-		drop.style.visibility = ((drop.style.visibility == 'hidden') ? "visible" : "hidden");
-		drop.style.opacity = ((drop.style.visibility == 'hidden') ? "0" : "1")
+		ref.current.style.visibility =
+			ref.current.style.visibility === 'hidden' ? 'visible' : 'hidden';
+		ref.current.style.opacity =
+			ref.current.style.visibility === 'hidden' ? '0' : '1';
 	}
 	return (
 		<header
@@ -85,25 +88,42 @@ export const Header = ({ setDarkMode, darkMode, page }) => {
 				>
 					{header[2].name}
 				</LinkAnchor>
-				
-				<div
-				className='relative'
-				
-				>
-					<p 
-					className='cursor-pointer ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light group flex flex-row items-center justify-center'
-					onClick={dropClick}
+
+				<div className="relative">
+					<p
+						className="cursor-pointer ease-in duration-200 hover:text-primary font-OpenSans font-bold text-base text-light group flex flex-row items-center justify-center"
+						onClick={dropClick}
 					>
-						{header[3].name}<SvgIcon name='header-arrow' className={'fill-light duration-300 group-hover:fill-primary w-[13px] h-[8px] ml-[5px]'}/>
+						{header[3].name}
+						<SvgIcon
+							name="header-arrow"
+							className={
+								'fill-light duration-300 group-hover:fill-primary w-[13px] h-[8px] ml-[5px]'
+							}
+						/>
 					</p>
 
-					<div style={{"visibility": "hidden", "opacity": "0"}} className='DropDownMenu absolute -left-[5px] top-[30px] w-[164px] py-[15px] bg-light flex flex-col gap-0 duration-500'>
-						<a href='/' className='w-full'>
-							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans ' + ((page=='main') ? 'bg-primary' : '')}>{header[4].name}</p>
-						</a>
-						<a href='/portfolio' className='w-full'>
-							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans ' + ((page=='portfolio') ? 'bg-primary' : '')}>{header[5].name}</p>
-						</a>
+					<div
+						style={{ visibility: 'hidden', opacity: '0' }}
+						className="DropDownMenu absolute -left-[5px] top-[30px] w-[164px] bg-light flex flex-col gap-0 duration-500"
+						ref={ref}
+					>
+						<NavLink
+							to="/"
+							className={({ isActive }) => (isActive ? 'bg-primary' : 'w-full')}
+						>
+							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans'}>
+								{header[4].name}
+							</p>
+						</NavLink>
+						<NavLink
+							to="/portfolio"
+							className={({ isActive }) => (isActive ? 'bg-primary' : 'w-full')}
+						>
+							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans'}>
+								{header[5].name}
+							</p>
+						</NavLink>
 					</div>
 				</div>
 			</nav>
