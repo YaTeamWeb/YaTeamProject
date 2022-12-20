@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { BackTop, Footer, Header } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
 import { useDispatch, useSelector } from 'react-redux';
