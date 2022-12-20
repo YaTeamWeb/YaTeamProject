@@ -6,7 +6,7 @@ import { selectLangItems } from '../../store/slices/lang/selectors.js';
 export const ProjectCard = ({ imageAlt, project, imageFigcaption, projectId }) => {
 	const { portfolio } = useSelector(selectLangItems);
 	return (
-		<a href={'/portfolio/' + projectId}>
+		<a href={'/#/portfolio/' + projectId}>
 		<figure className="group flex justify-center flex-col items-center">
 			<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 				<div className={'relative rounded h-full w-full'}>
