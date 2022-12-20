@@ -60,7 +60,7 @@ const ProjectInfoPage = () => {
 				</Swiper>
 				</div>
 				<div className='w-[357px]'>
-					<div className='infoBlock pt-5 px-[15px] pb-10'>
+					<div className='infoBlock pt-5 px-[15px] pb-10 shadow-projectInfo mb-[25px]'>
 						<h2 className='text-2xl font-semibold font-Raleway text-gray-500 mb-5 dark:text-light duration-500'>[Название проекта]</h2>
 						<div className='w-[327px] h-px bg-gray-100 mb-5'></div>
 						<div className='w-full flex flex-col gap-[10px]'>
