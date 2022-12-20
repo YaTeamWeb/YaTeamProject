@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import MainPage from './pages/MainPage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
+import ProjectInfoPage from './pages/ProjectInfoPage.jsx';
 
 AOS.init({
 	// Global settings:
@@ -51,7 +52,8 @@ function App() {
 				/>
 				<Routes>
 					<Route path="/" element={<MainPage />} />
-					<Route path="/portfolio" element={<PortfolioPage />} />
+					<Route path="/portfolio" element={<PortfolioPage />}/>
+					<Route path="/portfolio/:projectId" element={<ProjectInfoPage />}/>
 				</Routes>
 			</main>
 			<Footer />

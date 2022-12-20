@@ -1,8 +1,8 @@
 import lang from './lang.json';
-import project_1 from '../assets/images/MainPageImages/portfolio-1.png';
-import project_2 from '../assets/images/MainPageImages/portfolio-2.jpg';
-import project_3 from '../assets/images/MainPageImages/portfolio-3.png';
-import project_4 from '../assets/images/MainPageImages/portfolio-4.jpg';
+import project_1 from '../assets/images/ProjectsImages/portfolio-1.png';
+import project_2 from '../assets/images/ProjectsImages/portfolio-2.jpg';
+import project_3 from '../assets/images/ProjectsImages/portfolio-3.png';
+import project_4 from '../assets/images/ProjectsImages/portfolio-4.jpg';
 export const projects = [
 	{
 		id: '1',
