@@ -13,8 +13,14 @@ export const projects = [
 				return { ...el.portfolio.cards[0], lang: el.lang };
 			}),
 		],
-		images: [{ src: project_1 }],
+		images: [
+			{ src: project_1 },
+			{ src: project_1 },
+			{ src: project_1 },
+			{ src: project_1 },
+		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		createdDate: '20.12.2022',
 		link: 'www.yateam.site',
 	},
 	{
@@ -25,8 +31,14 @@ export const projects = [
 				return { ...el.portfolio.cards[1], lang: el.lang };
 			}),
 		],
-		images: [{ src: project_2 }],
+		images: [
+			{ src: project_2 },
+			{ src: project_2 },
+			{ src: project_2 },
+			{ src: project_2 },
+		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		createdDate: '20.12.2022',
 		link: 'www.yateam.site',
 	},
 	{
@@ -37,8 +49,14 @@ export const projects = [
 				return { ...el.portfolio.cards[2], lang: el.lang };
 			}),
 		],
-		images: [{ src: project_3 }],
+		images: [
+			{ src: project_3 },
+			{ src: project_3 },
+			{ src: project_3 },
+			{ src: project_3 },
+		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		createdDate: '20.12.2022',
 		link: 'www.yateam.site',
 	},
 	{
@@ -49,8 +67,14 @@ export const projects = [
 				return { ...el.portfolio.cards[3], lang: el.lang };
 			}),
 		],
-		images: [{ src: project_4 }],
+		images: [
+			{ src: project_4 },
+			{ src: project_4 },
+			{ src: project_4 },
+			{ src: project_4 },
+		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		createdDate: '20.12.2022',
 		link: 'www.yateam.site',
 	},
 	{
@@ -61,8 +85,14 @@ export const projects = [
 				return { ...el.portfolio.cards[4], lang: el.lang };
 			}),
 		],
-		images: [{ src: project_3 }],
+		images: [
+			{ src: project_3 },
+			{ src: project_3 },
+			{ src: project_3 },
+			{ src: project_3 },
+		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		createdDate: '20.12.2022',
 		link: 'www.yateam.site',
 	},
 ];
