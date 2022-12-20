@@ -7,6 +7,8 @@ import { Button } from '../components/UI/Button.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectLangItems } from '../store/slices/lang/selectors.js';
 import {
+	selectItemsCount,
+	selectItemsLimit,
 	selectProjectCategory,
 	selectProjectItems,
 } from '../store/slices/projects/selectors.js';
@@ -14,11 +16,13 @@ import classnames from 'classnames';
 import {
 	setCategoryItems,
 	setCurrentCategory,
+	setItemsLimit,
 	setSearchItems,
 } from '../store/slices/projects/index.js';
 import { debounce } from '../utils/Limitors.jsx';
 
 const PortfolioPage = () => {
+	const perLimitCount = 2;
 	const { portfolio } = useSelector(selectLangItems);
 	const dispatch = useDispatch();
 	const items = useSelector(selectProjectItems);
@@ -26,15 +30,22 @@ const PortfolioPage = () => {
 	const [open, setOpen] = useState(false);
 	const [value, setValue] = useState('');
 	const isMounted = useRef(true);
+	const limit = useSelector(selectItemsLimit);
+	const count = useSelector(selectItemsCount);
 	const onSetCategory = (id) => {
 		dispatch(setCurrentCategory(id));
 		dispatch(setCategoryItems(id));
+		dispatch(setItemsLimit(perLimitCount));
 		dispatch(setSearchItems(value));
 	};
 	const onChangeSearch = debounce((v) => {
 		dispatch(setSearchItems(v));
 	}, 500);
 
+	const onClickMore = () => {
+		dispatch(setItemsLimit(limit + perLimitCount));
+		dispatch(setSearchItems(value));
+	};
 	useEffect(() => {
 		onChangeSearch(value);
 		if (isMounted.current === true) {
@@ -142,25 +153,29 @@ const PortfolioPage = () => {
 						>
 							<ProjectCard
 								imageAlt={item.title}
-								project={item.image}
+								project={item.images[0].src}
 								imageFigcaption={item.title}
 								projectId={item.id}
 							/>
 						</li>
 					))}
 				</ul>
-
-				<div
-					className="flex justify-center items-center mt-10"
-					data-aos="fade-up"
-					data-aos-duration="1000"
-					data-aos-delay="0"
-					data-aos-offset="100"
-				>
-					<Button className="text-dark hover:text-light dark:text-light duration-500 mb-[120px]">
-						{portfolio.portfolioPageButton}
-					</Button>
-				</div>
+				{limit < count && (
+					<div
+						className="flex justify-center items-center mt-10"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						data-aos-delay="0"
+						data-aos-offset="100"
+					>
+						<Button
+							onClick={onClickMore}
+							className="text-dark hover:text-light dark:text-light duration-500 mb-[120px]"
+						>
+							{portfolio.portfolioPageButton}
+						</Button>
+					</div>
+				)}
 			</div>
 		</>
 	);
