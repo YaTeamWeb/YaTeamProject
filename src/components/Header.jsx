@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
 import * as Scroll from 'react-scroll';
+import { scroller } from 'react-scroll';
 import DarkModeToggle from './DarkMode/DarkModeToggle.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectLang, selectLangItems } from '../store/slices/lang/selectors.js';
@@ -9,7 +10,7 @@ import globeGif from '../assets/images/MainPageImages/globe.gif';
 import globeSvg from '../assets/images/svg/globe.svg';
 import { SvgIcon } from './UI/SvgIcon';
 import { debounce } from '../utils/Limitors.jsx';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export const Header = ({ setDarkMode, darkMode }) => {
 	const dispatch = useDispatch();
@@ -17,7 +18,6 @@ export const Header = ({ setDarkMode, darkMode }) => {
 	const LinkAnchor = Scroll.Link;
 	const { header } = useSelector(selectLangItems);
 	const [globeActive, setGlobeActive] = useState(false);
-
 	const ref = useRef(null);
 	const onChangeLang = debounce(() => {
 		setGlobeActive(true);
@@ -28,6 +28,15 @@ export const Header = ({ setDarkMode, darkMode }) => {
 		dispatch(setLang(currLang));
 		localStorage.setItem('lang', currLang);
 	}, 500);
+	const navigate = useNavigate();
+	const scrollToAnchor = async (anchor) => {
+		await navigate('/');
+		await scroller.scrollTo(anchor, {
+			duration: 1000,
+			spy: true,
+			smooth: true,
+		});
+	};
 
 	function dropClick() {
 		ref.current.style.visibility =
@@ -35,6 +44,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 		ref.current.style.opacity =
 			ref.current.style.visibility === 'hidden' ? '0' : '1';
 	}
+
 	return (
 		<header
 			className={
@@ -54,8 +64,8 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
-					hashSpy={true}
 					duration={1000}
+					onClick={() => scrollToAnchor('hero')}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
@@ -67,8 +77,8 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
-					hashSpy={true}
 					duration={1000}
+					onClick={() => scrollToAnchor('about')}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
@@ -80,8 +90,8 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					activeClass={'text-primary'}
 					spy={true}
 					smooth={true}
-					hashSpy={true}
 					duration={1000}
+					onClick={() => scrollToAnchor('services')}
 					className={
 						'cursor-pointer ease-in duration-200 hover:text-primary  font-OpenSans font-bold text-base text-light'
 					}
@@ -110,17 +120,23 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					>
 						<NavLink
 							to="/"
-							className={({ isActive }) => (isActive ? 'bg-primary' : 'w-full')}
+							className={({ isActive }) =>
+								isActive ? 'bg-primary text-light' : 'w-full text-dark'
+							}
+							onClick={dropClick}
 						>
-							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans'}>
+							<p className={'py-[8px] pl-[15px] font-OpenSans'}>
 								{header[4].name}
 							</p>
 						</NavLink>
 						<NavLink
 							to="/portfolio"
-							className={({ isActive }) => (isActive ? 'bg-primary' : 'w-full')}
+							className={({ isActive }) =>
+								isActive ? 'bg-primary text-light' : 'w-full text-dark'
+							}
+							onClick={dropClick}
 						>
-							<p className={'text-dark py-[8px] pl-[15px] font-OpenSans'}>
+							<p className={'py-[8px] pl-[15px] font-OpenSans'}>
 								{header[5].name}
 							</p>
 						</NavLink>

@@ -4,19 +4,18 @@ import {
 	About,
 	Benefits,
 	Clients,
+	Contact,
+	Counts,
 	CTA,
 	Hero,
 	Portfolio,
 	Services,
-	Counts,
 	Team,
-	Contact,
-	Footer,
 } from '../components/index.jsx';
 
 const MainPage = () => {
 	return (
-		<>
+		<div id="Scroll">
 			<Hero />
 			<About />
 			<Clients />
@@ -27,8 +26,7 @@ const MainPage = () => {
 			<Counts />
 			<Team />
 			<Contact />
-			<Footer />
-		</>
+		</div>
 	);
 };
 
