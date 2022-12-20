@@ -122,6 +122,7 @@
                     "description": "Описание сайта-визитки"
                 }
             ],
+            "search": "Поиск",
             "categories": ["Все", "Интернет-Магазины", "Сайты-Визитки"],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
@@ -345,6 +346,7 @@
             ],
             "categories": ["All", "Online stores", "Business card sites"],
             "overlay": "Check out",
+            "search": "Search",
             "portfolioPageButton": "View more",
             "button": "View all projects"
         },
