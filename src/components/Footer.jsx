@@ -1,13 +1,25 @@
 import React from 'react';
 import logo from '../assets/images/MainPageImages/logo.png';
 import { SvgIcon } from './UI/SvgIcon';
-import * as Scroll from 'react-scroll';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../store/slices/lang/selectors.js';
+import { Link, useNavigate } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+import * as Scroll from 'react-scroll';
 
 export const Footer = () => {
-	const LinkAnchor = Scroll.Link;
 	const { footer } = useSelector(selectLangItems);
+	const LinkAnchor = Scroll.Link;
+	const navigate = useNavigate();
+	const scrollToAnchor = async (anchor) => {
+		await navigate('/');
+		await scroller.scrollTo(anchor, {
+			duration: 1000,
+			spy: true,
+			smooth: true,
+		});
+	};
+
 	return (
 		<footer className={'bg-dark'}>
 			<div className={'bg-gray-400 dark:bg-dark duration-300'}>
@@ -85,16 +97,15 @@ export const Footer = () => {
 						</li>
 					</ul>
 					<ul>
-						<li className={'mb-5 text-xl\t font-Raleway font-bold text-light'}>
+						<li className={'mb-5 text-xl font-Raleway font-bold text-light'}>
 							{footer.firstList.title}
 						</li>
 						<li className={'mb-5 text-light '}>
 							<LinkAnchor
 								to="hero"
-								activeClass={'text-primary'}
 								smooth={true}
-								hashSpy={true}
 								duration={1000}
+								onClick={() => scrollToAnchor('hero')}
 								className={
 									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
@@ -114,10 +125,9 @@ export const Footer = () => {
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<LinkAnchor
 								to="about"
-								activeClass={'text-primary'}
 								smooth={true}
-								hashSpy={true}
 								duration={1000}
+								onClick={() => scrollToAnchor('about')}
 								className={
 									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
@@ -137,10 +147,9 @@ export const Footer = () => {
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<LinkAnchor
 								to="services"
-								activeClass={'text-primary'}
 								smooth={true}
-								hashSpy={true}
 								duration={1000}
+								onClick={() => scrollToAnchor('services')}
 								className={
 									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
@@ -160,10 +169,9 @@ export const Footer = () => {
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<LinkAnchor
 								to="team"
-								activeClass={'text-primary'}
 								smooth={true}
-								hashSpy={true}
 								duration={1000}
+								onClick={() => scrollToAnchor('team')}
 								className={
 									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}
@@ -183,10 +191,9 @@ export const Footer = () => {
 						<li className={'font-Raleway font-bold text-light '}>
 							<LinkAnchor
 								to="contacts"
-								activeClass={'text-primary'}
 								smooth={true}
-								hashSpy={true}
 								duration={1000}
+								onClick={() => scrollToAnchor('contacts')}
 								className={
 									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary text-base text-light'
 								}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { Heading2, SupTitle, SvgIcon } from '../components/index.jsx';
 import { ProjectCard } from '../components/UI/ProjectCard.jsx';
@@ -25,6 +25,7 @@ const PortfolioPage = () => {
 	const currCategory = useSelector(selectProjectCategory);
 	const [open, setOpen] = useState(false);
 	const [value, setValue] = useState('');
+	const isMounted = useRef(true);
 	const onSetCategory = (id) => {
 		dispatch(setCurrentCategory(id));
 		dispatch(setCategoryItems(id));
@@ -36,6 +37,13 @@ const PortfolioPage = () => {
 
 	useEffect(() => {
 		onChangeSearch(value);
+		if (isMounted.current === true) {
+			window.scrollTo(0, 0);
+			isMounted.current = false;
+		}
+		return () => {
+			isMounted.current = true;
+		};
 	}, [value]);
 	return (
 		<>
@@ -60,7 +68,7 @@ const PortfolioPage = () => {
 				>
 					<div
 						className={classnames(
-							'absolute top-0  duration-1000 z-10',
+							'absolute top-0  duration-500 z-10',
 							open ? 'translate-x-0 left-0' : 'left-[50%] translate-x-[-50%]'
 						)}
 					>
@@ -92,8 +100,8 @@ const PortfolioPage = () => {
 						autoFocus={true}
 						className={`outline-none ${
 							open ? 'h-[42px] w-full relative ' : 'w-0 border-none invisible'
-						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 duration-1000 px-[40px]`}
-						placeholder={'Поиск'}
+						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 duration-500 px-[40px]`}
+						placeholder={portfolio.search}
 					/>
 					{value && (
 						<button
@@ -153,7 +161,6 @@ const PortfolioPage = () => {
 					</Button>
 				</div>
 			</div>
-			{/*<Footer />*/}
 		</>
 	);
 };

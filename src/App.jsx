@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { BackTop, Header } from './components/index.jsx';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BackTop, Footer, Header } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from './store/slices/theme/index.js';
@@ -42,7 +42,7 @@ function App() {
 		}
 	}, []);
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<GrowingCircleAnimation isDark={isDark} />
 			<main className="App subpixel-antialiased">
 				<Header
@@ -54,8 +54,9 @@ function App() {
 					<Route path="/portfolio" element={<PortfolioPage />} />
 				</Routes>
 			</main>
+			<Footer />
 			<BackTop className="fixed bottom-3 right-3" />
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
