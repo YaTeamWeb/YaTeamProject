@@ -125,7 +125,16 @@
             "categories": ["Все", "Интернет-Магазины", "Сайты-Визитки"],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
-            "button": "Посмотреть все проекты"
+            "button": "Посмотреть все проекты",
+            "projectInfoPage": [{
+                "projectInfo" : "О проекте",
+                "home": "Домой",
+                "category": "Категория",
+                "client": "Клиент",
+                "date": "Дата создания",
+                "link": "Ссылка",
+                "solution" : "Идеальное решение для вашего бизнеса"
+            }]
         },
         "counts": {
             "title": "Мы в цифрах",
@@ -346,7 +355,16 @@
             "categories": ["All", "Online stores", "Business card sites"],
             "overlay": "Check out",
             "portfolioPageButton": "View more",
-            "button": "View all projects"
+            "button": "View all projects",
+            "projectInfoPage": [{
+                "projectInfo" : "About project",
+                "home": "Home",
+                "category": "Category",
+                "client": "Client",
+                "date": "Сreation date",
+                "link": "Link",
+                "solution" : "The perfect solution for your business"
+            }]
         },
         "counts": {
             "title": "We are in numbers",

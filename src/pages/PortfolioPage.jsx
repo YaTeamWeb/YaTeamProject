@@ -136,6 +136,7 @@ const PortfolioPage = () => {
 								imageAlt={item.title}
 								project={item.image}
 								imageFigcaption={item.title}
+								projectId={item.id}
 							/>
 						</li>
 					))}
