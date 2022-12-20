@@ -27,17 +27,16 @@ export const ProjectCard = ({ imageAlt, project, imageFigcaption, projectId }) =
 						{portfolio.overlay}
 					</div>
 				</div>
-			</div>
-			<figcaption
-				className={
-					imageFigcaption === ''
-						? ''
-						: 'group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light'
-				}
-			>
-				{imageFigcaption}
-			</figcaption>
-		</figure>
+				<figcaption
+					className={
+						imageFigcaption === ''
+							? ''
+							: 'group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light'
+					}
+				>
+					{imageFigcaption}
+				</figcaption>
+			</figure>
 		</a>
 	);
 };

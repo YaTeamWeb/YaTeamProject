@@ -7,9 +7,12 @@ export const selectProjectItems = (state) => {
 			...el.translations.find((item) => item.lang === state.lang.language),
 			id: el.id,
 			languages: el.languages,
-			image: el.image,
+			images: el.images,
+			link: el.link,
 		};
 	});
 };
 
 export const selectProjectCategory = (state) => state.projects.currentCategory;
+export const selectItemsLimit = (state) => state.projects.limit;
+export const selectItemsCount = (state) => state.projects.count;
