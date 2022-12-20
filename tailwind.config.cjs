@@ -28,6 +28,9 @@ module.exports = {
         'projectOverlay': "rgba(0, 0, 0, 0.8)",
         'projectInfoPageHeader': "#EEEEEE",
       },
+      boxShadow: {
+        'projectInfo': '0px 0px 20px rgba(0, 0, 0, 0.15)',
+      },
       fontFamily: {
         "Raleway": [
             'Raleway',
