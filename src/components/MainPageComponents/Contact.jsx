@@ -12,14 +12,24 @@ export const Contact = () => {
 	const [show, setShow] = useState(false);
 
 	const ControlForm = (event) => {
-		const xmlHttp = new XMLHttpRequest();
-		xmlHttp.open('POST', 'http://localhost:5500/feedback', false);
-		xmlHttp.send(new FormData(event.target));
-		event.target.reset();
-		console.log(xmlHttp.status);
-		setShow(true);
-		setTimeout(() => setShow(false), 2000);
 		event.preventDefault();
+		const xmlHttp = new XMLHttpRequest();
+		xmlHttp.open('POST', 'http://34.159.168.235:5500/feedback', true);
+		xmlHttp.send(new FormData(event.target));
+		xmlHttp.onreadystatechange = function () {
+			if (xmlHttp.readyState === 4) {
+				if (xmlHttp.status === 200) {
+					setShow(true);
+					console.log('Succes');
+					console.log(xmlHttp.status);
+					setTimeout(() => setShow(false), 2000);
+					event.target.reset();
+				} else {
+					console.log(xmlHttp.status);
+					alert('Error');
+				}
+			}
+		};
 	};
 
 	return (
