@@ -6,11 +6,13 @@ import { Button } from '../UI/Button.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { Link } from 'react-router-dom';
-import { selectProjectItems } from '../../store/slices/projects/selectors.js';
+import project_1 from '../../assets/images/ProjectsImages/portfolio-1.png';
+import project_2 from '../../assets/images/ProjectsImages/portfolio-2.jpg';
+import project_3 from '../../assets/images/ProjectsImages/portfolio-3.png';
+import project_4 from '../../assets/images/ProjectsImages/portfolio-4.jpg';
 
 export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
-	const items = useSelector(selectProjectItems);
 	return (
 		<section className="container py-16" id="portfolio">
 			<div
@@ -25,62 +27,59 @@ export const Portfolio = () => {
 				</Heading2>
 			</div>
 			<ul className="grid gap-y-10 gap-x-5 grid-cols-12">
-				{items.map((item) => (
-					<li
-						key={item.id}
-						className="col-span-6"
-						data-aos="fade-up"
-						data-aos-duration="1000"
-						data-aos-delay="0"
-						data-aos-offset="400"
-					>
-						<ProjectCard
-							imageAlt={item.title}
-							project={item.image}
-							imageFigcaption={item.title}
-							projectId={item.id}
-						/>
-					</li>
-				))}
-				{/*<li*/}
-				{/*	className="col-span-6  "*/}
-				{/*	data-aos="fade-up"*/}
-				{/*	data-aos-duration="1000"*/}
-				{/*	data-aos-delay="0"*/}
-				{/*	data-aos-offset="400"*/}
-				{/*>*/}
-				{/*	<ProjectCard*/}
-				{/*		imageAlt="Сайт-портфолио"*/}
-				{/*		project={project_2}*/}
-				{/*		imageFigcaption={portfolio.cards[1].name}*/}
-				{/*	/>*/}
-				{/*</li>*/}
-				{/*<li*/}
-				{/*	className="col-span-6  "*/}
-				{/*	data-aos="fade-up"*/}
-				{/*	data-aos-duration="1000"*/}
-				{/*	data-aos-delay="0"*/}
-				{/*	data-aos-offset="400"*/}
-				{/*>*/}
-				{/*	<ProjectCard*/}
-				{/*		imageAlt="Сайт-портфолио"*/}
-				{/*		project={project_3}*/}
-				{/*		imageFigcaption={portfolio.cards[2].name}*/}
-				{/*	/>*/}
-				{/*</li>*/}
-				{/*<li*/}
-				{/*	className="col-span-6"*/}
-				{/*	data-aos="fade-up"*/}
-				{/*	data-aos-duration="1000"*/}
-				{/*	data-aos-delay="0"*/}
-				{/*	data-aos-offset="400"*/}
-				{/*>*/}
-				{/*	<ProjectCard*/}
-				{/*		imageAlt="Сайт-портфолио"*/}
-				{/*		project={project_4}*/}
-				{/*		imageFigcaption={portfolio.cards[3].name}*/}
-				{/*	/>*/}
-				{/*</li>*/}
+				<li
+					className="col-span-6  "
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					data-aos-delay="0"
+					data-aos-offset="400"
+				>
+					<ProjectCard
+						imageAlt="Сайт-портфолио"
+						project={project_1}
+						imageFigcaption={portfolio.cards[0].title}
+					/>
+				</li>
+
+				<li
+					className="col-span-6  "
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					data-aos-delay="0"
+					data-aos-offset="400"
+				>
+					<ProjectCard
+						imageAlt="Сайт-портфолио"
+						project={project_2}
+						imageFigcaption={portfolio.cards[1].title}
+					/>
+				</li>
+				<li
+					className="col-span-6  "
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					data-aos-delay="0"
+					data-aos-offset="400"
+				>
+					<ProjectCard
+						imageAlt="Сайт-портфолио"
+						project={project_3}
+						imageFigcaption={portfolio.cards[2].title}
+					/>
+				</li>
+				<li
+					className="col-span-6"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					data-aos-delay="0"
+					data-aos-offset="400"
+				>
+					<ProjectCard
+						imageAlt="Сайт-портфолио"
+						project={project_4}
+						imageFigcaption={portfolio.cards[3].title}
+					/>
+				</li>
 			</ul>
 			<div
 				className="flex justify-center items-center mt-10"

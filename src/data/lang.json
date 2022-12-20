@@ -96,46 +96,59 @@
         "portfolio": {
             "suptitle": "Портфолио",
             "title": "Примеры наших работ",
+            "projectInfo" : "О проекте",
+            "home": "Домой",
+            "category": "Категория",
+            "client": "Клиент",
+            "date": "Дата создания",
+            "link": "Ссылка",
             "cards": [
                 {
                     "category": "Интернет-магазины",
                     "title": "Интернет-магазин книжек",
                     "authors": ["Ренат Губайдуллин", "Никитин Дмитрий", "Гарифуллин Инсаф", "Степан Мельников"],
-                    "description": "Описание интернет-магазина"
+                    "description": "Описание интернет-магазина",
+                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "client": "Яндекс"
                 },
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Никитина Дмитрия",
                     "authors": ["Никитин Дмитрий"],
-                    "description": "Описание сайта-визитки"
+                    "description": "Описание сайта-визитки",
+                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "client": "Персональный проект"
                 },
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Гарифуллина Инсафа",
                     "authors": ["Гарифуллин Инсаф"],
-                    "description": "Описание сайта-визитки"
+                    "description": "Описание сайта-визитки",
+                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "client": "Персональный проект"
                 },
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Рената Губайдуллина",
                     "authors": ["Ренат Губайдуллин"],
-                    "description": "Описание сайта-визитки"
+                    "description": "Описание сайта-визитки",
+                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "client": "Персональный проект"
+                },
+                {
+                    "category": "Сайты-визитки",
+                    "title": "Сайт-визитка Степана Мельникова",
+                    "authors": ["Степан Мельников"],
+                    "description": "Описание сайта-визитки",
+                    "solution" : "Идеальное решение для вас",
+                    "client": "Персональный проект"
                 }
             ],
             "search": "Поиск",
             "categories": ["Все", "Интернет-Магазины", "Сайты-Визитки"],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
-            "button": "Посмотреть все проекты",
-            "projectInfoPage": [{
-                "projectInfo" : "О проекте",
-                "home": "Домой",
-                "category": "Категория",
-                "client": "Клиент",
-                "date": "Дата создания",
-                "link": "Ссылка",
-                "solution" : "Идеальное решение для вашего бизнеса"
-            }]
+            "button": "Посмотреть все проекты"
         },
         "counts": {
             "title": "Мы в цифрах",
@@ -332,41 +345,55 @@
                     "category": "Online stores",
                     "title": "Online book store",
                     "authors": ["Renat Gubaidullin", "Nikitin Dmitriy", "Garifullin Insaf", "Stepan Melnikov"],
-                    "description": "Description of the online store"
+                    "description": "Description of the online store",
+                    "solution" : "The perfect solution for your business",
+                    "client": "Yandex"
                 },
                 {
                     "category": "Business card sites",
                     "title": "Dmitriy Nikitin's business card website",
                     "authors": ["Nikitin Dmitriy"],
-                    "description": "Description of the business card site"
+                    "description": "Description of the business card site",
+                    "solution" : "The perfect solution for your business",
+                    "client": "Personal project"
                 },
                 {
                     "category": "Business card sites",
                     "title": "Garifullin Insaf's business card website",
                     "authors": ["Garifullin Insaf"],
-                    "description": "Description of the business card site"
+                    "description": "Description of the business card site",
+                    "solution" : "The perfect solution for your business",
+                    "client": "Personal project"
                 },
                 {
                     "category": "Business card sites",
                     "title": "Renat Gubaidullin's business card website",
                     "authors": ["Renat Gubaidullin"],
-                    "description": "Description of the business card site"
+                    "description": "Description of the business card site",
+                    "solution" : "The perfect solution for your business",
+                    "client": "Personal project"
+                },
+                {
+                    "category": "Business card sites",
+                    "title": "Website-business card of Stepan Melnikov",
+                    "authors": ["Stepan Melnikov"],
+                    "description": "Description of the business card site its the best",
+                    "solution" : "The perfect solution for you",
+                    "client": "Personal project"
                 }
+
             ],
             "categories": ["All", "Online stores", "Business card sites"],
             "overlay": "Check out",
             "search": "Search",
             "portfolioPageButton": "View more",
             "button": "View all projects",
-            "projectInfoPage": [{
-                "projectInfo" : "About project",
-                "home": "Home",
-                "category": "Category",
-                "client": "Client",
-                "date": "Сreation date",
-                "link": "Link",
-                "solution" : "The perfect solution for your business"
-            }]
+            "projectInfo" : "About project",
+            "home": "Home",
+            "category": "Category",
+            "client": "Client",
+            "date": "Сreation date",
+            "link": "Link"
         },
         "counts": {
             "title": "We are in numbers",
