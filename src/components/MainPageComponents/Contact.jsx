@@ -160,7 +160,7 @@ export const Contact = () => {
 						<input
 							type="submit"
 							value="Отправить Сообщение"
-							className="w-[231px] px-[25px] py-[10px] rounded bg-primary hover:bg-button-hover duration-500 cursor-pointer"
+							className="w-[231px] px-[25px] py-[10px] rounded bg-primary hover:bg-hover duration-500 cursor-pointer"
 						/>
 					</div>
 				</form>
