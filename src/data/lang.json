@@ -5,6 +5,8 @@
             {"name": "Домой"},
             {"name": "О нас"},
             {"name": "Сервисы"},
+            {"name": "Команда"},
+            {"name": "Контакты"},
             {"name": "Страницы"},
             {"name": "Главная"},
             {"name": "Проекты"}
@@ -249,6 +251,8 @@
             {"name": "Home"},
             {"name": "About us"},
             {"name": "Services"},
+            {"name": "Team"},
+            {"name": "Contacts"},
             {"name": "Pages"},
             {"name": "Main"},
             {"name": "Projects"}

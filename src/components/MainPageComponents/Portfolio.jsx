@@ -37,6 +37,7 @@ export const Portfolio = () => {
 					<ProjectCard
 						imageAlt="Сайт-портфолио"
 						project={project_1}
+						projectId={1}
 						imageFigcaption={portfolio.cards[0].title}
 					/>
 				</li>
@@ -51,6 +52,7 @@ export const Portfolio = () => {
 					<ProjectCard
 						imageAlt="Сайт-портфолио"
 						project={project_2}
+						projectId={2}
 						imageFigcaption={portfolio.cards[1].title}
 					/>
 				</li>
@@ -63,6 +65,7 @@ export const Portfolio = () => {
 				>
 					<ProjectCard
 						imageAlt="Сайт-портфолио"
+						projectId={3}
 						project={project_3}
 						imageFigcaption={portfolio.cards[2].title}
 					/>
@@ -77,6 +80,7 @@ export const Portfolio = () => {
 					<ProjectCard
 						imageAlt="Сайт-портфолио"
 						project={project_4}
+						projectId={4}
 						imageFigcaption={portfolio.cards[3].title}
 					/>
 				</li>
