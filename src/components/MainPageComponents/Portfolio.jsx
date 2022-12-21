@@ -14,7 +14,7 @@ import project_4 from '../../assets/images/ProjectsImages/portfolio-4.jpg';
 export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
 	return (
-		<section className="container py-16" id="portfolio">
+		<section className="container py-16 px-[30px]" id="portfolio">
 			<div
 				data-aos="fade-up"
 				data-aos-duration="1000"

@@ -14,7 +14,7 @@ export const ProjectCard = ({
 	return (
 		<Link to={'/portfolio/' + projectId}>
 			<figure className="group flex justify-center flex-col items-center">
-				<div className="group p-5 w-[590px] h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
+				<div className="group p-5 w-[315px] lg:w-[425px] xl:w-[590px] h-[240px] lg:h-[290px] xl:h-[400px] border rounded-3xl border-gray-100 hover:border-primary ease-linear duration-300 cursor-pointer">
 					<div className={'relative rounded h-full w-full'}>
 						<LazyLoadImage
 							className="rounded-xl object-cover w-full h-full"
@@ -38,7 +38,7 @@ export const ProjectCard = ({
 					className={
 						imageFigcaption === ''
 							? ''
-							: 'group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light'
+							: 'group-hover:text-primary ease-linear duration-300 font-semibold text-2xl mt-8 dark:text-light text-center'
 					}
 				>
 					{imageFigcaption}

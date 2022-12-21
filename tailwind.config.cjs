@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'md': '990px',
+      },
       backgroundImage: {
         'hero': "url('/src/assets/images/MainPageImages/hero.png')",
         'cta': "linear-gradient(180deg, rgba(2, 2, 2, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/src/assets/images/MainPageImages/cta.jpg')",

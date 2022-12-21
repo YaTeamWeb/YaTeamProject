@@ -29,7 +29,7 @@ export const Clients = () => {
 
 	return (
 		<section
-			className="container py-16"
+			className="container py-16 px-[30px]"
 			style={{
 				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
