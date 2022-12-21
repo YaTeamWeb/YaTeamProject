@@ -10,7 +10,7 @@ import globeGif from '../assets/images/MainPageImages/globe.gif';
 import globeSvg from '../assets/images/svg/globe.svg';
 import { SvgIcon } from './UI/SvgIcon';
 import { debounce } from '../utils/Limitors.jsx';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 export const Header = ({ setDarkMode, darkMode }) => {
 	const dispatch = useDispatch();
@@ -38,6 +38,8 @@ export const Header = ({ setDarkMode, darkMode }) => {
 		});
 	};
 
+	const { pathname } = useLocation();
+
 	function dropClick() {
 		ref.current.style.visibility =
 			ref.current.style.visibility === 'hidden' ? 'visible' : 'hidden';
@@ -61,7 +63,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 			>
 				<LinkAnchor
 					to="hero"
-					activeClass={'text-primary'}
+					activeClass={pathname === '/' ? 'text-primary' : ''}
 					spy={true}
 					smooth={true}
 					duration={1000}
@@ -74,7 +76,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				</LinkAnchor>
 				<LinkAnchor
 					to="about"
-					activeClass={'text-primary'}
+					activeClass={pathname === '/' ? 'text-primary' : ''}
 					spy={true}
 					smooth={true}
 					duration={1000}
@@ -87,7 +89,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				</LinkAnchor>
 				<LinkAnchor
 					to="services"
-					activeClass={'text-primary'}
+					activeClass={pathname === '/' ? 'text-primary' : ''}
 					spy={true}
 					smooth={true}
 					duration={1000}
@@ -100,7 +102,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				</LinkAnchor>
 				<LinkAnchor
 					to="team"
-					activeClass={'text-primary'}
+					activeClass={pathname === '/' ? 'text-primary' : ''}
 					spy={true}
 					smooth={true}
 					duration={1000}
@@ -113,7 +115,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				</LinkAnchor>
 				<LinkAnchor
 					to="contacts"
-					activeClass={'text-primary'}
+					activeClass={pathname === '/' ? 'text-primary' : ''}
 					spy={true}
 					smooth={true}
 					duration={1000}
