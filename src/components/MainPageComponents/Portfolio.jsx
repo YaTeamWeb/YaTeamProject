@@ -26,9 +26,9 @@ export const Portfolio = () => {
 					{portfolio.title}
 				</Heading2>
 			</div>
-			<ul className="grid gap-y-10 gap-x-5 grid-cols-12">
+			<ul className="grid gap-y-10 gap-x-5 grid-cols-12 ">
 				<li
-					className="col-span-6  "
+					className="sm:col-span-6  xs:col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -43,7 +43,7 @@ export const Portfolio = () => {
 				</li>
 
 				<li
-					className="col-span-6  "
+					className="sm:col-span-6  xs:col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -57,7 +57,7 @@ export const Portfolio = () => {
 					/>
 				</li>
 				<li
-					className="col-span-6  "
+					className="sm:col-span-6  xs:col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -71,7 +71,7 @@ export const Portfolio = () => {
 					/>
 				</li>
 				<li
-					className="col-span-6"
+					className="sm:col-span-6  xs:col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"

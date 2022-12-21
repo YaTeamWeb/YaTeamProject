@@ -37,8 +37,7 @@ export const Counts = () => {
 					src={notebook}
 					alt={'Ноутбук'}
 					effect={'blur'}
-					height={520}
-					className="object-cover w-[650px] h-[450px] lg:w-[870px] lg:h-[520px] xl:w-[397px] xl:h-[520px]"
+					className="object-cover lg:w-[650px] lg:h-[520px] xs:w-full xs:max-h-[520px] md:max-h-[450px] xs:max-h-[300px]"
 				/>
 			</div>
 			<div
@@ -47,109 +46,107 @@ export const Counts = () => {
 				data-aos-delay="0"
 				data-aos-offset="350"
 			>
-			<div
-				className="bg-transparent w-[650px] h-[342px] lg:w-[870px] lg:h-[320px] xl:w-[772px] xl:h-[339px]"
-			>
-				<Heading2 className="mb-[15px] dark:text-light duration-500">
-					{counts.title}
-				</Heading2>
-				<Body className="mb-[15px] dark:text-light duration-500">
-					{counts.description}
-				</Body>
-				<div className="grid grid-rows-2 grid-cols-2 gap-x-[30px] gap-y-[16px] w-full h-[219px]">
-					<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
-						<div className="w-51px h-51px">
-							<SvgIcon className="fill-primary" name={'smile'} size={51} />
+				<div className="bg-transparent ">
+					<Heading2 className="mb-[15px]  dark:text-light duration-500">
+						{counts.title}
+					</Heading2>
+					<Body className="mb-[15px] dark:text-light duration-500">
+						{counts.description}
+					</Body>
+					<div className="grid xs:grid-rows-4 xs:h-full  sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full h-[219px]">
+						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+							<div className="">
+								<SvgIcon className="fill-primary" name={'smile'} size={51} />
+							</div>
+							<div>
+								<span
+									data-purecounter-duration="2.5"
+									data-purecounter-end="65"
+									className='purecounter block font-bold text-6xl font-["Open_Sans"] h-full mb-[10px] dark:text-light duration-500'
+								>
+									0
+								</span>
+								<Body2>
+									{counts.items[0].textFirst}{' '}
+									<span className="font-semibold text-dark dark:text-light duration-500">
+										{counts.items[0].keywords}
+									</span>{' '}
+									{counts.items[0].textSecond}
+								</Body2>
+							</div>
 						</div>
-						<div className="">
-							<span
-								data-purecounter-duration="2.5"
-								data-purecounter-end="65"
-								className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'
-							>
-								0
-							</span>
-							<Body2>
-								{counts.items[0].textFirst}{' '}
-								<span className="font-semibold text-dark dark:text-light duration-500">
-									{counts.items[0].keywords}
-								</span>{' '}
-								{counts.items[0].textSecond}
-							</Body2>
-						</div>
-					</div>
 
-					<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
-						<div className="w-51px h-51px">
-							<SvgIcon className="fill-primary" name={'projects'} size={50} />
+						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+							<div className="w-51px h-51px">
+								<SvgIcon className="fill-primary" name={'projects'} size={50} />
+							</div>
+							<div className="">
+								<span
+									data-purecounter-duration="3"
+									data-purecounter-end="85"
+									className='purecounter block font-bold text-6xl font-["Open_Sans"] h-full mb-[10px] dark:text-light duration-500'
+								>
+									0
+								</span>
+								<Body2>
+									{counts.items[1].textFirst}{' '}
+									<span className="font-semibold text-dark dark:text-light duration-500">
+										{counts.items[1].keywords}
+									</span>{' '}
+									{counts.items[1].textSecond}
+								</Body2>
+							</div>
 						</div>
-						<div className="">
-							<span
-								data-purecounter-duration="3"
-								data-purecounter-end="85"
-								className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'
-							>
-								0
-							</span>
-							<Body2>
-								{counts.items[1].textFirst}{' '}
-								<span className="font-semibold text-dark dark:text-light duration-500">
-									{counts.items[1].keywords}
-								</span>{' '}
-								{counts.items[1].textSecond}
-							</Body2>
-						</div>
-					</div>
 
-					<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
-						<div className="w-51px h-51px">
-							<SvgIcon
-								className="fill-primary"
-								name={'calendary'}
-								size={51}
-							/>
+						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+							<div className="w-51px h-51px">
+								<SvgIcon
+									className="fill-primary"
+									name={'calendary'}
+									size={51}
+								/>
+							</div>
+							<div className="">
+								<span
+									data-purecounter-duration="1.5"
+									data-purecounter-end="10"
+									className='purecounter block font-bold text-6xl font-["Open_Sans"] h-full mb-[10px] dark:text-light duration-500'
+								>
+									0
+								</span>
+								<Body2>
+									{counts.items[2].textFirst}{' '}
+									<span className="font-semibold text-dark dark:text-light duration-500">
+										{counts.items[2].keywords}
+									</span>{' '}
+									{counts.items[2].textSecond}
+								</Body2>
+							</div>
 						</div>
-						<div className="">
-							<span
-								data-purecounter-duration="1.5"
-								data-purecounter-end="10"
-								className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'
-							>
-								0
-							</span>
-							<Body2>
-								{counts.items[2].textFirst}{' '}
-								<span className="font-semibold text-dark dark:text-light duration-500">
-									{counts.items[2].keywords}
-								</span>{' '}
-								{counts.items[2].textSecond}
-							</Body2>
-						</div>
-					</div>
 
-					<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
-						<div className="w-51px h-51px">
-							<SvgIcon className="fill-primary" name={'medal'} size={51} />
-						</div>
-						<div className="">
-							<span
-								data-purecounter-duration="2"
-								data-purecounter-end="20"
-								className='purecounter font-bold text-6xl font-["Open_Sans"] h-[54px] mb-[10px] dark:text-light duration-500'
-							>
-								0
-							</span>
-							<Body2>
-								{counts.items[3].textFirst}{' '}
-								<span className="font-semibold text-dark dark:text-light duration-500">
-									{counts.items[3].keywords}
-								</span>{' '}
-								{counts.items[3].textSecond}
-							</Body2>
+						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+							<div className="w-51px h-51px">
+								<SvgIcon className="fill-primary" name={'medal'} size={51} />
+							</div>
+							<div className="">
+								<span
+									data-purecounter-duration="2"
+									data-purecounter-end="20"
+									className='purecounter block font-bold text-6xl font-["Open_Sans"] xs:h-full mb-[10px] dark:text-light duration-500'
+								>
+									0
+								</span>
+								<Body2>
+									{counts.items[3].textFirst}{' '}
+									<span className="font-semibold text-dark dark:text-light duration-500">
+										{counts.items[3].keywords}
+									</span>{' '}
+									{counts.items[3].textSecond}
+								</Body2>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 	);

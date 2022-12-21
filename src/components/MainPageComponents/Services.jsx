@@ -57,10 +57,9 @@ export const Services = () => {
 			onMouseLeave={theme ? clearNearBy : null}
 			onMouseMove={theme ? onMouseMove : null}
 			id="services"
-			className="container py-16"
 			data-aos="fade-up"
 			data-aos-delay="500"
-			className='container py-16 px-[30px]'
+			className="container py-16 px-[30px]"
 		>
 			<div data-aos="fade-up" data-aos-delay="0" data-aos-offset="450">
 				<SupTitle>{services.suptitle}</SupTitle>
