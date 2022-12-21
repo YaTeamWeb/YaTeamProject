@@ -56,9 +56,10 @@ const PortfolioPage = () => {
 			isMounted.current = true;
 		};
 	}, [value]);
+
 	return (
 		<>
-			<div className="container pt-[124px] overflow-hidden">
+			<div className="container py-[124px] overflow-hidden">
 				<div
 					data-aos="fade-up"
 					data-aos-duration="1000"
@@ -160,6 +161,11 @@ const PortfolioPage = () => {
 						</li>
 					))}
 				</ul>
+				{count === 0 && (
+					<h3 className="text-dark dark:text-light duration-500 text-center text-6xl">
+						Ничего не найдено
+					</h3>
+				)}
 				{limit < count && (
 					<div
 						className="flex justify-center items-center mt-10"

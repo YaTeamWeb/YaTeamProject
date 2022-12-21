@@ -27,13 +27,13 @@ const ProjectInfoPage = () => {
 							'absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center'
 						}
 					>
-						<h1 className={'text-6xl dark:text-light mb-2.5'}>
+						<h1 className={'text-6xl dark:text-light mb-2.5 duration-500'}>
 							Ничего не найдено 😞
 						</h1>
 						<Link
 							to={'/'}
 							className={
-								'text-3xl dark:text-light hover:text-primary duration-300'
+								'text-3xl dark:text-light hover:text-primary dark:hover:text-primary duration-500'
 							}
 						>
 							Вернуться
