@@ -10,6 +10,7 @@ import 'swiper/css/autoplay';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../store/slices/lang/selectors.js';
 import { selectProjectItem } from '../store/slices/projects/selectors.js';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ProjectInfoPage = () => {
 	const { portfolio } = useSelector(selectLangItems);
@@ -83,16 +84,18 @@ const ProjectInfoPage = () => {
 					>
 						{item.images.map((image, id) => (
 							<SwiperSlide key={id}>
-								<img
-									className="w-[650px] object-cover"
+								<LazyLoadImage
+									className="w-[650px] h-[450px] object-cover"
 									src={image.src}
+									height={450}
+									width={650}
 									alt="Проект"
 								/>
 							</SwiperSlide>
 						))}
 					</Swiper>
 				</div>
-				<div className="w-[357px]">
+				<div className="w-fit">
 					<div className="infoBlock pt-5 px-[15px] pb-10 shadow-projectInfo mb-[25px]">
 						<h2 className="text-2xl font-semibold font-Raleway text-gray-500 mb-5 dark:text-light duration-500">
 							{item.title}
@@ -127,10 +130,10 @@ const ProjectInfoPage = () => {
 							</p>
 						</div>
 					</div>
-					<h3 className="text-2xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
+					<h3 className="w-[357px] text-2xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
 						{item.solution}
 					</h3>
-					<p className="text-base font-normal font-Raleway text-gray-500 dark:text-light duration-500">
+					<p className="w-[357px] text-base font-normal font-Raleway text-gray-500 dark:text-light duration-500">
 						{item.description}
 					</p>
 				</div>
