@@ -48,15 +48,16 @@ export const Header = ({ setDarkMode, darkMode }) => {
 	return (
 		<header
 			className={
-				'fixed z-50 top-0 left-0 flex items-center justify-between w-full bg-black text-light px-7 h-16'
+				'fixed z-50 top-0 left-0 right-0 w-full px-7 bg-black'
 			}
 		>
+			<div className='flex items-center justify-between w-full h-16 text-light'>
 			<a className="block" href="/">
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>
 			<nav
 				className={
-					'max-w-[1200px] flex gap-[80px] justify-between items-center'
+					'max-w-[1200px] flex justify-between items-center min-w-[600px] lg:min-w-[650px] xl:min-w-[800px]'
 				}
 			>
 				<LinkAnchor
@@ -178,6 +179,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						<img className={'w-[50px] h-[50px]'} src={globeSvg} alt="Глобус" />
 					)}
 				</button>
+			</div>
 			</div>
 		</header>
 	);

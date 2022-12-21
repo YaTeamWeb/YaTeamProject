@@ -22,7 +22,7 @@ export const Footer = () => {
 
 	return (
 		<footer className={'bg-dark'}>
-			<div className={'bg-gray-400 dark:bg-dark duration-300'}>
+			<div className={'px-[30px] bg-gray-400 dark:bg-dark duration-300'}>
 				<div className={'container py-16 relative flex justify-between '}>
 					<ul className={'w-[255px]'}>
 						<li className={'mb-7'}>

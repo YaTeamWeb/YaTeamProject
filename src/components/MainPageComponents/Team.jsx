@@ -29,7 +29,7 @@ export const Team = () => {
 	return (
 		<section
 			id="team"
-			className="container py-16"
+			className="container py-16 px-[30px]"
 			data-aos="fade-up"
 			data-aos-delay="500"
 			onMouseLeave={clearNearBy}
@@ -41,7 +41,8 @@ export const Team = () => {
 				</Heading2>
 			</div>
 
-			<ul className="text-center gap-5 grid grid-cols-4">
+			<div className='w-full flex justify-start'>
+			<ul className="text-center gap-5 grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
 				<TeamItem
 					clearNearBy={clearNearBy}
 					id={'1'}
@@ -95,6 +96,7 @@ export const Team = () => {
 					dataAosOffset="0"
 				/>
 			</ul>
+			</div>
 		</section>
 	);
 };

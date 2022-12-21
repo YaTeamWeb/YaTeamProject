@@ -12,13 +12,13 @@ export const About = () => {
 
 	return (
 		<div
-			className="py-24 flex gap-30 justify-between container"
+			className="py-24 px-[60px] grid grid-cols-2 gap-[30px] container"
 			id="about"
 			data-aos="fade-up"
 			data-aos-delay="0"
 			data-aos-offset="400"
 		>
-			<div className="max-w-[650px]" data-aos="fade-right" data-aos-delay="0">
+			<div className="w-full" data-aos="fade-right" data-aos-delay="0">
 				<Heading2 className="mb-4 leading-10 dark:text-light duration-500">
 					{about.title}
 				</Heading2>
@@ -51,15 +51,18 @@ export const About = () => {
 					{about.descriptions[0].text}
 				</Body>
 			</div>
+			<div
+			data-aos="fade-left"
+			data-aos-delay="0"
+			className='w-[350px] lg:w-[420px] xl:w-[565px]'
+			>
 			<LazyLoadImage
 				src={aboutMainPage}
 				alt="Команда"
-				data-aos="fade-left"
-				data-aos-delay="0"
 				effect="blur"
-				width={565}
-				height={832}
+				className='w-[350px] lg:w-[420px] xl:w-[565px] object-cover'
 			/>
+			</div>
 		</div>
 	);
 };
