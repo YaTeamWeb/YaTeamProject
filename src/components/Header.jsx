@@ -141,7 +141,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 
 					<div
 						style={{ visibility: 'hidden', opacity: '0' }}
-						className="DropDownMenu absolute -left-[5px] top-[30px] w-[164px] bg-light flex flex-col gap-0 duration-500"
+						className="DropDownMenu absolute -left-[5px] top-[30px] w-[164px] bg-light flex flex-col gap-0 duration-500 border border-dark"
 						ref={ref}
 					>
 						<NavLink
