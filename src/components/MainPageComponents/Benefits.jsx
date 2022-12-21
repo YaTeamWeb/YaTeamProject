@@ -13,7 +13,7 @@ export const Benefits = () => {
 	const { benefits } = useSelector(selectLangItems);
 
 	return (
-		<section className="container py-16">
+		<section className="container py-16 px-[30px]">
 			<div data-aos="fade-up" data-aos-delay="0">
 				<SupTitle>{benefits.suptitle}</SupTitle>
 				<Heading2 className="mb-10 dark:text-light duration-500">
@@ -26,14 +26,18 @@ export const Benefits = () => {
 				data-aos-delay="0"
 				data-aos-offset="350"
 			>
-				<LazyLoadImage
-					src={work}
-					alt="Печатание на клавиатуре"
+				<div className='w-[350px] lg:w-[415px] xl:w-[775px] h-[546px]'
 					data-aos="fade-right"
 					data-aos-delay="10"
 					data-aos-offset="350"
+				>
+				<LazyLoadImage
+					src={work}
+					alt="Печатание на клавиатуре"
 					effect={'blur'}
+					className='w-[350px] lg:w-[415px] xl:w-[775px] h-[546px] object-cover'
 				/>
+				</div>
 				<ul className="ml-7 max-w-[394px]">
 					<li
 						className="flex mb-10"

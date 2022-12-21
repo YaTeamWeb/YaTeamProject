@@ -34,7 +34,7 @@ export const Contact = () => {
 
 	return (
 		<section
-			className="container"
+			className="container py-16 px-[30px]"
 			data-aos="fade-up"
 			data-aos-delay="0"
 			id="contacts"

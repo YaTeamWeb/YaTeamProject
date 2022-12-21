@@ -124,7 +124,12 @@ const ProjectInfoPage = () => {
 								<span className="font-semibold mr-[5px]">
 									{portfolio.link + ':'}
 								</span>
-								<a href="#" className="text-primary">
+								<a
+                                    href={item.link}
+                                    target={'_blank'}
+                                    rel="noreferrer"
+                                    className="text-primary"
+                                >
 									{item.link}
 								</a>
 							</p>
