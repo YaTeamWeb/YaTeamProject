@@ -55,7 +55,7 @@ export const TeamItem = ({
 						onMouseEnter={clearNearBy}
 						id={id}
 						width={291}
-						height={'100%'}
+						height={406}
 						effect={'blur'}
 					/>
 					<div
