@@ -53,7 +53,7 @@ export const Counts = () => {
 					<Body className="mb-[15px] dark:text-light duration-500">
 						{counts.description}
 					</Body>
-					<div className="grid grid-rows-4 h-full  sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full">
+					<div className="grid grid-rows-4 h-full sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full">
 						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
 							<div className="">
 								<SvgIcon className="fill-primary" name={'smile'} size={51} />
