@@ -48,15 +48,18 @@ export const Contact = () => {
 				</Heading2>
 			</div>
 
+			<div
+			data-aos="zoom-in"
+			data-aos-delay="0"
+			data-aos-offset="300"
+			>
 			<iframe
 				src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b8ce5caeefc0863f905a7c7db4c4cea3a8d9e37252825f96627dd39152296e5&amp;source=constructor"
 				width="100%"
 				height="400"
 				frameBorder="0"
-				data-aos="zoom-in"
-				data-aos-delay="0"
-				data-aos-offset="500"
 			></iframe>
+			</div>
 
 			<div className="flex sm:flex-row flex-col sm:pl-[10px] p-0  sm:pt-5 sm:pr-5 sm:pb-5 gap-10">
 				<ul
@@ -124,7 +127,7 @@ export const Contact = () => {
 							name="name"
 							placeholder="Ваше имя"
 							required
-							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-[12px] xs:text-[14px] font-OpenSans placeholder:text-gray-300
 							border-solid border-2 border-border-input"
 						></input>
 						<input
@@ -132,7 +135,7 @@ export const Contact = () => {
 							name="email"
 							required
 							placeholder="Ваш email"
-							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-[12px] xs:text-[14px] font-OpenSans placeholder:text-gray-300
 							border-solid border-2 border-border-input"
 						></input>
 						<input
@@ -140,14 +143,14 @@ export const Contact = () => {
 							name="theme"
 							required
 							placeholder="Тема"
-							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans  placeholder:text-gray-300 col-span-2
+							className="h-10 p-[10px] rounded-[5px] outline-none font-normal text-[12px] xs:text-[14px] font-OpenSans  placeholder:text-gray-300 col-span-2
 							border-solid border-2 border-border-input"
 						></input>
 						<textarea
 							name="message"
 							placeholder="Сообщение"
 							required
-							className="h-[137px] resize-none p-[10px] rounded-[5px] outline-none font-normal text-sm font-OpenSans placeholder:text-gray-300 col-span-2
+							className="h-[137px] resize-none p-[10px] rounded-[5px] outline-none font-normal text-[12px] xs:text-[14px] font-OpenSans placeholder:text-gray-300 col-span-2
 							border-solid border-2 border-border-input"
 						></textarea>
 					</div>
@@ -160,7 +163,7 @@ export const Contact = () => {
 						<input
 							type="submit"
 							value="Отправить Сообщение"
-							className="w-[231px] px-[25px] py-[10px] rounded bg-primary hover:bg-hover duration-500 cursor-pointer"
+							className="w-[231px] px-[25px] py-[10px] rounded-[4px] bg-primary  text-[14px] xs:text-[16px] hover:bg-hover duration-500 cursor-pointer"
 						/>
 					</div>
 				</form>
