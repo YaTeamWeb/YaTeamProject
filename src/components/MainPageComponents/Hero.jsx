@@ -35,7 +35,7 @@ export const Hero = () => {
 							}
 						>
 							<SvgIcon className="fill-primary" name={'speed'} size={40} />
-							<p className="mm:text-[14px] xs:text-[16px] md:text-xl ease-in duration-150 cursor-pointer hover:text-primary">
+							<p className="mm:text-[14px] xs:text-[16px] md:text-[18px] ease-in duration-150 cursor-pointer hover:text-primary">
 								{hero.cards[0].name}
 							</p>
 						</li>
@@ -45,7 +45,7 @@ export const Hero = () => {
 							}
 						>
 							<SvgIcon className="fill-primary" name={'medal'} size={40} />
-							<p className="mm:text-[14px] xs:text-[16px] md:text-xl ease-in duration-150 cursor-pointer hover:text-primary">
+							<p className="mm:text-[14px] xs:text-[16px] md:text-[18px] ease-in duration-150 cursor-pointer hover:text-primary">
 								{hero.cards[1].name}
 							</p>
 						</li>
@@ -55,7 +55,7 @@ export const Hero = () => {
 							}
 						>
 							<SvgIcon className="fill-primary" name={'design'} size={40} />
-							<p className="mm:text-[14px] xs:text-[16px] md:text-xl ease-in duration-150 cursor-pointer hover:text-primary">
+							<p className="mm:text-[14px] xs:text-[16px] md:text-[18px] ease-in duration-150 cursor-pointer hover:text-primary">
 								{hero.cards[2].name}
 							</p>
 						</li>

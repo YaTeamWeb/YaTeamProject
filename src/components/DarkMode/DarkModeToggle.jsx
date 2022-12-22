@@ -38,12 +38,12 @@ const DarkModeToggle = ({ isDark, onClickMethod }) => (
 		type="button"
 		aria-label="Dark Mode Toggle"
 		onClick={(event) => onClickWrapper(onClickMethod, !isDark, event)}
-		className={'mr-2.5 relative w-8 h-8 bg-primary rounded-full'}
+		className={'mr-2.5 relative w-[32px] h-[32px] bg-primary rounded-full'}
 	>
 		<div
 			className={classnames(
 				isDark ? 'scale-100' : 'w-6 h-6 scale-0',
-				'absolute w-6 h-6 left-2.5 bottom-2.5 rounded-full z-50 bg-dark ease-in-out duration-300'
+				'absolute w-[24px] h-[24px] left-[10px] bottom-[10px] rounded-full z-50 bg-dark ease-in-out duration-300'
 			)}
 		/>
 	</button>
