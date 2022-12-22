@@ -58,7 +58,7 @@ export const Contact = () => {
 				data-aos-offset="500"
 			></iframe>
 
-			<div className="flex flex-row pl-[10px] pt-5 pr-5 pb-5 gap-10">
+			<div className="flex sm:flex-row xs:flex-col sm:pl-[10px] xs:p-0  sm:pt-5 sm:pr-5 sm:pb-5 gap-10">
 				<ul
 					className="flex flex-col items-start gap-[30px] min-w-[334px] py-[10px]"
 					data-aos="fade-right"
@@ -70,10 +70,10 @@ export const Contact = () => {
 							<SvgIcon name={'location'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl xs:text-4xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[0].title}
 							</p>
-							<p className="font-normal text-base text-gray-300 font-OpenSans">
+							<p className="font-normal sm:text-base xs:text-2xl  text-gray-300 font-OpenSans">
 								{contacts.items[0].description}
 							</p>
 						</div>
@@ -83,12 +83,12 @@ export const Contact = () => {
 							<SvgIcon name={'email'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl xs:text-4xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[1].title}
 							</p>
 							<a
 								href={'mailto:info@yateam.site'}
-								className="font-normal text-base text-gray-300 hover:text-primary duration-300 font-OpenSans"
+								className="font-normal sm:text-base xs:text-2xl text-gray-300 hover:text-primary duration-300 font-OpenSans"
 							>
 								{contacts.items[1].description}
 							</a>
@@ -99,12 +99,12 @@ export const Contact = () => {
 							<SvgIcon name={'phone'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold text-2xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl xs:text-4xl dark:text-light mb-[5px] font-Raleway">
 								{contacts.items[2].title}
 							</p>
 							<a
 								href={'tel:78005553535'}
-								className="font-normal hover:text-primary duration-300 text-base text-gray-300 font-OpenSans font-400"
+								className="font-normal hover:text-primary duration-300 sm:text-base xs:text-2xl text-gray-300 font-OpenSans font-400"
 							>
 								{contacts.items[2].description}
 							</a>
@@ -112,7 +112,7 @@ export const Contact = () => {
 					</li>
 				</ul>
 				<form
-					className="p-[10px] w-full flex flex-col gap-5"
+					className="xs:p-0 sm:p-[10px] w-full flex flex-col gap-5"
 					data-aos="fade-left"
 					onSubmit={ControlForm}
 					data-aos-delay="0"
