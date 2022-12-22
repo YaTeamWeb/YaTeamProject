@@ -10,6 +10,7 @@ import 'swiper/css/autoplay';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../store/slices/lang/selectors.js';
 import { selectProjectItem } from '../store/slices/projects/selectors.js';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ProjectInfoPage = () => {
 	const { portfolio } = useSelector(selectLangItems);
@@ -27,13 +28,13 @@ const ProjectInfoPage = () => {
 							'absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] flex flex-col items-center'
 						}
 					>
-						<h1 className={'text-6xl dark:text-light mb-2.5'}>
+						<h1 className={'text-6xl dark:text-light mb-2.5 duration-500'}>
 							Ничего не найдено 😞
 						</h1>
 						<Link
 							to={'/'}
 							className={
-								'text-3xl dark:text-light hover:text-primary duration-300'
+								'text-3xl dark:text-light hover:text-primary dark:hover:text-primary duration-500'
 							}
 						>
 							Вернуться
@@ -44,9 +45,9 @@ const ProjectInfoPage = () => {
 		);
 	}
 	return (
-		<>
-			<div className="mt-16 w-full h-[78px] bg-projectInfoPageHeader px-[120px] flex flex-row justify-between items-center dark:bg-gray-400 duration-500 ">
-				<h1 className='text-[32px] text-gray-500 font-medium font-["Open_Sans"] dark:text-light duration-500'>
+		<main>
+			<div className="mt-16 w-full xs:py-10  bg-projectInfoPageHeader px-[120px] flex md:flex-row justify-between md:items-center xs:flex-col  dark:bg-gray-400 duration-500 ">
+				<h1 className='text-3xl xs:mb-2.5 text-gray-500 font-medium font-["Open_Sans"] dark:text-light duration-500'>
 					{portfolio.projectInfo}
 				</h1>
 				<p className='text-xl font-light text-gray-500 font-["Open_Sans"] dark:text-light duration-500'>
@@ -57,13 +58,13 @@ const ProjectInfoPage = () => {
 				</p>
 			</div>
 			<div
-				className="container py-[124px] overflow-hidden flex flex-row gap-[30px]"
+				className="px-[30px] container py-[124px] overflow-hidden flex gap-[30px] xl:flex-row xl:items-start md:flex-col md:items-center sm:flex-col sm:items-center xs:flex-col xs:items-center"
 				style={{
 					'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 					'--swiper-pagination-bullet-inactive-opacity': '100%',
 				}}
 			>
-				<div className="w-[650px]">
+				<div className="xl:w-[650px] xs:w-[375px]">
 					<Swiper
 						modules={[Pagination, Autoplay]}
 						spaceBetween={50}
@@ -83,16 +84,18 @@ const ProjectInfoPage = () => {
 					>
 						{item.images.map((image, id) => (
 							<SwiperSlide key={id}>
-								<img
-									className="w-[650px] object-cover"
+								<LazyLoadImage
+									className="xl:w-[650px] xl:h-[450px] xs:w-[375px] xs:h-[225px]  object-cover"
 									src={image.src}
+									height={450}
+									width={650}
 									alt="Проект"
 								/>
 							</SwiperSlide>
 						))}
 					</Swiper>
 				</div>
-				<div className="w-[357px]">
+				<div className="w-fit">
 					<div className="infoBlock pt-5 px-[15px] pb-10 shadow-projectInfo mb-[25px]">
 						<h2 className="text-2xl font-semibold font-Raleway text-gray-500 mb-5 dark:text-light duration-500">
 							{item.title}
@@ -122,26 +125,26 @@ const ProjectInfoPage = () => {
 									{portfolio.link + ':'}
 								</span>
 								<a
-                                    href={item.link}
-                                    target={'_blank'}
-                                    rel="noreferrer"
-                                    className="text-primary"
-                                >
+									href={item.link}
+									target={'_blank'}
+									rel="noreferrer"
+									className="text-primary"
+								>
 									{item.link}
 								</a>
 							</p>
 						</div>
 					</div>
-					<h3 className="text-2xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
+					<h3 className="w-[357px] text-2xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
 						{item.solution}
 					</h3>
-					<p className="text-base font-normal font-Raleway text-gray-500 dark:text-light duration-500">
+					<p className="w-[357px] text-base font-normal font-Raleway text-gray-500 dark:text-light duration-500">
 						{item.description}
 					</p>
 				</div>
 			</div>
 			{/*<Footer />*/}
-		</>
+		</main>
 	);
 };
 

@@ -10,7 +10,7 @@ import dmitriy from '../../assets/images/MainPageImages/dmitriy.png';
 import stepan from '../../assets/images/MainPageImages/stepan.png';
 
 const angles = [];
-let nearBy = [];
+const nearBy = [];
 
 export const Team = () => {
 	const { team } = useSelector(selectLangItems);
@@ -41,61 +41,61 @@ export const Team = () => {
 				</Heading2>
 			</div>
 
-			<div className='w-full flex justify-start'>
-			<ul className="text-center gap-5 grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
-				<TeamItem
-					clearNearBy={clearNearBy}
-					id={'1'}
-					initial={team.people[0].name}
-					role={team.people[0].job}
-					photo={renat}
-					backGround={
-						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
-					}
-					dataAos="zoom-in"
-					dataAosDelay="0"
-					dataAosOffset="0"
-				/>
-				<TeamItem
-					clearNearBy={clearNearBy}
-					id={'2'}
-					initial={team.people[1].name}
-					role={team.people[1].job}
-					photo={insaf}
-					backGround={
-						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
-					}
-					dataAos="zoom-in"
-					dataAosDelay="0"
-					dataAosOffset="0"
-				/>
-				<TeamItem
-					clearNearBy={clearNearBy}
-					id={'3'}
-					initial={team.people[2].name}
-					role={team.people[2].job}
-					photo={dmitriy}
-					backGround={
-						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
-					}
-					dataAos="zoom-in"
-					dataAosDelay="0"
-					dataAosOffset="0"
-				/>
-				<TeamItem
-					clearNearBy={clearNearBy}
-					id={'4'}
-					initial={team.people[3].name}
-					role={team.people[3].job}
-					photo={stepan}
-					backGround={
-						'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
-					}
-					dataAos="zoom-in"
-					dataAosDelay="0"
-					dataAosOffset="0"
-				/>
-			</ul>
+			<div className="w-full flex justify-start lg:items-start xs:items-center xs:flex-col	">
+				<ul className="text-center gap-5 grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 xs:grid-cols-1">
+					<TeamItem
+						clearNearBy={clearNearBy}
+						id={'1'}
+						initial={team.people[0].name}
+						role={team.people[0].job}
+						photo={renat}
+						backGround={
+							'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
+						}
+						dataAos="zoom-in"
+						dataAosDelay="0"
+						dataAosOffset="0"
+					/>
+					<TeamItem
+						clearNearBy={clearNearBy}
+						id={'2'}
+						initial={team.people[1].name}
+						role={team.people[1].job}
+						photo={insaf}
+						backGround={
+							'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
+						}
+						dataAos="zoom-in"
+						dataAosDelay="0"
+						dataAosOffset="0"
+					/>
+					<TeamItem
+						clearNearBy={clearNearBy}
+						id={'3'}
+						initial={team.people[2].name}
+						role={team.people[2].job}
+						photo={dmitriy}
+						backGround={
+							'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
+						}
+						dataAos="zoom-in"
+						dataAosDelay="0"
+						dataAosOffset="0"
+					/>
+					<TeamItem
+						clearNearBy={clearNearBy}
+						id={'4'}
+						initial={team.people[3].name}
+						role={team.people[3].job}
+						photo={stepan}
+						backGround={
+							'bg-[linear-gradient(180deg,#D7D7D7_0%,rgba(239,239,239,0.5)_100%)]'
+						}
+						dataAos="zoom-in"
+						dataAosDelay="0"
+						dataAosOffset="0"
+					/>
+				</ul>
 			</div>
 		</section>
 	);
