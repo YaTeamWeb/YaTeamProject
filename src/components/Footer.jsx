@@ -305,7 +305,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  lg:text-base text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon

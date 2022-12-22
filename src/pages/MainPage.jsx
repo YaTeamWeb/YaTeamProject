@@ -25,7 +25,7 @@ const MainPage = () => {
 			<Portfolio />
 			<Counts />
 			<Team />
-			<Contact />
+			{/*<Contact />*/}
 		</div>
 	);
 };
