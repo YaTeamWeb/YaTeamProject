@@ -29,7 +29,7 @@ export const Clients = () => {
 
 	return (
 		<section
-			className="container py-16 px-[30px]"
+			className="container py-16 px-[10px] xm:px-[20px] md:px-[30px]"
 			style={{
 				'--swiper-pagination-bullet-inactive-color': '#DDDDDD',
 				'--swiper-pagination-bullet-inactive-opacity': '100%',
@@ -48,7 +48,7 @@ export const Clients = () => {
 			<div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
 				<Swiper
 					modules={[Pagination, Autoplay]}
-					spaceBetween={159}
+					spaceBetween={(window.outerWidth > 485) ? 159 : 0}
 					pagination={{
 						clickable: true,
 						horizontalClass: 'swiper-pagination-horizontal relative mt-9',
@@ -60,63 +60,75 @@ export const Clients = () => {
 					autoplay={{
 						delay: 2000,
 					}}
-					slidesPerView={4}
+					slidesPerView={(window.outerWidth > 1024) ? 4 : ((window.outerWidth > 485) ? 3 : 1)}
 					speed={1000}
 				>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="h-12 object-cover"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain text-center"
 							src={clients.isRus ? sberbank : sberbankEng}
 							alt="Сбербанк"
 						/>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="max-h-12 object-cover"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain"
 							src={microsoft}
 							alt="Microsoft"
 						/>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="max-h-12 object-cover dark:invert duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain dark:invert duration-500"
 							src={apple}
 							alt="Apple"
 						/>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-0 dark:opacity-100 duration-500 absolute"
 							src={clients.isRus ? darkMode_yandex : darkMode_yandexEng}
 							alt="Yandex"
 						/>
 						<img
-							className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-100 dark:opacity-0 duration-500"
 							src={clients.isRus ? yandex : yandexEng}
 							alt="Yandex"
 						/>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="max-h-12 object-cover opacity-0 dark:opacity-100 duration-500 absolute"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-0 dark:opacity-100 duration-500 absolute"
 							src={darkMode_amazon}
 							alt="Amazon"
 						/>
 						<img
-							className="max-h-12 object-cover opacity-100 dark:opacity-0 duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-100 dark:opacity-0 duration-500"
 							src={amazon}
 							alt="Amazon"
 						/>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img className="max-h-12 object-cover" src={ozon} alt="Ozon" />
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'><img className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain" src={ozon} alt="Ozon" /></div>
 					</SwiperSlide>
 					<SwiperSlide>
+						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="max-h-12 object-cover"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain"
 							src={netflix}
 							alt="Netflix"
 						/>
+						</div>
 					</SwiperSlide>
 				</Swiper>
 			</div>

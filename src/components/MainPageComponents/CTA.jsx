@@ -13,15 +13,15 @@ export const CTA = () => {
 	return (
 		<section
 			className={
-				'bg-dark bg-cta w-full h-[271px] bg-fixed bg-cover bg-no-repeat '
+				'bg-dark bg-cta w-full lg:h-[271px] bg-fixed bg-cover bg-no-repeat px-[30px]'
 			}
 			id="cta"
 		>
 			<div
-				className="flex flex-col gap-[20px] py-[60px] items-center justify-center"
+				className="flex flex-col gap-[20px] py-[60px] items-center justify-center "
 				data-aos="zoom-in"
 				data-aos-delay="0"
-				data-aos-offset="500"
+				data-aos-offset="350"
 			>
 				<Heading3 className="text-light">{contactToAs.title}</Heading3>
 

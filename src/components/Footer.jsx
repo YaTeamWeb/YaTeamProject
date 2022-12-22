@@ -23,8 +23,10 @@ export const Footer = () => {
 	return (
 		<footer className={'bg-dark'}>
 			<div className={'px-[30px] bg-gray-400 dark:bg-dark duration-300'}>
-				<div className={'container py-16 relative flex justify-between '}>
-					<ul className={'w-[255px]'}>
+				<div
+					className={'container py-16 relative flex flex-wrap justify-between '}
+				>
+					<ul className={'w-[255px] xs:mb-5'}>
 						<li className={'mb-7'}>
 							<a className="block" href="/">
 								<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />

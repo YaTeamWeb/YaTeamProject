@@ -47,15 +47,15 @@
                 },
                 {
                     "title": "Чётко следуем ТЗ",
-                    "description": "Для нас нет невозвожного"
+                    "description": "Мы никогда не отступаем от ТЗ без согласования с заказчиком"
                 },
                 {
-                    "title": "Для нас нет невозвожного",
-                    "description": "Мы никогда не заставляем заказчика ждать"
+                    "title": "Для нас нет невозможного",
+                    "description": "Мы никогда не говорим “сложно”, мы говорим “требует чуть больше времени чем обычно”"
                 },
                 {
-                    "title": "Работаем как часы",
-                    "description": "Мы никогда не заставляем заказчика ждать"
+                    "title": "Экспериментируем",
+                    "description": "Мы стараемся сделать каждый продукт уникальным, поэтому всегда применяем самые свежие идеи"
                 }
 
             ]
@@ -341,15 +341,15 @@
                 },
                 {
                     "title": "We clearly follow the TOR",
-                    "description": "There is nothing irrevocable for us"
+                    "description": "We never deviate from the TOR without the consent of the customer"
                 },
                 {
                     "title": "There is nothing irrevocable for us",
-                    "description": "We never keep the customer waiting"
+                    "description": "We never say “difficult”, we say “it takes a little more time than usual”"
                 },
                 {
-                    "title": "We work like clockwork",
-                    "description": "We never keep the customer waiting"
+                    "title": "Experimenting",
+                    "description": "We try to make each product unique, so we always apply the latest ideas"
                 }
 
             ]

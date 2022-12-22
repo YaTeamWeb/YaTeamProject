@@ -8,7 +8,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'mm': '350px',
+        'xs': '400px',
+        'xm': '475px',
+        'sm': '770px',
         'md': '990px',
+        'lg': '1024px',
+        'xl': '1280px'
       },
       backgroundImage: {
         'hero': "url('/src/assets/images/MainPageImages/hero.png')",

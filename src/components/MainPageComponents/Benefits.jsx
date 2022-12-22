@@ -13,7 +13,7 @@ export const Benefits = () => {
 	const { benefits } = useSelector(selectLangItems);
 
 	return (
-		<section className="container py-16 px-[30px]">
+		<section className="container py-16 px-[10px] xm:px-[20px] md:px-[30px]">
 			<div data-aos="fade-up" data-aos-delay="0">
 				<SupTitle>{benefits.suptitle}</SupTitle>
 				<Heading2 className="mb-10 dark:text-light duration-500">
@@ -21,21 +21,21 @@ export const Benefits = () => {
 				</Heading2>
 			</div>
 			<div
-				className="flex justify-between"
+				className="flex sm:flex-row flex-col lg:gap-[40px] gap-[30px]"
 				data-aos="fade-up"
 				data-aos-delay="0"
-				data-aos-offset="350"
+				data-aos-offset="200"
 			>
-				<div className='w-[350px] lg:w-[415px] xl:w-[775px] h-[546px]'
+				<div className='w-full sm:max-w-[350px] lg:max-w-[415px] xl:max-w-[775px] sm:h-[546px]'
 					data-aos="fade-right"
 					data-aos-delay="10"
-					data-aos-offset="350"
+					data-aos-offset="200"
 				>
 				<LazyLoadImage
 					src={work}
 					alt="Печатание на клавиатуре"
 					effect={'blur'}
-					className='w-[350px] lg:w-[415px] xl:w-[775px] h-[546px] object-cover'
+					className='w-full sm:max-w-[350px] lg:max-w-[415px] xl:max-w-[775px] sm:h-[546px] object-cover'
 				/>
 				</div>
 				<ul className="ml-7 max-w-[394px]">
@@ -43,7 +43,7 @@ export const Benefits = () => {
 						className="flex mb-10"
 						data-aos="fade-left"
 						data-aos-delay="0"
-						data-aos-offset="350"
+						data-aos-offset="200"
 					>
 						<div>
 							<SvgIcon size={51} name="clock" className="fill-primary" />
@@ -59,7 +59,7 @@ export const Benefits = () => {
 						className="flex mb-10"
 						data-aos="fade-left"
 						data-aos-delay="0"
-						data-aos-offset="350"
+						data-aos-offset="200"
 					>
 						<div>
 							<SvgIcon size={51} name="copy" className="fill-primary" />
@@ -75,7 +75,7 @@ export const Benefits = () => {
 						className="flex mb-10"
 						data-aos="fade-left"
 						data-aos-delay="0"
-						data-aos-offset="350"
+						data-aos-offset="200"
 					>
 						<div>
 							<SvgIcon
@@ -95,7 +95,7 @@ export const Benefits = () => {
 						className="flex"
 						data-aos="fade-left"
 						data-aos-delay="0"
-						data-aos-offset="350"
+						data-aos-offset="200"
 					>
 						<div>
 							<SvgIcon

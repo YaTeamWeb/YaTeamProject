@@ -37,7 +37,7 @@ export const ServicesItem = ({
 			data-aos={dataAos}
 			data-aos-delay={dataAosDelay}
 			data-aos-offset={dataAosOffset}
-			className={'col-span-4 '}
+			className={'lg:col-span-4 sm:col-span-6 xs:col-span-12'}
 		>
 			<div
 				onMouseLeave={theme ? onMouseLeave : null}
@@ -47,7 +47,7 @@ export const ServicesItem = ({
 				id={id}
 			>
 				<SvgIcon
-					className="rounded mb-5 bg-primary p-5"
+					className="rounded mb-5 bg-primary p-[20px]"
 					name={svgName}
 					size={70}
 				/>

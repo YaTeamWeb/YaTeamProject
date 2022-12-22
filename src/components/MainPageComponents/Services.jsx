@@ -57,10 +57,9 @@ export const Services = () => {
 			onMouseLeave={theme ? clearNearBy : null}
 			onMouseMove={theme ? onMouseMove : null}
 			id="services"
-			className="container py-16"
 			data-aos="fade-up"
 			data-aos-delay="500"
-			className='container py-16 px-[30px]'
+			className="container py-16 px-[30px]"
 		>
 			<div data-aos="fade-up" data-aos-delay="0" data-aos-offset="450">
 				<SupTitle>{services.suptitle}</SupTitle>
@@ -78,7 +77,7 @@ export const Services = () => {
 					id={'1'}
 					dataAos="zoom-in"
 					dataAosDelay="0"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -88,7 +87,7 @@ export const Services = () => {
 					id={'2'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -98,7 +97,7 @@ export const Services = () => {
 					id={'3'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -108,7 +107,7 @@ export const Services = () => {
 					id={'4'}
 					dataAos="zoom-in"
 					dataAosDelay="0"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -118,7 +117,7 @@ export const Services = () => {
 					id={'5'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -128,7 +127,7 @@ export const Services = () => {
 					id={'6'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 			</ul>
 		</section>
