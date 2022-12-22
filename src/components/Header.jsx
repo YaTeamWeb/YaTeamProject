@@ -51,7 +51,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				'fixed z-50 top-0 left-0 right-0 w-full px-7 bg-black'
 			}
 		>
-			<div className='flex items-center justify-between w-full h-16 text-light'>
+			<div className='flex items-center justify-between w-full h-[64px] text-light'>
 			<a className="block" href="/">
 				<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 			</a>

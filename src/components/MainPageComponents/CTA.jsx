@@ -21,7 +21,7 @@ export const CTA = () => {
 				className="flex flex-col gap-[20px] py-[60px] items-center justify-center"
 				data-aos="zoom-in"
 				data-aos-delay="0"
-				data-aos-offset="500"
+				data-aos-offset="350"
 			>
 				<Heading3 className="text-light">{contactToAs.title}</Heading3>
 
