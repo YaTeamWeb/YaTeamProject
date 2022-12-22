@@ -59,7 +59,7 @@ const PortfolioPage = () => {
 
 	return (
 		<>
-			<div className="container py-[124px] overflow-hidden xl:px-0 xs:px-[30px]">
+			<div className="container py-[124px] overflow-hidden xl:px-0 px-[30px]">
 				<div
 					data-aos="fade-up"
 					data-aos-duration="1000"
@@ -112,7 +112,7 @@ const PortfolioPage = () => {
 						autoFocus={true}
 						className={`outline-none ${
 							open ? 'h-[42px] w-full relative ' : 'w-0 border-none invisible'
-						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 xl:text-base xs:text-2xl duration-500 px-[40px]`}
+						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 xl:text-base xs:text-2xl text-3xl duration-500 px-[40px]`}
 						placeholder={portfolio.search}
 					/>
 					{value && (
@@ -128,7 +128,7 @@ const PortfolioPage = () => {
 				<div className={' flex items-center justify-center mb-10  '}>
 					<ul
 						className={
-							'flex sm:overflow-hidden xs:overflow-y-hidden xs:overflow-x-auto xs:whitespace-nowrap xs:h-[37px]'
+							'flex sm:overflow-hidden overflow-y-hidden overflow-x-auto whitespace-nowrap h-[37px]'
 						}
 					>
 						{portfolio.categories.map((el, id) => (
@@ -136,7 +136,7 @@ const PortfolioPage = () => {
 								<button
 									onClick={() => onSetCategory(id)}
 									className={classnames(
-										'block w-fit mr-1.5 py-2 px-4 hover:bg-primary xl:text-base xs:text-2xl duration-300 rounded font-OpenSans font-semibold hover:text-light dark:text-light dark:hover:text-dark',
+										'block w-fit mr-1.5 py-2 px-4 hover:bg-primary xl:text-base xs:text-2xl text-3xl duration-300 rounded font-OpenSans font-semibold hover:text-light dark:text-light dark:hover:text-dark',
 										currCategory === id
 											? 'text-light dark:text-dark bg-primary'
 											: ''
@@ -149,7 +149,7 @@ const PortfolioPage = () => {
 					</ul>
 				</div>
 
-				<ul className="grid gap-y-10 gap-x-5 sm:grid-cols-12 xs:grid-cols-6  mb-8">
+				<ul className="grid gap-y-10 gap-x-5 sm:grid-cols-12 grid-cols-6  mb-8">
 					{items.map((item) => (
 						<li
 							key={item.id}

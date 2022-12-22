@@ -26,21 +26,21 @@ export const Footer = () => {
 				<div
 					className={'container py-16 relative flex flex-wrap justify-between '}
 				>
-					<ul className={'w-[255px] xs:mb-5'}>
+					<ul className={'w-[255px] sm:mb-0 mb-5'}>
 						<li className={'mb-7'}>
 							<a className="block" href="/">
 								<img className="w-8 h-10" src={logo} alt="Логотип YaTeam" />
 							</a>
 						</li>
 						<li className={'mb-7'}>
-							<address className="not-italic text-light font-Raleway font-semibold lg:text-base xs:text-2xl">
+							<address className="not-italic text-light font-Raleway font-semibold lg:text-base xs:text-2xl text-3xl">
 								{footer.address}
 							</address>
 						</li>
 						<li className={'mb-7 flex flex-col'}>
 							<a
 								className={
-									'text-light font-Raleway font-semibold lg:text-base xs:text-2xl hover:text-primary duration-300'
+									'text-light font-Raleway font-semibold lg:text-base xs:text-2xl text-3xl hover:text-primary duration-300'
 								}
 								href="tel:78005553535"
 							>
@@ -51,7 +51,7 @@ export const Footer = () => {
 							</a>
 							<a
 								className={
-									'text-light font-Raleway font-semibold lg:text-base xs:text-2xl hover:text-primary duration-300'
+									'text-light font-Raleway font-semibold lg:text-base xs:text-2xl text-3xl hover:text-primary duration-300'
 								}
 								href="mailto:info@yateam.site"
 							>
@@ -101,7 +101,7 @@ export const Footer = () => {
 					<ul>
 						<li
 							className={
-								'mb-5 lg:xl xs:text-3xl font-Raleway font-bold text-light'
+								'mb-5 lg:xl xs:text-3xl text-4xl font-Raleway font-bold text-light'
 							}
 						>
 							{footer.firstList.title}
@@ -113,7 +113,7 @@ export const Footer = () => {
 								duration={1000}
 								onClick={() => scrollToAnchor('hero')}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -135,7 +135,7 @@ export const Footer = () => {
 								duration={1000}
 								onClick={() => scrollToAnchor('about')}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -157,7 +157,7 @@ export const Footer = () => {
 								duration={1000}
 								onClick={() => scrollToAnchor('services')}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -179,7 +179,7 @@ export const Footer = () => {
 								duration={1000}
 								onClick={() => scrollToAnchor('team')}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -201,7 +201,7 @@ export const Footer = () => {
 								duration={1000}
 								onClick={() => scrollToAnchor('contacts')}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -220,7 +220,7 @@ export const Footer = () => {
 					<ul>
 						<li
 							className={
-								'mb-5 font-Raleway lg:text-xl xs:text-3xl font-bold text-light'
+								'mb-5 font-Raleway lg:text-xl xs:text-3xl text-4xl font-bold text-light'
 							}
 						>
 							{footer.secondList.title}
@@ -229,7 +229,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -248,7 +248,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -267,7 +267,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -286,7 +286,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 								}
 							>
 								<SvgIcon
@@ -305,7 +305,7 @@ export const Footer = () => {
 							<a
 								href={'#'}
 								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  lg:text-base xs:text-2xl text-light'
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  lg:text-base text-2xl text-light'
 								}
 							>
 								<SvgIcon
@@ -326,14 +326,14 @@ export const Footer = () => {
 			<div className={'flex justify-center flex-col items-center py-7'}>
 				<p
 					className={
-						'text-light font-semibold font-OpenSans mb-2.5 lg:text-base xs:text-2xl'
+						'text-light font-semibold font-OpenSans mb-2.5 lg:text-base text-2xl'
 					}
 				>
 					© Copyright YaTeam. {footer.license}
 				</p>
 				<p
 					className={
-						'text-light font-normal font-OpenSans lg:text-base xs:text-2xl'
+						'text-light font-normal font-OpenSans lg:text-base text-2xl'
 					}
 				>
 					Designed by

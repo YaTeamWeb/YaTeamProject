@@ -27,8 +27,8 @@ export const TeamItem = ({
 		const x = e.clientX - rect.left;
 		const y = e.clientY - rect.top;
 		e.currentTarget.style.background = `radial-gradient(circle at ${x}px ${y}px , rgba(157, 78, 221, 0.9),rgba(157, 78, 221,0) )`;
-		e.currentTarget.style.borderTopLeftRadius = `12px`;
-		e.currentTarget.style.borderTopRightRadius = `12px`;
+		e.currentTarget.style.borderTopLeftRadius = '12px';
+		e.currentTarget.style.borderTopRightRadius = '12px';
 		e.currentTarget.style.borderImage = `radial-gradient(20% 65% at ${x}px ${y}px ,rgba(157, 78, 221,0.7),rgba(157, 78, 221,0.7),rgba(157, 78, 221,0.1) ) 9 / 2px / 0px stretch `;
 	};
 
@@ -39,11 +39,11 @@ export const TeamItem = ({
 			data-aos-offset={dataAosOffset}
 			className={''}
 		>
-			<div className="w-[355px] lg:w-[285px] dark:border-[#111] dark:shadow-lg rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
+			<div className=" lg:w-[285px] dark:border-[#111] dark:shadow-lg rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
 				<div
 					className={classnames(
 						backGround,
-						'relative rounded-t-xl w-full w-[355px] lg:w-[203px] xl:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
+						'relative rounded-t-xl w-full lg:w-[285px]  xl:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
 					)}
 				>
 					<div className="w-full h-full z-20 relative">
@@ -62,7 +62,7 @@ export const TeamItem = ({
 					<div
 						className={classnames(
 							backGround,
-							'rounded-t-xl absolute top-0 left-0 z-10 w-[355px] lg:w-[203px] lg:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
+							'rounded-t-xl absolute top-0 left-0 z-10  lg:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
 						)}
 					></div>
 				</div>
