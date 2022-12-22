@@ -64,7 +64,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 	return (
 		<header
 			className={
-				'fixed z-50 top-0 left-0 right-0 w-full px-7 bg-black'
+				'fixed z-50 top-0 left-0 px-7 bg-black w-full'
 			}
 		>
 			<div className='flex items-center justify-between w-full h-[64px] text-light'>

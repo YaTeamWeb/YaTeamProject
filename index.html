@@ -53,13 +53,12 @@
       }
     </style>
   </head>
-  <body style='overflow-x:hidden'
+  <body style='position:relative; overflow-x:hidden;'
   onScroll="
   document.querySelector('.BackToTopContainer').
   style=(((window.pageYOffset < document.documentElement.clientHeight) 
   ? 'opacity: 0; visibility: hidden;' : 'opacity: 1; visibility: visible;')
    + 'transition: all 0.5s;');
-
    "
   >
     <div id="root">
