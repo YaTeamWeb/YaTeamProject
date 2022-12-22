@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { Link } from 'react-router-dom';
 import project_1 from '../../assets/images/ProjectsImages/portfolio-1.png';
-import project_2 from '../../assets/images/ProjectsImages/portfolio-2.jpg';
+import project_2 from '../../assets/images/ProjectsImages/portfolio-2/1.jpg';
 import project_3 from '../../assets/images/ProjectsImages/portfolio-3/1.png';
 import project_4 from '../../assets/images/ProjectsImages/portfolio-4.jpg';
 
@@ -28,7 +28,7 @@ export const Portfolio = () => {
 			</div>
 			<ul className="grid gap-y-10 gap-x-5 grid-cols-12 ">
 				<li
-					className="sm:col-span-6  xs:col-span-12"
+					className="sm:col-span-6  col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -43,7 +43,7 @@ export const Portfolio = () => {
 				</li>
 
 				<li
-					className="sm:col-span-6  xs:col-span-12"
+					className="sm:col-span-6  col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -57,7 +57,7 @@ export const Portfolio = () => {
 					/>
 				</li>
 				<li
-					className="sm:col-span-6  xs:col-span-12"
+					className="sm:col-span-6  col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"
@@ -71,7 +71,7 @@ export const Portfolio = () => {
 					/>
 				</li>
 				<li
-					className="sm:col-span-6  xs:col-span-12"
+					className="sm:col-span-6  col-span-12"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="0"

@@ -59,7 +59,7 @@ const PortfolioPage = () => {
 
 	return (
 		<>
-			<div className="container py-[124px] overflow-hidden">
+			<div className="container py-[124px] overflow-hidden xl:px-0 px-[30px]">
 				<div
 					data-aos="fade-up"
 					data-aos-duration="1000"
@@ -98,7 +98,7 @@ const PortfolioPage = () => {
 									'fill-dark ',
 									open
 										? ''
-										: 'group-hover:fill-light dark:group-hover:fill-dark duration-300 dark:fill-light'
+										: 'group-hover:fill-light dark:group-hover:fill-dark duration-300 dark:fill-light '
 								)}
 								name={'search'}
 								size={21}
@@ -112,7 +112,7 @@ const PortfolioPage = () => {
 						autoFocus={true}
 						className={`outline-none ${
 							open ? 'h-[42px] w-full relative ' : 'w-0 border-none invisible'
-						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 duration-500 px-[40px]`}
+						}  border border-primary rounded-lg font-OpenSans font-semibold placeholder:text-gray-300 xl:text-base xs:text-2xl text-3xl duration-500 px-[40px]`}
 						placeholder={portfolio.search}
 					/>
 					{value && (
@@ -125,24 +125,31 @@ const PortfolioPage = () => {
 					)}
 				</form>
 
-				<div className={'flex items-center justify-center mb-10'}>
-					{portfolio.categories.map((el, id) => (
-						<button
-							key={el + id}
-							onClick={() => onSetCategory(id)}
-							className={classnames(
-								'mr-1.5 py-2 px-4 hover:bg-primary duration-300 rounded font-OpenSans font-semibold hover:text-light dark:text-light dark:hover:text-dark',
-								currCategory === id
-									? 'text-light dark:text-dark bg-primary'
-									: ''
-							)}
-						>
-							{el}
-						</button>
-					))}
+				<div className={' flex items-center justify-center mb-10  '}>
+					<ul
+						className={
+							'flex sm:overflow-hidden overflow-y-hidden overflow-x-auto whitespace-nowrap h-[37px]'
+						}
+					>
+						{portfolio.categories.map((el, id) => (
+							<li key={el + id} className={'list-none'}>
+								<button
+									onClick={() => onSetCategory(id)}
+									className={classnames(
+										'block w-fit mr-1.5 py-2 px-4 hover:bg-primary xl:text-base xs:text-2xl text-3xl duration-300 rounded font-OpenSans font-semibold hover:text-light dark:text-light dark:hover:text-dark',
+										currCategory === id
+											? 'text-light dark:text-dark bg-primary'
+											: ''
+									)}
+								>
+									{el}
+								</button>
+							</li>
+						))}
+					</ul>
 				</div>
 
-				<ul className="grid gap-y-10 gap-x-5 grid-cols-12 mb-8">
+				<ul className="grid gap-y-10 gap-x-5 sm:grid-cols-12 grid-cols-6  mb-8">
 					{items.map((item) => (
 						<li
 							key={item.id}

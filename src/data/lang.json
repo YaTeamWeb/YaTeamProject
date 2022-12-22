@@ -109,16 +109,16 @@
                     "category": "Интернет-магазины",
                     "title": "Интернет-магазин книжек",
                     "authors": ["Ренат Губайдуллин", "Никитин Дмитрий", "Гарифуллин Инсаф", "Степан Мельников"],
-                    "description": "Описание интернет-магазина",
+                    "description": "Данный проект был создан в качестве домашнего задания в Интенсивах Академии Яндекса. Его ключевая особенность - удобство использоания и быстрая загрузка данных. Он преставялет собой интернет-магазин для продажи книг. Наша команда продумала каждую мелочь, чтобы сделать ваш опыт использования незабываемым.",
                     "solution" : "Идеальное решение для вашего бизнеса",
-                    "client": "Яндекс"
+                    "client": "Персональный проект"
                 },
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Никитина Дмитрия",
                     "authors": ["Никитин Дмитрий"],
-                    "description": "Описание сайта-визитки",
-                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "description": "Данный проект был сделан с целью показать себя. Здесь всё минималистично, но очень красиво. Знания и опыт раскрываются в процессе просмотра сайта.",
+                    "solution" : "Минимализм - не значит, что плохо",
                     "client": "Персональный проект"
                 },
                 {
@@ -397,16 +397,16 @@
                     "category": "Online stores",
                     "title": "Online book store",
                     "authors": ["Renat Gubaidullin", "Nikitin Dmitriy", "Garifullin Insaf", "Stepan Melnikov"],
-                    "description": "Description of the online store",
+                    "description": "This project was created as a homework assignment at the intensive courses of the Yandex Academy. Its key feature is ease of use and fast data loading. This is an online bookstore. Our team has thought through every detail to make your use unforgettable.\n",
                     "solution" : "The perfect solution for your business",
-                    "client": "Yandex"
+                    "client": "Personal project"
                 },
                 {
                     "category": "Business card sites",
                     "title": "Dmitriy Nikitin's business card website",
                     "authors": ["Nikitin Dmitriy"],
-                    "description": "Description of the business card site",
-                    "solution" : "The perfect solution for your business",
+                    "description": "This project was made in order to show itself. Everything here is minimalistic, but very beautiful. Knowledge and experience are revealed in the process of viewing the site.",
+                    "solution" : "Minimalism does not mean that it is bad",
                     "client": "Personal project"
                 },
                 {

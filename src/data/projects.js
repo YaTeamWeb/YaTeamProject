@@ -1,6 +1,10 @@
 import lang from './lang.json';
 import project_1 from '../assets/images/ProjectsImages/portfolio-1.png';
-import project_2 from '../assets/images/ProjectsImages/portfolio-2.jpg';
+import project_2_1 from '../assets/images/ProjectsImages/portfolio-2/1.jpg';
+import project_2_2 from '../assets/images/ProjectsImages/portfolio-2/2.jpg';
+import project_2_3 from '../assets/images/ProjectsImages/portfolio-2/3.jpg';
+import project_2_4 from '../assets/images/ProjectsImages/portfolio-2/4.jpg';
+import project_2_5 from '../assets/images/ProjectsImages/portfolio-2/5.jpg';
 import project_3_1 from '../assets/images/ProjectsImages/portfolio-3/1.png';
 import project_3_2 from '../assets/images/ProjectsImages/portfolio-3/2.jpg';
 import project_3_3 from '../assets/images/ProjectsImages/portfolio-3/3.jpg';
@@ -54,9 +58,9 @@ export const projects = [
 			{ src: project_1 },
 			{ src: project_1 },
 		],
-		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
-		createdDate: '20.12.2022',
-		link: 'www.yateam.site',
+		languages: ['HTML', 'CSS', 'Javascript', 'React', 'Redux Toolkit'],
+		createdDate: '10.11.2022',
+		link: 'https://renat2006.github.io/intensive_react_homework/',
 	},
 	{
 		id: '2',
@@ -67,14 +71,15 @@ export const projects = [
 			}),
 		],
 		images: [
-			{ src: project_2 },
-			{ src: project_2 },
-			{ src: project_2 },
-			{ src: project_2 },
+			{ src: project_2_1 },
+			{ src: project_2_2 },
+			{ src: project_2_3 },
+			{ src: project_2_4 },
+			{ src: project_2_5 },
 		],
 		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
-		createdDate: '20.12.2022',
-		link: 'www.yateam.site',
+		createdDate: '25.09.2022',
+		link: 'https://nikdimer.github.io/',
 	},
 	{
 		id: '3',

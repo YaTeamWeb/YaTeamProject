@@ -37,7 +37,7 @@ export const Counts = () => {
 					src={notebook}
 					alt={'Ноутбук'}
 					effect={'blur'}
-					className="object-cover lg:w-[650px] lg:h-[520px] xs:w-full xs:max-h-[520px] md:max-h-[450px] xs:max-h-[300px]"
+					className="object-cover lg:w-[650px] lg:h-[520px] w-full max-h-[520px] md:max-h-[450px] max-h-[300px]"
 				/>
 			</div>
 			<div
@@ -53,7 +53,7 @@ export const Counts = () => {
 					<Body className="mb-[15px] dark:text-light duration-500">
 						{counts.description}
 					</Body>
-					<div className="grid xs:grid-rows-4 xs:h-full  sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full h-[219px]">
+					<div className="grid grid-rows-4 h-full  sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full">
 						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
 							<div className="">
 								<SvgIcon className="fill-primary" name={'smile'} size={51} />
@@ -132,7 +132,7 @@ export const Counts = () => {
 								<span
 									data-purecounter-duration="2"
 									data-purecounter-end="20"
-									className='purecounter block font-bold text-6xl font-["Open_Sans"] xs:h-full mb-[10px] dark:text-light duration-500'
+									className='purecounter block font-bold text-6xl font-["Open_Sans"] h-full mb-[10px] dark:text-light duration-500'
 								>
 									0
 								</span>
