@@ -45,7 +45,7 @@ function App() {
 	return (
 		<HashRouter>
 			<GrowingCircleAnimation isDark={isDark} />
-			<main className="App subpixel-antialiased">
+			<main className="App subpixel-antialiased w-full">
 				<Header
 					setDarkMode={(theme) => dispatch(setTheme(theme))}
 					darkMode={isDark}
