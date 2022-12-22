@@ -37,7 +37,7 @@ export const Counts = () => {
 					src={notebook}
 					alt={'Ноутбук'}
 					effect={'blur'}
-					className="object-cover lg:w-[650px] lg:h-[520px] xs:w-full xs:max-h-[520px] md:max-h-[450px] xs:max-h-[300px]"
+					className="object-cover lg:w-[650px] lg:h-[520px] xs:w-max xs:max-h-[520px] md:max-h-[450px] xs:max-h-[300px]"
 				/>
 			</div>
 			<div

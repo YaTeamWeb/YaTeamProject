@@ -41,8 +41,8 @@ export const Team = () => {
 				</Heading2>
 			</div>
 
-			<div className="w-full flex justify-start lg:items-start xs:items-center xs:flex-col	">
-				<ul className="text-center gap-5 grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 xs:grid-cols-1">
+			<div className="w-full flex justify-start xl:items-start xs:items-center xs:flex-col	">
+				<ul className="text-center gap-5 grid lg:grid-cols-2 grid-rows-2 xl:grid-cols-4 lg:grid-rows-1 xs:grid-cols-1">
 					<TeamItem
 						clearNearBy={clearNearBy}
 						id={'1'}

@@ -25,7 +25,7 @@ export const CTA = () => {
 			>
 				<Heading3 className="text-light">{contactToAs.title}</Heading3>
 
-				<Body3 className="text-light text-center max-w-[960px]">
+				<Body3 className="text-light text-center xs:text-2xl max-w-[960px]">
 					{contactToAs.description}
 				</Body3>
 				<LinkAnchor to={'contacts'} smooth={true} duration={1000}>

@@ -39,30 +39,30 @@ export const TeamItem = ({
 			data-aos-offset={dataAosOffset}
 			className={''}
 		>
-			<div className="w-[355px] lg:w-[203px] xl:w-[285px] dark:border-[#111] dark:shadow-lg rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
+			<div className="w-[355px] lg:w-[285px] dark:border-[#111] dark:shadow-lg rounded-xl h-full scale-[0.999] border border-gray-100 dark:border-transparent ease-in-out hover:shadow-xl hover:translate-y-[-10px] hover:border-light duration-300 flex items-start flex-col justify-center">
 				<div
 					className={classnames(
 						backGround,
-						'relative rounded-t-xl w-[355px] lg:w-[203px] xl:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
+						'relative rounded-t-xl w-full w-[355px] lg:w-[203px] xl:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
 					)}
 				>
-					<div className='w-full h-full z-20 relative'>
-					<LazyLoadImage
-						className={'item w-full h-full object-cover'}
-						src={photo}
-						alt={initial}
-						onMouseLeave={onMouseLeave}
-						onMouseMove={onMouseMove}
-						onMouseEnter={clearNearBy}
-						id={id}
-						height={'100%'}
-						effect={'blur'}
-					/>
+					<div className="w-full h-full z-20 relative">
+						<LazyLoadImage
+							className={'item w-full h-full object-cover'}
+							src={photo}
+							alt={initial}
+							onMouseLeave={onMouseLeave}
+							onMouseMove={onMouseMove}
+							onMouseEnter={clearNearBy}
+							id={id}
+							height={'100%'}
+							effect={'blur'}
+						/>
 					</div>
 					<div
 						className={classnames(
 							backGround,
-							'rounded-t-xl absolute top-0 left-0 z-10 w-[355px] lg:w-[203px] xl:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
+							'rounded-t-xl absolute top-0 left-0 z-10 w-[355px] lg:w-[203px] lg:w-[285px] h-[300px] lg:h-[250px] xl:h-[280px]'
 						)}
 					></div>
 				</div>

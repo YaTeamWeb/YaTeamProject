@@ -46,7 +46,7 @@ const ProjectInfoPage = () => {
 	}
 	return (
 		<main>
-			<div className="mt-16 w-full xs:py-10  bg-projectInfoPageHeader px-[120px] flex md:flex-row justify-between md:items-center xs:flex-col  dark:bg-gray-400 duration-500 ">
+			<div className="mt-16 w-full lg:py-10 xs:pt-32 xs:pb-16  bg-projectInfoPageHeader px-[120px] flex md:flex-row justify-between md:items-center xs:flex-col  dark:bg-gray-400 duration-500 ">
 				<h1 className='text-3xl xs:mb-2.5 text-gray-500 font-medium font-["Open_Sans"] dark:text-light duration-500'>
 					{portfolio.projectInfo}
 				</h1>
@@ -64,7 +64,7 @@ const ProjectInfoPage = () => {
 					'--swiper-pagination-bullet-inactive-opacity': '100%',
 				}}
 			>
-				<div className="xl:w-[650px] xs:w-[375px]">
+				<div className="xl:w-[650px] xl:h-[450px] xs:w-[375px] xs:h-[225px]">
 					<Swiper
 						modules={[Pagination, Autoplay]}
 						spaceBetween={50}
@@ -85,10 +85,8 @@ const ProjectInfoPage = () => {
 						{item.images.map((image, id) => (
 							<SwiperSlide key={id}>
 								<LazyLoadImage
-									className="xl:w-[650px] xl:h-[450px] xs:w-[375px] xs:h-[225px]  object-cover"
+									className="xl:w-[650px] xl:h-[450px] xs:w-[375px] xs:h-[225px] object-cover"
 									src={image.src}
-									height={450}
-									width={650}
 									alt="Проект"
 								/>
 							</SwiperSlide>
@@ -102,25 +100,25 @@ const ProjectInfoPage = () => {
 						</h2>
 						<div className="w-[327px] h-px bg-gray-100 mb-5"></div>
 						<div className="w-full flex flex-col gap-[10px]">
-							<p className='text-base font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
+							<p className='md:text-base xs:text-2xl  font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
 								<span className="font-semibold mr-[5px]">
 									{portfolio.category + ':'}
 								</span>
 								{item.category}
 							</p>
-							<p className='text-base font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
+							<p className='md:text-base xs:text-2xl font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
 								<span className="font-semibold mr-[5px]">
 									{portfolio.client + ':'}
 								</span>
 								{item.client}
 							</p>
-							<p className='text-base font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
+							<p className='md:text-base xs:text-2xl font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
 								<span className="font-semibold mr-[5px]">
 									{portfolio.date + ':'}
 								</span>
 								{item.createdDate}
 							</p>
-							<p className='text-base font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
+							<p className='md:text-base xs:text-2xl font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
 								<span className="font-semibold mr-[5px]">
 									{portfolio.link + ':'}
 								</span>
@@ -135,10 +133,10 @@ const ProjectInfoPage = () => {
 							</p>
 						</div>
 					</div>
-					<h3 className="w-[357px] text-2xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
+					<h3 className="w-[357px] md:text-2xl xs:text-4xl font-semibold font-Raleway text-gray-500 mb-[10px] dark:text-light duration-500">
 						{item.solution}
 					</h3>
-					<p className="w-[357px] text-base font-normal font-Raleway text-gray-500 dark:text-light duration-500">
+					<p className="w-[357px] md:text-base xs:text-2xl font-normal font-Raleway text-gray-500 dark:text-light duration-500">
 						{item.description}
 					</p>
 				</div>

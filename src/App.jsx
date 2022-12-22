@@ -52,8 +52,8 @@ function App() {
 				/>
 				<Routes>
 					<Route path="/" element={<MainPage />} />
-					<Route path="/portfolio" element={<PortfolioPage />}/>
-					<Route path="/portfolio/:projectId" element={<ProjectInfoPage />}/>
+					<Route path="/portfolio" element={<PortfolioPage />} />
+					<Route path="/portfolio/:projectId" element={<ProjectInfoPage />} />
 				</Routes>
 			</main>
 			<Footer />
