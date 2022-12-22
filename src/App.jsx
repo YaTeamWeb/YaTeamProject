@@ -22,7 +22,7 @@ AOS.init({
 	disableMutationObserver: false,
 	debounceDelay: 50,
 	throttleDelay: 200,
-	offset: 400,
+	offset: 0,
 	delay: 0,
 	duration: 1000,
 	easing: 'ease-in-out',

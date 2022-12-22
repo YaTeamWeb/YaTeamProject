@@ -77,7 +77,7 @@ export const Services = () => {
 					id={'1'}
 					dataAos="zoom-in"
 					dataAosDelay="0"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -87,7 +87,7 @@ export const Services = () => {
 					id={'2'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -97,7 +97,7 @@ export const Services = () => {
 					id={'3'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -107,7 +107,7 @@ export const Services = () => {
 					id={'4'}
 					dataAos="zoom-in"
 					dataAosDelay="0"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -117,7 +117,7 @@ export const Services = () => {
 					id={'5'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 				<ServicesItem
 					clearNearBy={clearNearBy}
@@ -127,7 +127,7 @@ export const Services = () => {
 					id={'6'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
-					dataAosOffset="600"
+					dataAosOffset="300"
 				/>
 			</ul>
 		</section>

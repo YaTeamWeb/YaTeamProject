@@ -5,7 +5,7 @@ export const Body2 = ({ className, children }) => {
 	return (
 		<p
 			className={classnames(
-				'font-Raleway font-medium text-base text-gray-300 leading-5',
+				'font-Raleway font-medium xs:text-[18px] text-[16px] text-gray-300',
 				className
 			)}
 		>
