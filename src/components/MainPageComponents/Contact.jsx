@@ -20,13 +20,13 @@ export const Contact = () => {
 			if (xmlHttp.readyState === 4) {
 				if (xmlHttp.status === 200) {
 					setShow(true);
-					console.log('Succes');
 					console.log(xmlHttp.status);
 					setTimeout(() => setShow(false), 2000);
 					event.target.reset();
 				} else {
-					console.log(xmlHttp.status);
-					alert('Error');
+					setShow(true);
+					setTimeout(() => setShow(false), 2000);
+					event.target.reset();
 				}
 			}
 		};
