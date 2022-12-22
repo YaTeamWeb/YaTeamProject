@@ -60,7 +60,7 @@ export const Contact = () => {
 
 			<div className="flex sm:flex-row flex-col sm:pl-[10px] p-0  sm:pt-5 sm:pr-5 sm:pb-5 gap-10">
 				<ul
-					className="flex flex-col items-start gap-[30px] min-w-[334px] py-[10px]"
+					className="flex flex-col items-start gap-[30px] py-[10px]"
 					data-aos="fade-right"
 					data-aos-delay="0"
 					data-aos-offset="300"
