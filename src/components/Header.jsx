@@ -61,7 +61,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				<nav
 					className={`${
 						burgerOpen ? '' : 'invisible opacity-0'
-					} h-[240px] lg:h-full lg:bg-transparent bg-dark dark:bg-light absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
+					} h-[240px] lg:h-full lg:bg-transparent bg-dark dark:bg-light lg:bg-dark lg:dark:bg-dark absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
 				>
 					<LinkAnchor
 						to="hero"
@@ -71,7 +71,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						duration={1000}
 						onClick={() => scrollToAnchor('hero')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 					>
 						{header[0].name}
@@ -84,7 +84,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						duration={1000}
 						onClick={() => scrollToAnchor('about')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 					>
 						{header[1].name}
@@ -97,7 +97,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						duration={1000}
 						onClick={() => scrollToAnchor('services')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 					>
 						{header[2].name}
@@ -110,7 +110,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						duration={1000}
 						onClick={() => scrollToAnchor('team')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 					>
 						{header[3].name}
@@ -123,7 +123,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						duration={1000}
 						onClick={() => scrollToAnchor('contacts')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 					>
 						{header[4].name}
@@ -131,14 +131,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 
 					<div className="relative">
 						<p
-							className="pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light group flex flex-row items-center justify-center"
+							className="pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light group flex flex-row items-center justify-center"
 							onClick={dropClick}
 						>
 							{header[5].name}
 							<SvgIcon
 								name="header-arrow"
 								className={
-									'fill-light lg:fill-light dark:fill-dark duration-300 group-hover:fill-primary w-[13px] h-[8px] ml-[5px]'
+									'fill-light lg:fill-light lg:dark:fill-light dark:fill-dark duration-300 group-hover:fill-primary w-[13px] h-[8px] ml-[5px]'
 								}
 							/>
 						</p>
@@ -219,14 +219,15 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						</p>
 					</button>
 					<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
+					<div className='cursor-pointer w-[30px] h-[30px] flex justify-center items-center' onClick={hamburgerClick}>
 					<button
 						className={`${
 							burgerOpen
 								? 'rotate-45 after:rotate-[90deg] after:duration-300 after:translate-y-[-10px]'
-								: ' before:absolute before:w-[40px] before:h-[3px] before:bg-light before:left-0 before:top-[-10px] '
-						} lg:hidden relative w-[40px]  h-[3px] bg-light duration-300 after:absolute after:w-[40px] after:h-[3px] after:bg-light after:left-0 after:top-[10px]`}
-						onClick={hamburgerClick}
+								: ' before:absolute before:w-[30px] before:h-[3px] before:bg-light before:left-0 before:top-[-10px] '
+						} lg:hidden relative w-[30px]  h-[3px] bg-light duration-300 after:absolute after:w-[30px] after:h-[3px] after:bg-light after:left-0 after:top-[10px]`}
 					></button>
+					</div>
 				</div>
 			</div>
 		</header>

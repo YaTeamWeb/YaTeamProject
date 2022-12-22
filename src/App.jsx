@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from './store/slices/theme/index.js';
 import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation.jsx';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+//import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import MainPage from './pages/MainPage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
@@ -14,7 +14,7 @@ import ProjectInfoPage from './pages/ProjectInfoPage.jsx';
 
 AOS.init({
 	// Global settings:
-	disable: false,
+	disable: 'mobile',
 	startEvent: 'load',
 	initClassName: 'aos-init',
 	animatedClassName: 'aos-animate',
