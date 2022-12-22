@@ -38,7 +38,7 @@ export const ProjectCard = ({
 					className={
 						imageFigcaption === ''
 							? ''
-							: 'group-hover:text-primary ease-linear duration-300 font-semibold sm:text-2xl xs:text-3xl mt-8 dark:text-light text-center'
+							: 'group-hover:text-primary ease-linear duration-300 font-semibold sm:text-2xl xs:text-3xl text-4xl mt-8 dark:text-light text-center'
 					}
 				>
 					{imageFigcaption}

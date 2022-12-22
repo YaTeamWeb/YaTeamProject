@@ -37,7 +37,7 @@ export const ServicesItem = ({
 			data-aos={dataAos}
 			data-aos-delay={dataAosDelay}
 			data-aos-offset={dataAosOffset}
-			className={'lg:col-span-4 sm:col-span-6 xs:col-span-12'}
+			className={'lg:col-span-4 sm:col-span-6 col-span-12'}
 		>
 			<div
 				onMouseLeave={theme ? onMouseLeave : null}
