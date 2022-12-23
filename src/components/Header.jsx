@@ -70,14 +70,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: ''
+								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 						spy={true}
 						smooth={true}
 						duration={1000}
 						onClick={() => scrollToAnchor('hero')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
 						{header[0].name}
@@ -87,14 +87,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: ''
+								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 						spy={true}
 						smooth={true}
 						duration={1000}
 						onClick={() => scrollToAnchor('about')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
 						{header[1].name}
@@ -104,14 +104,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: ''
+								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 						spy={true}
 						smooth={true}
 						duration={1000}
 						onClick={() => scrollToAnchor('services')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
 						{header[2].name}
@@ -121,14 +121,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: ''
+								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 						spy={true}
 						smooth={true}
 						duration={1000}
 						onClick={() => scrollToAnchor('team')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
 						{header[3].name}
@@ -138,14 +138,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: ''
+								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
 						}
 						spy={true}
 						smooth={true}
 						duration={1000}
 						onClick={() => scrollToAnchor('contacts')}
 						className={
-							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light'
+							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
 						{header[4].name}
