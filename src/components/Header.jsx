@@ -30,7 +30,9 @@ export const Header = ({ setDarkMode, darkMode }) => {
 			spy: true,
 			smooth: true,
 		});
-		setBurgerOpen(!burgerOpen);
+		if (document.documentElement.clientWidth >= 1024) {
+			setBurgerOpen(!burgerOpen);
+		}
 	};
 
 	const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -65,7 +67,11 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				>
 					<LinkAnchor
 						to="hero"
-						activeClass={pathname === '/' ? 'text-primary' : ''}
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
 						spy={true}
 						smooth={true}
 						duration={1000}
@@ -78,7 +84,11 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					</LinkAnchor>
 					<LinkAnchor
 						to="about"
-						activeClass={pathname === '/' ? 'text-primary' : ''}
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
 						spy={true}
 						smooth={true}
 						duration={1000}
@@ -91,7 +101,11 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					</LinkAnchor>
 					<LinkAnchor
 						to="services"
-						activeClass={pathname === '/' ? 'text-primary' : ''}
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
 						spy={true}
 						smooth={true}
 						duration={1000}
@@ -104,7 +118,11 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					</LinkAnchor>
 					<LinkAnchor
 						to="team"
-						activeClass={pathname === '/' ? 'text-primary' : ''}
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
 						spy={true}
 						smooth={true}
 						duration={1000}
@@ -117,7 +135,11 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					</LinkAnchor>
 					<LinkAnchor
 						to="contacts"
-						activeClass={pathname === '/' ? 'text-primary' : ''}
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
 						spy={true}
 						smooth={true}
 						duration={1000}
@@ -219,14 +241,17 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						</p>
 					</button>
 					<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
-					<div className='cursor-pointer w-[30px] h-[30px] flex justify-center items-center' onClick={hamburgerClick}>
-					<button
-						className={`${
-							burgerOpen
-								? 'rotate-45 after:rotate-[90deg] after:duration-300 after:translate-y-[-10px]'
-								: ' before:absolute before:w-[30px] before:h-[3px] before:bg-light before:left-0 before:top-[-10px] '
-						} lg:hidden relative w-[30px]  h-[3px] bg-light duration-300 after:absolute after:w-[30px] after:h-[3px] after:bg-light after:left-0 after:top-[10px]`}
-					></button>
+					<div
+						className="cursor-pointer w-[30px] h-[30px] flex justify-center items-center"
+						onClick={hamburgerClick}
+					>
+						<button
+							className={`${
+								burgerOpen
+									? 'rotate-45 after:rotate-[90deg] after:duration-300 after:translate-y-[-10px]'
+									: ' before:absolute before:w-[30px] before:h-[3px] before:bg-light before:left-0 before:top-[-10px] '
+							} lg:hidden relative w-[30px]  h-[3px] bg-light duration-300 after:absolute after:w-[30px] after:h-[3px] after:bg-light after:left-0 after:top-[10px]`}
+						></button>
 					</div>
 				</div>
 			</div>

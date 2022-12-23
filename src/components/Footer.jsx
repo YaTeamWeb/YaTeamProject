@@ -3,9 +3,9 @@ import logo from '../assets/images/MainPageImages/logo.png';
 import { SvgIcon } from './UI/SvgIcon';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../store/slices/lang/selectors.js';
-import { Link, useNavigate } from 'react-router-dom';
-import { scroller } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 import * as Scroll from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 export const Footer = () => {
 	const { footer } = useSelector(selectLangItems);
@@ -101,7 +101,7 @@ export const Footer = () => {
 					<ul>
 						<li
 							className={
-								'mb-5 lg:xl xs:text-3xl text-4xl font-Raleway font-bold text-light'
+								'mb-5 lg:text-xl xs:text-3xl text-4xl font-Raleway font-bold text-light'
 							}
 						>
 							{footer.firstList.title}

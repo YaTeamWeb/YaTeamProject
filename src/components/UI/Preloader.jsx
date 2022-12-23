@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Preloader = () => {
-	return <div></div>;
+	return <div className={'preloader'}></div>;
 };
