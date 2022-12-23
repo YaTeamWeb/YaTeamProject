@@ -230,6 +230,13 @@
         "contacts": {
             "suptitle": "Связаться",
             "title": "Свяжитесь с нами!",
+            "form": {
+                "name": "Ваше имя",
+                "email": "Ваш email",
+                "theme": "Тема",
+                "message": "Сообщение"
+            },
+            "button": "Отправить Сообщение",
             "items": [
                 {
                     "title": "Расположение",
@@ -523,6 +530,13 @@
         "contacts": {
             "suptitle": "Contact",
             "title": "Contact to us!",
+            "button": "Send a Message",
+            "form": {
+                "name": "Your name",
+                "email": "Your email",
+                "theme": "Topic",
+                "message": "Message"
+            },
             "items": [
                 {
                     "title": "Location",

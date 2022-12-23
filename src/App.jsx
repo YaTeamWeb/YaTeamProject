@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { BackTop, Footer, Header } from './components/index.jsx';
+import { BackTop, Footer, Header, Preloader } from './components/index.jsx';
 import { selectTheme } from './store/slices/theme/selectors.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from './store/slices/theme/index.js';
 import GrowingCircleAnimation from './components/DarkMode/GrowingCircleAnimation.jsx';
 import AOS from 'aos';
-//import 'aos/dist/aos.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import MainPage from './pages/MainPage.jsx';
-import PortfolioPage from './pages/PortfolioPage.jsx';
-import ProjectInfoPage from './pages/ProjectInfoPage.jsx';
+const MainPage = React.lazy(() => import('./pages/MainPage.jsx'));
+const PortfolioPage = React.lazy(() => import('./pages/PortfolioPage.jsx'));
+const ProjectInfoPage = React.lazy(() => import('./pages/ProjectInfoPage.jsx'));
 
 AOS.init({
 	// Global settings:
@@ -50,11 +49,13 @@ function App() {
 					setDarkMode={(theme) => dispatch(setTheme(theme))}
 					darkMode={isDark}
 				/>
-				<Routes>
-					<Route path="/" element={<MainPage />} />
-					<Route path="/portfolio" element={<PortfolioPage />} />
-					<Route path="/portfolio/:projectId" element={<ProjectInfoPage />} />
-				</Routes>
+				<Suspense fallback={<Preloader />}>
+					<Routes>
+						<Route path="/" element={<MainPage />} />
+						<Route path="/portfolio" element={<PortfolioPage />} />
+						<Route path="/portfolio/:projectId" element={<ProjectInfoPage />} />
+					</Routes>
+				</Suspense>
 			</main>
 			<Footer />
 			<BackTop className="fixed bottom-3 right-3" />
