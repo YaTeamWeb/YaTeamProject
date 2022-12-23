@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import project_1 from '../../assets/images/ProjectsImages/portfolio-1.png';
 import project_2 from '../../assets/images/ProjectsImages/portfolio-2/1.jpg';
 import project_3 from '../../assets/images/ProjectsImages/portfolio-3/1.png';
-import project_4 from '../../assets/images/ProjectsImages/portfolio-4.jpg';
+import project_4 from '../../assets/images/ProjectsImages/portfolio-4/1.jpg';
 
 export const Portfolio = () => {
 	const { portfolio } = useSelector(selectLangItems);
