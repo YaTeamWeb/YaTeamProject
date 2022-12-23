@@ -71,11 +71,11 @@
                 {
                     "title": "Вёрстка с макета",
                     "description": "Сверстаем сайт по готовому макету"
-                },             
+                },
                 {
                     "title": "Поддержка сайта",
                     "description": "Поддержим уже готовый сайт"
-                },         
+                },
                 {
                     "title": "Сайт под ключ",
                     "description": "Разработаем вам сайт от идеи до запуска в интернете"
@@ -83,7 +83,7 @@
                 {
                     "title": "Вёрстка с макета",
                     "description": "Сверстаем сайт по готовому макету"
-                },             
+                },
                 {
                     "title": "Поддержка сайта",
                     "description": "Поддержим уже готовый сайт"
@@ -130,8 +130,8 @@
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Рената Губайдуллина",
-                    "description": "Описание сайта-визитки",
-                    "solution" : "Идеальное решение для вашего бизнеса",
+                    "description": "Проект сделан для Лицея Академии Яндекса с целью показать свой путь в разработке и продемонстрировать навыки работы с разными технологиями.",
+                    "solution" : "Путь к успеху даётся не просто",
                     "client": "Персональный проект"
                 },
                 {
@@ -364,11 +364,11 @@
                 {
                     "title": "Layout from the layout",
                     "description": "We are building a website according to a ready-made layout"
-                },             
+                },
                 {
                     "title": "Website support",
                     "description": "We will support a ready-made website"
-                },     
+                },
                 {
                     "title": "Turnkey website",
                     "description": "We will develop a website for you from the idea to the launch on the Internet"
@@ -376,7 +376,7 @@
                 {
                     "title": "Layout from the layout",
                     "description": "We are building a website according to a ready-made layout"
-                },             
+                },
                 {
                     "title": "Website support",
                     "description": "We will support a ready-made website"
@@ -417,8 +417,8 @@
                 {
                     "category": "Business card sites",
                     "title": "Renat Gubaidullin's business card website",
-                    "description": "Description of the business card site",
-                    "solution" : "The perfect solution for your business",
+                    "description": "The project was made for the Lyceum of the Yandex Academy in order to show your way in development and demonstrate skills working with different technologies.",
+                    "solution" : "The path to success is not easy",
                     "client": "Personal project"
                 },
                 {
