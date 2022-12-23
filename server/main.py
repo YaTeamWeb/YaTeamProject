@@ -8,9 +8,7 @@ bot = Bot()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://yateam.site/",
-                   "http://localhost:5173",
-                   "http://188.17.149.193:5173"],
+    allow_origins=["https://wondrous-gumdrop-d258e6.netlify.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
