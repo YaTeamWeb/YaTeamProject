@@ -63,14 +63,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				<nav
 					className={`${
 						burgerOpen ? '' : 'invisible opacity-0'
-					} h-[240px] lg:h-full lg:bg-transparent bg-dark dark:bg-light lg:bg-dark lg:dark:bg-dark absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
+					} h-[240px] lg:h-full lg:bg-transparent bg-dark dark:bg-light dark:text-dark lg:dark:text-light lg:bg-dark lg:dark:bg-dark absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
 				>
 					<LinkAnchor
 						to="hero"
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
+								: ''
 						}
 						spy={true}
 						smooth={true}
@@ -87,7 +87,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
+								: ''
 						}
 						spy={true}
 						smooth={true}
@@ -104,7 +104,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
+								: ''
 						}
 						spy={true}
 						smooth={true}
@@ -121,7 +121,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
+								: ''
 						}
 						spy={true}
 						smooth={true}
@@ -138,7 +138,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						activeClass={
 							pathname === '/'
 								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
-								: 'text-light dark:text-dark lg:text-light lg:dark:text-light'
+								: ''
 						}
 						spy={true}
 						smooth={true}
