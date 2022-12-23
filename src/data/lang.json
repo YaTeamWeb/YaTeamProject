@@ -198,7 +198,9 @@
             "categories": ["Все", "Интернет-Магазины", "Сайты-Визитки", "Коммерческие предприятия"],
             "overlay": "Посмотреть",
             "portfolioPageButton": "Загрузить ещё",
-            "button": "Посмотреть все проекты"
+            "button": "Посмотреть все проекты",
+            "nothingFound": "Ничего не найдено",
+            "goBack": "Вернуться"
         },
         "counts": {
             "title": "Мы в цифрах",
@@ -499,10 +501,13 @@
             "category": "Category",
             "client": "Client",
             "date": "Сreation date",
-            "link": "Link"
+            "link": "Link",
+            "nothingFound": "Nothing found",
+            "goBack": "Go back"
         },
         "counts": {
             "title": "We are in numbers",
+            "description": "Look at our successes",
             "items": [
                 {
                     "textFirst": "So many",
