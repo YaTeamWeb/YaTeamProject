@@ -170,7 +170,7 @@ const PortfolioPage = () => {
 				</ul>
 				{count === 0 && (
 					<h3 className="text-dark dark:text-light duration-500 text-center text-6xl">
-						Ничего не найдено
+						{portfolio.nothingFound}
 					</h3>
 				)}
 				{limit < count && (

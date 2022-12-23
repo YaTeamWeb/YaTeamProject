@@ -30,7 +30,7 @@ const ProjectInfoPage = () => {
 						}
 					>
 						<h1 className={'text-6xl dark:text-light mb-2.5 duration-500'}>
-							Ничего не найдено 😞
+							{portfolio.nothingFound} 😞
 						</h1>
 						<Link
 							to={'/'}
@@ -38,7 +38,7 @@ const ProjectInfoPage = () => {
 								'text-3xl dark:text-light hover:text-primary dark:hover:text-primary duration-500'
 							}
 						>
-							Вернуться
+							{portfolio.goBack}
 						</Link>
 					</div>
 				</div>
