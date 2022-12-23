@@ -30,16 +30,14 @@ export const Header = ({ setDarkMode, darkMode }) => {
 			spy: true,
 			smooth: true,
 		});
-		if (document.documentElement.clientWidth >= 1024) {
-			setBurgerOpen(!burgerOpen);
-		}
+		setBurgerOpen(!burgerOpen);
 	};
 
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 
 	const { pathname } = useLocation();
 
-	function dropClick() {
+	function dropClick(e) {
 		if (document.documentElement.clientWidth >= 1024) {
 			ref.current.style.visibility =
 				ref.current.style.visibility === 'hidden' ? 'visible' : 'hidden';
@@ -47,6 +45,9 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				ref.current.style.visibility === 'hidden' ? '0' : '1';
 		} else {
 			setDropdownOpen(!dropdownOpen);
+			if (e.currentTarget.classList.contains('burger-link')) {
+				setBurgerOpen(!burgerOpen);
+			}
 		}
 	}
 
@@ -205,10 +206,10 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							isActive
 								? `${
 										dropdownOpen ? '' : 'invisible opacity-0'
-								  } w-full bg-primary text-light dark:text-dark lg:hidden  duration-500`
+								  } burger-link w-full bg-primary text-light dark:text-dark lg:hidden  duration-500`
 								: `${
 										dropdownOpen ? '' : 'invisible opacity-0'
-								  } w-full bg-dark dark:bg-light text-light dark:text-dark lg:hidden  duration-500`
+								  } burger-link w-full bg-dark dark:bg-light text-light dark:text-dark lg:hidden  duration-500`
 						}
 						onClick={dropClick}
 					>
@@ -222,10 +223,10 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							isActive
 								? `${
 										dropdownOpen ? '' : 'invisible opacity-0'
-								  } w-full bg-primary text-light dark:text-dark lg:hidden  duration-500`
+								  } burger-link w-full bg-primary text-light dark:text-dark lg:hidden  duration-500`
 								: `${
 										dropdownOpen ? '' : 'invisible opacity-0'
-								  } w-full bg-dark dark:bg-light text-light dark:text-dark lg:hidden  duration-500`
+								  } burger-link w-full bg-dark dark:bg-light text-light dark:text-dark lg:hidden  duration-500`
 						}
 						onClick={dropClick}
 					>
