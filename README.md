@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8758d867-e311-4c78-8e61-1e8674bf6ecc/deploy-status)](https://app.netlify.com/sites/tiny-moonbeam-f33e03/deploys)
+
 ### YaTeam - Web Studio from Saratov
 <h1 align='center'>Документация / Documentation</h1>
 <h2>Основная Информация</h2>
@@ -79,3 +81,4 @@
     <li><h3>Eslint - <a href='https://eslint.org/'>https://eslint.org/</a></h3></li>
     <li><h3>Prettier - <a href='https://prettier.io/'>https://prettier.io/</a></h3></li>
 </ul>
+

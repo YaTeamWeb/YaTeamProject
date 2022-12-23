@@ -1,35 +1,49 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { SvgIcon } from '../UI/SvgIcon.jsx';
 import { Heading2 } from '../UI/Heading2.jsx';
 import { SupTitle } from '../UI/SupTitle.jsx';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import { SuccessModal } from '../UI/SuccessModal';
+import emailjs from '@emailjs/browser';
+import { ErrorModal } from '../UI/ErrorModal';
+import { InfoModal } from '../UI/InfoModal';
 
 export const Contact = () => {
 	const { contacts } = useSelector(selectLangItems);
 
 	const [show, setShow] = useState(false);
+	const [showError, setShowError] = useState(false);
+	const [showInfo, setShowInfo] = useState(false);
+	const form = useRef();
 
 	const ControlForm = (event) => {
 		event.preventDefault();
-		const xmlHttp = new XMLHttpRequest();
-		xmlHttp.open('POST', 'http://34.159.168.235:5500/feedback', true);
-		xmlHttp.send(new FormData(event.target));
-		xmlHttp.onreadystatechange = function () {
-			if (xmlHttp.readyState === 4) {
-				if (xmlHttp.status === 200) {
+		setShowInfo(true);
+
+		emailjs
+			.sendForm(
+				'service_vq5bndn',
+				'template_9ijfg6m',
+				form.current,
+				'kAKGLxt3XkEBl2lFN'
+			)
+			.then(
+				(result) => {
+					setShowInfo(false);
 					setShow(true);
-					console.log('Succes');
-					console.log(xmlHttp.status);
+					console.log(result.text);
 					setTimeout(() => setShow(false), 2000);
+
 					event.target.reset();
-				} else {
-					console.log(xmlHttp.status);
-					alert('Error');
+				},
+				(error) => {
+					setShowInfo(false);
+					setShowError(true);
+					console.log(error.text);
+					setTimeout(() => setShowError(false), 2000);
 				}
-			}
-		};
+			);
 	};
 
 	return (
@@ -40,6 +54,11 @@ export const Contact = () => {
 			id="contacts"
 		>
 			<SuccessModal show={show} text={'Сообщение отправлено'} />
+			<ErrorModal
+				show={showError}
+				text={'Произошла ошибка при отправке сообщения'}
+			/>
+			<InfoModal show={showInfo} text={'Ожидайте, сообщение отправляется'} />
 			<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
 				<SupTitle>{contacts.suptitle}</SupTitle>
 
@@ -69,7 +88,7 @@ export const Contact = () => {
 							<SvgIcon name={'location'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[0].title}
 							</p>
 							<p className="font-normal sm:text-base text-2xl  text-gray-300 font-OpenSans">
@@ -82,7 +101,7 @@ export const Contact = () => {
 							<SvgIcon name={'email'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[1].title}
 							</p>
 							<a
@@ -98,7 +117,7 @@ export const Contact = () => {
 							<SvgIcon name={'phone'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway">
+							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[2].title}
 							</p>
 							<a
@@ -111,9 +130,11 @@ export const Contact = () => {
 					</li>
 				</ul>
 				<form
+					id="contact_form"
 					className="p-0 sm:p-[10px] w-full flex flex-col gap-5"
 					data-aos="fade-left"
 					onSubmit={ControlForm}
+					ref={form}
 					data-aos-delay="0"
 					data-aos-offset="300"
 				>
