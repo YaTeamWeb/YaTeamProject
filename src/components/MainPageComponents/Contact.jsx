@@ -33,7 +33,7 @@ export const Contact = () => {
 					setShowInfo(false);
 					setShow(true);
 					console.log(result.text);
-					setTimeout(() => setShow(false), 2001);
+					setTimeout(() => setShow(false), 2000);
 
 					event.target.reset();
 				},
