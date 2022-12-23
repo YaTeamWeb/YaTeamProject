@@ -104,11 +104,11 @@
             "client": "Клиент",
             "date": "Дата создания",
             "link": "Ссылка",
+            "technologies": "Технологии",
             "cards": [
                 {
                     "category": "Интернет-магазины",
                     "title": "Интернет-магазин книжек",
-                    "authors": ["Ренат Губайдуллин", "Никитин Дмитрий", "Гарифуллин Инсаф", "Степан Мельников"],
                     "description": "Данный проект был создан в качестве домашнего задания в Интенсивах Академии Яндекса. Его ключевая особенность - удобство использоания и быстрая загрузка данных. Он преставялет собой интернет-магазин для продажи книг. Наша команда продумала каждую мелочь, чтобы сделать ваш опыт использования незабываемым.",
                     "solution" : "Идеальное решение для вашего бизнеса",
                     "client": "Персональный проект"
@@ -116,7 +116,6 @@
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Никитина Дмитрия",
-                    "authors": ["Никитин Дмитрий"],
                     "description": "Данный проект был сделан с целью показать себя. Здесь всё минималистично, но очень красиво. Знания и опыт раскрываются в процессе просмотра сайта.",
                     "solution" : "Минимализм - не значит, что плохо",
                     "client": "Персональный проект"
@@ -124,7 +123,6 @@
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Гарифуллина Инсафа",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Этот проект был сделан для Яндекс Интенсивов. Для него я попытался максимально передать свой опыт разработки сайтов. Также выбрал приятные глазу цвета и сделал светлую и тёмную тему. Тут всё сконцетрированно на идее - показать себя. Поэтому я постарался сделать всё на максимум.",
                     "solution" : "Структура проекта и организация - важнейшая часть работы",
                     "client": "Персональный проект"
@@ -132,7 +130,6 @@
                 {
                     "category": "Сайты-визитки",
                     "title": "Сайт-визитка Рената Губайдуллина",
-                    "authors": ["Ренат Губайдуллин"],
                     "description": "Описание сайта-визитки",
                     "solution" : "Идеальное решение для вашего бизнеса",
                     "client": "Персональный проект"
@@ -140,7 +137,6 @@
                 {
                     "category": "Коммерческие предприятия",
                     "title": "Онлайн-курсы от CreateX",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Курсы от CreateX. Здесь всё максимально продумано - цвета, оттенки, функционал, дизайн. Всё это совмещено с одним из популярнейших образовательных платформ - CreateX. Сайт сделан максимально удобным для пользователя. Качество, скорость и креативность совмещены в одном.",
                     "solution" : "Невероятная скорость и качество - это то, что вам нужно!",
                     "client": "CreateX"
@@ -148,7 +144,6 @@
                 {
                     "category": "Интернет-магазины",
                     "title": "Сайт для путешествий",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Особенность этого сайта в том, что он очень красиво анимирован. Сайт путешествий и исследований помогает людям в отпуске, тем кто хочет отдохнуть и расслабиться. Макисмальный труд был вложен для того, чтобы люди уже начиная с осмотра сайта ощущали себя в отпуске.",
                     "solution" : "Красивейшие анимации - всегда успокаивает",
                     "client": "Tour and Travel"
@@ -156,7 +151,6 @@
                 {
                     "category": "Интернет-магазины",
                     "title": "Интернет магазин различных товаров - Shopka",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Здесь получилось уместить большое количество элементов в маленькой страничке. Благодаря этому получилось сделать максимальное удобство. Всё это совместилось с очень красивыми анимациями и просторным функционалом.",
                     "solution" : "Удобство прежде всего",
                     "client": "Shopka Corporation"
@@ -164,7 +158,6 @@
                 {
                     "category": "Коммерческие предприятия",
                     "title": "Строительная компания - Konstruct",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Завораживающий и удивительный сайт. Специально для этого, подобраны картинки, которые будут удивлять пользователя. Анимации один из элементов, который здесь очень важен, ведь клиент всегда любит такое. Мы постарались показать на максимум эту строительную компанию, чтобы она была такой же восхитительной, как и этот сайт.",
                     "solution" : "Удивить пользователя - уже часть проделанной работы",
                     "client": "Konstruct Inc."
@@ -172,7 +165,6 @@
                 {
                     "category": "Интернет-магазины",
                     "title": "Ювелирный магазин - Moon River",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Блеск и красота - это главное, что сделано в этой работе. Без этого - задача была бы не выполнена. Как раз таки поэтому, здесь необычная сетка и дизайн. Чтобы сделать эту работу потребовалось не мало усилий, но благодаря упорному труду и креативности решения, всё выполнено - идеально.",
                     "solution" : "Индивидуальный подход к каждому",
                     "client": "Moon River"
@@ -180,7 +172,6 @@
                 {
                     "category": "Интернет-магазины",
                     "title": "Кофейный магазин - Revo Coffee",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Просто замечательный дизайн, благодаря которому пользователю захочется горячего и вкусного кофе. Также здесь проработаны анимации, которые плавно выходят, чтобы не слепить пользователя кучей информации. Ну и конечно же - слайдеры, которые тоже удивительно красиво анимированы. Адаптивность под все устройства и понятный интерфейс, ведь кофе должен суметь заказать каждый.",
                     "solution" : "Красота и Креативность - повод пользователю остаться на сайте",
                     "client": "Revo Coffee Việt Nam"
@@ -188,7 +179,6 @@
                 {
                     "category": "Коммерческие предприятия",
                     "title": "Фотостудия - Agency",
-                    "authors": ["Гарифуллин Инсаф"],
                     "description": "Было решено совместить креативность фотостудии и наше творчество. Таким образом, был получен невероятный дизайн, а также красота анимаций. Тут был принят такой подход, с помощью которого пользователь мы хотели, чтобы настолько был поражён, что ему этот сайт запомнился бы навсегда. Надеюсь у нас получилось это сделать - скорость, дизайн, качество и анимированность. Максимальный труд и усердство.",
                     "solution" : "Совместная работа и любовь к делу.",
                     "client": "Agency"
@@ -401,11 +391,11 @@
         "portfolio": {
             "suptitle": "Portfolio",
             "title": "Examples of our work",
+            "technologies": "Technologies",
             "cards": [
                 {
                     "category": "Online stores",
                     "title": "Online book store",
-                    "authors": ["Renat Gubaidullin", "Nikitin Dmitriy", "Garifullin Insaf", "Stepan Melnikov"],
                     "description": "This project was created as a homework assignment at the intensive courses of the Yandex Academy. Its key feature is ease of use and fast data loading. This is an online bookstore. Our team has thought through every detail to make your use unforgettable.\n",
                     "solution" : "The perfect solution for your business",
                     "client": "Personal project"
@@ -413,7 +403,6 @@
                 {
                     "category": "Business card sites",
                     "title": "Dmitriy Nikitin's business card website",
-                    "authors": ["Nikitin Dmitriy"],
                     "description": "This project was made in order to show itself. Everything here is minimalistic, but very beautiful. Knowledge and experience are revealed in the process of viewing the site.",
                     "solution" : "Minimalism does not mean that it is bad",
                     "client": "Personal project"
@@ -421,7 +410,6 @@
                 {
                     "category": "Business card sites",
                     "title": "Garifullin Insaf's business card website",
-                    "authors": ["Garifullin Insaf"],
                     "description": "This project was made for Yandex Intensive. For him, I tried to convey my experience of website development as much as possible. I also chose eye-pleasing colors and made a light and dark theme. Everything here is focused on the idea of showing yourself. So I tried to do everything to the maximum.",
                     "solution" : "Project structure and organization are the most important part of the work",
                     "client": "Personal project"
@@ -429,7 +417,6 @@
                 {
                     "category": "Business card sites",
                     "title": "Renat Gubaidullin's business card website",
-                    "authors": ["Renat Gubaidullin"],
                     "description": "Description of the business card site",
                     "solution" : "The perfect solution for your business",
                     "client": "Personal project"
@@ -437,7 +424,6 @@
                 {
                     "category": "Commercial enterprises",
                     "title": "Online courses from CreateX",
-                    "authors": ["Garifullin Insaf"],
                     "description": "Courses from CreateX. Everything is thought out as much as possible here - colors, shades, functionality, design. All this is combined with one of the most popular educational platforms - CreateX. The site is made as user-friendly as possible. Quality, speed and creativity are combined in one.",
                     "solution" : "Incredible speed and quality is what you need!",
                     "client": "CreateX"
@@ -445,7 +431,6 @@
                 {
                     "category": "Online stores",
                     "title": "Travel Website",
-                    "authors": ["Garifullin Insaf"],
                     "description": "The peculiarity of this site is that it is very beautifully animated. The travel and research website helps people on vacation, those who want to relax and unwind. The maximum amount of work was invested in order for people to feel like they are on vacation starting from the site inspection.",
                     "solution" : "The most beautiful animations are always soothing",
                     "client": "Tour and Travel"
@@ -453,7 +438,6 @@
                 {
                     "category": "Online stores",
                     "title": "Online store of various goods - Shopka",
-                    "authors": ["Garifullin Insaf"],
                     "description": "Here it turned out to fit a large number of elements in a small page. Thanks to this, it turned out to make maximum convenience. All this is combined with very beautiful animations and spacious functionality.",
                     "solution" : "Convenience first of all",
                     "client": "Shopka Corporation"
@@ -461,7 +445,6 @@
                 {
                     "category": "Commercial enterprises",
                     "title": "Construction company - Konstruct",
-                    "authors": ["Garifullin Insaf"],
                     "description": "A fascinating and amazing website. Especially for this, images have been selected that will surprise the user. Animations are one of the elements that is very important here, because the client always likes this. We tried to show this construction company to the maximum, so that it would be as amazing as this site.",
                     "solution" : "Surprise the user is already part of the work done",
                     "client": "Konstruct Inc."
@@ -469,7 +452,6 @@
                 {
                     "category": "Online stores",
                     "title": "Jewelry Store - Moon River",
-                    "authors": ["Garifullin Insaf"],
                     "description": "Brilliance and beauty are the main things that are done in this work. Without this, the task would not have been completed. That's exactly why there is an unusual grid and design here. It took a lot of effort to do this job, but thanks to the hard work and creativity of the solution, everything was done - perfectly.",
                     "solution" : "Individual approach to everyone",
                     "client": "Moon River"
@@ -477,7 +459,6 @@
                 {
                     "category": "Online stores",
                     "title": "Coffee shop - Revo Coffee",
-                    "authors": ["Garifullin Insaf"],
                     "description": "Just a wonderful design, thanks to which the user will want hot and delicious coffee. Also, animations have been worked out here, which smoothly come out so as not to blind the user with a bunch of information. And of course - sliders, which are also amazingly beautifully animated. Adaptability to all devices and a clear interface, because everyone should be able to order coffee.",
                     "solution" : "Beauty and Creativity are a reason for the user to stay on the site",
                     "client": "Revo Coffee Việt Nam"
@@ -485,7 +466,6 @@
                 {
                     "category": "Commercial enterprises",
                     "title": "Photo Studio - Agency",
-                    "authors": ["Garifullin Insaf"],
                     "description": "It was decided to combine the creativity of the photo studio and our creativity. Thus, an incredible design was obtained, as well as the beauty of the animations. Here we adopted such an approach, with the help of which we wanted the user to be so amazed that he would remember this site forever. I hope we managed to do it - speed, design, quality and animation. Maximum work and diligence.",
                     "solution" : "Teamwork and love of business.",
                     "client": "Agency"
