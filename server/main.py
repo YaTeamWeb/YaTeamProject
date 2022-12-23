@@ -8,7 +8,9 @@ bot = Bot()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://wondrous-gumdrop-d258e6.netlify.app/"],
+    allow_origins=["https://develop--wondrous-gumdrop-d258e6.netlify.app"
+
+                   ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
@@ -38,4 +40,4 @@ async def feedback(name: str = Form(),
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=5500, reload=True)
+    uvicorn.run("main:app", host="https://develop--wondrous-gumdrop-d258e6.netlify.app", port=5500, reload=True)
