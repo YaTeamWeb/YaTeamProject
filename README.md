@@ -91,3 +91,5 @@
     <li><h3>npm run lint - Линтирование кода</h3></li>
     <li><h3>npm run deploy - Линтирование кода + Сборка проекта</h3></li>
 </ul>
+
+<h2>Testing commit</h2>
