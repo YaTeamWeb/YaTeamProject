@@ -93,7 +93,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[2].title}
 					description={services.cards[2].description}
-					svgName={'speed2'}
+					svgName={'optimization'}
 					id={'3'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
@@ -113,7 +113,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[4].title}
 					description={services.cards[4].description}
-					svgName={'ad'}
+					svgName={'browser'}
 					id={'5'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
