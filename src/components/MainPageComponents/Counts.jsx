@@ -3,7 +3,7 @@ import { Heading2 } from '../UI/Heading2.jsx';
 import { Body } from '../UI/Body.jsx';
 import { Body2 } from '../UI/Body2.jsx';
 import { SvgIcon } from '../UI/SvgIcon.jsx';
-import notebook from '../../assets/images/MainPageImages/counts.png';
+import notebook from '../../assets/images/MainPageImages/counts.webp';
 import { useSelector } from 'react-redux';
 import { selectLangItems } from '../../store/slices/lang/selectors.js';
 import PureCounter from '@srexi/purecounterjs';
@@ -19,7 +19,7 @@ export const Counts = () => {
 	return (
 		<section
 			className={
-				'container flex flex-col xl:flex-row gap-8 items-center justify-center py-16 px-[30px] w-full'
+				'container flex flex-col xl:flex-row gap-8 items-center justify-center py-16 px-[30px]'
 			}
 			id="cta"
 			data-aos="fade-up"
@@ -28,7 +28,7 @@ export const Counts = () => {
 			data-aos-offset="400"
 		>
 			<div
-				className="countsImage w-full xl:w-[397px] h-full flex justify-center items-center"
+				className="countsImage w-full xl:w-[270px] xl:h-[450px]  h-[450px] sm:h-[520px]"
 				data-aos="fade-right"
 				data-aos-duration="1000"
 				data-aos-delay="0"
@@ -37,7 +37,8 @@ export const Counts = () => {
 					src={notebook}
 					alt={'Ноутбук'}
 					effect={'blur'}
-					className="object-cover lg:w-[650px] lg:h-[520px] w-full max-h-[520px] md:max-h-[450px] max-h-[300px]"
+					wrapperClassName='w-full xl:w-[270px] xl:h-[450px] h-[450px] sm:h-[520px]'
+					className=" w-full xl:w-[270px] xl:h-[450px] h-[450px] sm:h-[520px] object-cover"
 				/>
 			</div>
 			<div
@@ -54,7 +55,7 @@ export const Counts = () => {
 						{counts.description}
 					</Body>
 					<div className="grid grid-rows-4 h-full sm:grid-rows-2 sm:grid-cols-2 gap-x-[30px] gap-y-[16px] w-full">
-						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+						<div className="flex flex-row items-center justify-start gap-[30px] xs:h-[102px]">
 							<div className="">
 								<SvgIcon className="fill-primary" name={'smile'} size={51} />
 							</div>
@@ -76,7 +77,7 @@ export const Counts = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+						<div className="flex flex-row items-center justify-start gap-[30px] xs:h-[102px]">
 							<div className="w-51px h-51px">
 								<SvgIcon className="fill-primary" name={'projects'} size={50} />
 							</div>
@@ -98,7 +99,7 @@ export const Counts = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+						<div className="flex flex-row items-center justify-start gap-[30px] xs:h-[102px]">
 							<div className="w-51px h-51px">
 								<SvgIcon
 									className="fill-primary"
@@ -124,7 +125,7 @@ export const Counts = () => {
 							</div>
 						</div>
 
-						<div className="flex flex-row items-center justify-start gap-[30px] h-[102px]">
+						<div className="flex flex-row items-center justify-start gap-[30px] xs:h-[102px]">
 							<div className="w-51px h-51px">
 								<SvgIcon className="fill-primary" name={'medal'} size={51} />
 							</div>

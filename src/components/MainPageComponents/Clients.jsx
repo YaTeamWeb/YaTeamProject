@@ -10,10 +10,10 @@ import sberbank from '../../assets/images/MainPageImages/clients-1.svg';
 import sberbankEng from '../../assets/images/MainPageImages/clients-1-eng.png';
 import microsoft from '../../assets/images/MainPageImages/clients-2.png';
 import apple from '../../assets/images/MainPageImages/clients-3.png';
-import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.png';
+import darkMode_yandex from '../../assets/images/MainPageImages/clients-4-dark.svg';
 import yandexEng from '../../assets/images/MainPageImages/clients-4-eng.svg';
 import darkMode_yandexEng from '../../assets/images/MainPageImages/darkMode-clients-4-eng.svg';
-import yandex from '../../assets/images/MainPageImages/clients-4.png';
+import yandex from '../../assets/images/MainPageImages/clients-4.svg';
 import { useSelector } from 'react-redux';
 import {
 	selectLang,
@@ -64,27 +64,27 @@ export const Clients = () => {
 					speed={1000}
 				>
 					<SwiperSlide>
-						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
+						<div className='xm:h-[50px] xm:w-[120px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain text-center"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[120px] h-[30px] object-contain text-center"
 							src={clients.isRus ? sberbank : sberbankEng}
 							alt="Сбербанк"
 						/>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
+						<div className='xm:h-[50px] xm:w-[160px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[160px] h-[40px] object-contain"
 							src={microsoft}
 							alt="Microsoft"
 						/>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
+						<div className='xm:h-[50px] xm:w-[120px] mb-[20px] flex justify-center items-center'>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain dark:invert duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[120px] h-[40px] object-contain dark:invert duration-500"
 							src={apple}
 							alt="Apple"
 						/>
@@ -92,13 +92,15 @@ export const Clients = () => {
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
+						<div className='xm:h-[40px] lg:max-h-12 xm:w-[100px] h-[30px] opacity-0 dark:opacity-100 duration-500 absolute'>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-0 dark:opacity-100 duration-500 absolute"
+							className="w-full h-full object-contain"
 							src={clients.isRus ? darkMode_yandex : darkMode_yandexEng}
 							alt="Yandex"
 						/>
+						</div>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-100 dark:opacity-0 duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[100px] h-[30px] object-contain opacity-100 dark:opacity-0 duration-500"
 							src={clients.isRus ? yandex : yandexEng}
 							alt="Yandex"
 						/>
@@ -106,13 +108,15 @@ export const Clients = () => {
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className='xm:h-[50px] xm:w-[100px] mb-[20px] flex justify-center items-center'>
+						<div className='xm:h-[40px] lg:max-h-12 xm:w-[100px] h-[40px] opacity-0 dark:opacity-100 duration-500 absolute'>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-0 dark:opacity-100 duration-500 absolute"
+							className="w-full h-full object-contain"
 							src={darkMode_amazon}
 							alt="Amazon"
 						/>
+						</div>
 						<img
-							className="xm:h-[40px] lg:max-h-12 xm:w-[140px] h-[30px] object-contain opacity-100 dark:opacity-0 duration-500"
+							className="xm:h-[40px] lg:max-h-12 xm:w-[100px] h-[40px] object-contain opacity-100 dark:opacity-0 duration-500"
 							src={amazon}
 							alt="Amazon"
 						/>

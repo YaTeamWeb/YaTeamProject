@@ -9,6 +9,7 @@ import { scroller } from 'react-scroll';
 
 export const Footer = () => {
 	const { footer } = useSelector(selectLangItems);
+	console.log(footer);
 	const LinkAnchor = Scroll.Link;
 	const navigate = useNavigate();
 	const scrollToAnchor = async (anchor) => {
@@ -174,6 +175,28 @@ export const Footer = () => {
 						</li>
 						<li className={'mb-5 font-Raleway font-bold text-light '}>
 							<LinkAnchor
+								to="portfolio"
+								smooth={true}
+								duration={1000}
+								onClick={() => scrollToAnchor('portfolio')}
+								className={
+									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
+								}
+							>
+								<SvgIcon
+									size={12}
+									name={'arrowRight'}
+									className={
+										'fill-primary group-hover:translate-x-1 duration-300'
+									}
+								/>
+								<p className={'ml-1.5 font-Raleway font-semibold'}>
+									{footer.firstList.items[3].text}
+								</p>
+							</LinkAnchor>
+						</li>
+						<li className={'mb-5 font-Raleway font-bold text-light '}>
+							<LinkAnchor
 								to="team"
 								smooth={true}
 								duration={1000}
@@ -190,7 +213,7 @@ export const Footer = () => {
 									}
 								/>
 								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.firstList.items[3].text}
+									{footer.firstList.items[4].text}
 								</p>
 							</LinkAnchor>
 						</li>
@@ -212,7 +235,7 @@ export const Footer = () => {
 									}
 								/>
 								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.firstList.items[4].text}
+									{footer.firstList.items[5].text}
 								</p>
 							</LinkAnchor>
 						</li>

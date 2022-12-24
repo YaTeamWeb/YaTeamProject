@@ -49,7 +49,7 @@ export const ServicesItem = ({
 				<SvgIcon
 					className="rounded mb-5 bg-primary p-[20px]"
 					name={svgName}
-					size={70}
+					size={71}
 				/>
 
 				<Heading3 className="block ease-linear duration-300 hover:text-primary cursor-pointer mb-5 dark:text-light dark:hover:text-primary">
