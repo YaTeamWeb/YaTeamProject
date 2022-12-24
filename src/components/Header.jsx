@@ -64,7 +64,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 				<nav
 					className={`${
 						burgerOpen ? '' : 'invisible opacity-0'
-					} h-[240px] lg:h-full lg:bg-transparent bg-dark dark:bg-light dark:text-dark lg:dark:text-light lg:bg-dark lg:dark:bg-dark absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
+					} h-[280px] lg:h-full lg:bg-transparent bg-dark dark:bg-light dark:text-dark lg:dark:text-light lg:bg-dark lg:dark:bg-dark absolute top-[74px] right-[10px] lg:static w-[150px] lg:max-w-[1200px]  lg:visible lg:opacity-100 flex lg:flex flex-col lg:flex-row lg:justify-between items-start lg:items-center lg:min-w-[650px] xl:min-w-[800px] duration-500`}
 				>
 					<LinkAnchor
 						to="hero"
@@ -118,6 +118,23 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						{header[2].name}
 					</LinkAnchor>
 					<LinkAnchor
+						to="portfolio"
+						activeClass={
+							pathname === '/'
+								? 'lg:text-primary lg:dark:text-primary text-primary dark:text-primary'
+								: ''
+						}
+						spy={true}
+						smooth={true}
+						duration={1000}
+						onClick={() => scrollToAnchor('portfolio')}
+						className={
+							'lg:mr-[10px] xl:m-0 pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
+						}
+					>
+						{header[3].name}
+					</LinkAnchor>
+					<LinkAnchor
 						to="team"
 						activeClass={
 							pathname === '/'
@@ -132,7 +149,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
-						{header[3].name}
+						{header[4].name}
 					</LinkAnchor>
 					<LinkAnchor
 						to="contacts"
@@ -149,7 +166,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							'pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] '
 						}
 					>
-						{header[4].name}
+						{header[5].name}
 					</LinkAnchor>
 
 					<div className="relative">
@@ -157,7 +174,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 							className="pl-[15px] py-[8px] lg:p-0 w-full cursor-pointer ease-in duration-200 hover:text-primary hover:dark:text-primary font-OpenSans font-bold text-[16px] text-light dark:text-dark lg:text-light lg:dark:text-light group flex flex-row items-center justify-center"
 							onClick={dropClick}
 						>
-							{header[5].name}
+							{header[6].name}
 							<SvgIcon
 								name="header-arrow"
 								className={
@@ -181,7 +198,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 								onClick={dropClick}
 							>
 								<p className={'py-[8px] pl-[15px] text-[16px] font-OpenSans'}>
-									{header[6].name}
+									{header[7].name}
 								</p>
 							</NavLink>
 							<NavLink
@@ -194,7 +211,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 								onClick={dropClick}
 							>
 								<p className={'py-[8px] pl-[15px] text-[16px] font-OpenSans'}>
-									{header[7].name}
+									{header[8].name}
 								</p>
 							</NavLink>
 						</div>
@@ -214,7 +231,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						onClick={dropClick}
 					>
 						<p className={'py-[8px] pl-[15px] text-[16px] font-OpenSans'}>
-							{header[6].name}
+							{header[7].name}
 						</p>
 					</NavLink>
 					<NavLink
@@ -231,7 +248,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 						onClick={dropClick}
 					>
 						<p className={'py-[8px] pl-[15px] text-[16px] font-OpenSans'}>
-							{header[7].name}
+							{header[8].name}
 						</p>
 					</NavLink>
 				</nav>
@@ -243,7 +260,7 @@ export const Header = ({ setDarkMode, darkMode }) => {
 					</button>
 					<DarkModeToggle isDark={darkMode} onClickMethod={setDarkMode} />
 					<div
-						className="cursor-pointer w-[30px] h-[30px] flex justify-center items-center"
+						className="cursor-pointer w-[30px] h-[30px] flex justify-center items-center lg:invisible"
 						onClick={hamburgerClick}
 					>
 						<button

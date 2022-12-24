@@ -5,6 +5,7 @@
             {"name": "Домой"},
             {"name": "О нас"},
             {"name": "Сервисы"},
+            {"name": "Портфолио"},
             {"name": "Команда"},
             {"name": "Контакты"},
             {"name": "Страницы"},
@@ -275,6 +276,7 @@
                     {"text":  "Домой"},
                     {"text":  "О нас"},
                     {"text":  "Сервисы"},
+                    {"text":  "Портфолио"},
                     {"text":  "Команда"},
                     {"text":  "Связаться"}
                 ]
@@ -298,6 +300,7 @@
             {"name": "Home"},
             {"name": "About us"},
             {"name": "Services"},
+            {"name": "Portfolio"},
             {"name": "Team"},
             {"name": "Contacts"},
             {"name": "Pages"},
@@ -568,6 +571,7 @@
                     {"text":  "Home"},
                     {"text":  "About us"},
                     {"text":  "Services"},
+                    {"text":  "Portfolio"},
                     {"text":  "Team"},
                     {"text":  "Contact"}
                 ]
