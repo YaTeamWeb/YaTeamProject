@@ -74,20 +74,20 @@
                     "description": "Сверстаем сайт по готовому макету"
                 },
                 {
-                    "title": "Поддержка сайта",
-                    "description": "Поддержим уже готовый сайт"
+                    "title": "Оптимизация",
+                    "description": "Найдём и решим проблемы с оптимизацией"
                 },
                 {
-                    "title": "Сайт под ключ",
-                    "description": "Разработаем вам сайт от идеи до запуска в интернете"
+                    "title": "Дизайн",
+                    "description": "Создадим уникальный дизайн для вашей компании"
                 },
                 {
-                    "title": "Вёрстка с макета",
-                    "description": "Сверстаем сайт по готовому макету"
+                    "title": "Маркетинг",
+                    "description": "Сделаем так, что о вас услышит весь мир"
                 },
                 {
-                    "title": "Поддержка сайта",
-                    "description": "Поддержим уже готовый сайт"
+                    "title": "Поддержка",
+                    "description": "Поможем вашему сайту дольше оставаться на плаву"
                 }
             ]
         },
@@ -369,20 +369,20 @@
                     "description": "We are building a website according to a ready-made layout"
                 },
                 {
-                    "title": "Website support",
-                    "description": "We will support a ready-made website"
+                    "title": "Optimization",
+                    "description": "We will find and solve optimization problems"
                 },
                 {
-                    "title": "Turnkey website",
-                    "description": "We will develop a website for you from the idea to the launch on the Internet"
+                    "title": "Design",
+                    "description": "Let's create a unique design for your company"
                 },
                 {
-                    "title": "Layout from the layout",
-                    "description": "We are building a website according to a ready-made layout"
+                    "title": "Marketing",
+                    "description": "Let's make the whole world hear about you"
                 },
                 {
-                    "title": "Website support",
-                    "description": "We will support a ready-made website"
+                    "title": "Support",
+                    "description": "We will help your site stay afloat longer"
                 }
             ]
         },
