@@ -93,7 +93,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[2].title}
 					description={services.cards[2].description}
-					svgName={'browser'}
+					svgName={'speed2'}
 					id={'3'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
@@ -103,7 +103,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[3].title}
 					description={services.cards[3].description}
-					svgName={'key'}
+					svgName={'chancery'}
 					id={'4'}
 					dataAos="zoom-in"
 					dataAosDelay="0"
@@ -113,7 +113,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[4].title}
 					description={services.cards[4].description}
-					svgName={'layout'}
+					svgName={'ad'}
 					id={'5'}
 					dataAos="zoom-in"
 					dataAosDelay="50"
@@ -123,7 +123,7 @@ export const Services = () => {
 					clearNearBy={clearNearBy}
 					title={services.cards[5].title}
 					description={services.cards[5].description}
-					svgName={'browser'}
+					svgName={'lifebuoy'}
 					id={'6'}
 					dataAos="zoom-in"
 					dataAosDelay="100"
