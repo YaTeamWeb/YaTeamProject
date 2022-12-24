@@ -121,6 +121,12 @@ const ProjectInfoPage = () => {
 							</p>
 							<p className='md:text-base text-2xl font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
 								<span className="font-semibold mr-[5px]">
+									{portfolio.technologies + ':'}
+								</span>
+								{item.languages.join(', ')}
+							</p>
+							<p className='md:text-base text-2xl font-normal font-["Open_Sans"] text-gray-500 dark:text-light duration-500'>
+								<span className="font-semibold mr-[5px]">
 									{portfolio.link + ':'}
 								</span>
 								<a

@@ -9,7 +9,10 @@ import project_3_1 from '../assets/images/ProjectsImages/portfolio-3/1.png';
 import project_3_2 from '../assets/images/ProjectsImages/portfolio-3/2.jpg';
 import project_3_3 from '../assets/images/ProjectsImages/portfolio-3/3.jpg';
 import project_3_4 from '../assets/images/ProjectsImages/portfolio-3/4.jpg';
-import project_4 from '../assets/images/ProjectsImages/portfolio-4.jpg';
+import project_4_1 from '../assets/images/ProjectsImages/portfolio-4/1.jpg';
+import project_4_2 from '../assets/images/ProjectsImages/portfolio-4/2.jpg';
+import project_4_3 from '../assets/images/ProjectsImages/portfolio-4/3.jpg';
+import project_4_4 from '../assets/images/ProjectsImages/portfolio-4/4.jpg';
 import project_5_1 from '../assets/images/ProjectsImages/portfolio-5/1.jpg';
 import project_5_2 from '../assets/images/ProjectsImages/portfolio-5/2.jpg';
 import project_5_3 from '../assets/images/ProjectsImages/portfolio-5/3.jpg';
@@ -77,7 +80,7 @@ export const projects = [
 			{ src: project_2_4 },
 			{ src: project_2_5 },
 		],
-		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		languages: ['HTML', 'CSS', 'Three.js'],
 		createdDate: '25.09.2022',
 		link: 'https://nikdimer.github.io/',
 	},
@@ -108,14 +111,14 @@ export const projects = [
 			}),
 		],
 		images: [
-			{ src: project_4 },
-			{ src: project_4 },
-			{ src: project_4 },
-			{ src: project_4 },
+			{ src: project_4_1 },
+			{ src: project_4_2 },
+			{ src: project_4_3 },
+			{ src: project_4_3 },
 		],
-		languages: ['HTML', 'CSS', 'React', 'Redux Toolkit'],
+		languages: ['HTML', 'CSS', 'Bootstrap'],
 		createdDate: '20.12.2022',
-		link: 'www.yateam.site',
+		link: 'https://github.com/renat2006/Resume',
 	},
 	{
 		id: '5',

@@ -36,8 +36,6 @@ function App() {
 	const isDark = useSelector(selectTheme);
 	const dispatch = useDispatch();
 	useEffect(() => {
-		console.log();
-		window.onload;
 		const html = document.querySelector('html');
 		if (JSON.parse(localStorage.getItem('theme')) === true) {
 			html.classList.add('dark');

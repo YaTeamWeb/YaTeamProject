@@ -248,101 +248,30 @@ export const Footer = () => {
 						>
 							{footer.secondList.title}
 						</li>
-						<li className={'mb-5 font-Raleway font-bold text-light '}>
-							<a
-								href={'#'}
-								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
-								}
+						{footer.secondList.items.map((el, id) => (
+							<li
+								key={`${el.text}-${id}`}
+								className={'mb-5 font-Raleway font-bold text-light '}
 							>
-								<SvgIcon
-									size={12}
-									name={'arrowRight'}
+								<a
+									href={'#'}
 									className={
-										'fill-primary group-hover:translate-x-1 duration-300'
+										'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
 									}
-								/>
-								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.secondList.items[0].text}
-								</p>
-							</a>
-						</li>
-						<li className={'mb-5 font-Raleway font-bold text-light '}>
-							<a
-								href={'#'}
-								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
-								}
-							>
-								<SvgIcon
-									size={12}
-									name={'arrowRight'}
-									className={
-										'fill-primary group-hover:translate-x-1 duration-300'
-									}
-								/>
-								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.secondList.items[1].text}
-								</p>
-							</a>
-						</li>
-						<li className={'mb-5 font-Raleway font-bold text-light '}>
-							<a
-								href={'#'}
-								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
-								}
-							>
-								<SvgIcon
-									size={12}
-									name={'arrowRight'}
-									className={
-										'fill-primary group-hover:translate-x-1 duration-300'
-									}
-								/>
-								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.secondList.items[2].text}
-								</p>
-							</a>
-						</li>
-						<li className={'mb-5 font-Raleway font-bold text-light '}>
-							<a
-								href={'#'}
-								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary lg:text-base xs:text-2xl text-3xl text-light'
-								}
-							>
-								<SvgIcon
-									size={12}
-									name={'arrowRight'}
-									className={
-										'fill-primary group-hover:translate-x-1 duration-300'
-									}
-								/>
-								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.secondList.items[3].text}
-								</p>
-							</a>
-						</li>
-						<li className={' text-light '}>
-							<a
-								href={'#'}
-								className={
-									'w-fit group flex items-center cursor-pointer ease-in duration-200 hover:text-primary  lg:text-base xs:text-2xl text-3xl text-light'
-								}
-							>
-								<SvgIcon
-									size={12}
-									name={'arrowRight'}
-									className={
-										'fill-primary group-hover:translate-x-1 duration-300'
-									}
-								/>
-								<p className={'ml-1.5 font-Raleway font-semibold'}>
-									{footer.secondList.items[4].text}
-								</p>
-							</a>
-						</li>
+								>
+									<SvgIcon
+										size={12}
+										name={'arrowRight'}
+										className={
+											'fill-primary group-hover:translate-x-1 duration-300'
+										}
+									/>
+									<p className={'ml-1.5 font-Raleway font-semibold'}>
+										{el.text}
+									</p>
+								</a>
+							</li>
+						))}
 					</ul>
 				</div>
 			</div>
