@@ -69,10 +69,10 @@ export const Contact = () => {
 							<SvgIcon name={'location'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
+							<p className="font-semibold sm:text-[20px] lg:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[0].title}
 							</p>
-							<p className="font-normal sm:text-base text-2xl  text-gray-300 font-OpenSans">
+							<p className="font-normal sm:text-[16px] xl:text-base text-[14px] text-gray-300 font-OpenSans">
 								{contacts.items[0].description}
 							</p>
 						</div>
@@ -82,12 +82,12 @@ export const Contact = () => {
 							<SvgIcon name={'email'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
+							<p className="font-semibold sm:text-[20px] lg:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[1].title}
 							</p>
 							<a
 								href={'mailto:info@yateam.site'}
-								className="font-normal sm:text-base text-2xl text-gray-300 hover:text-primary duration-300 font-OpenSans"
+								className="font-normal sm:text-[16px] xl:text-base text-[14px] text-gray-300 hover:text-primary duration-300 font-OpenSans"
 							>
 								{contacts.items[1].description}
 							</a>
@@ -98,12 +98,12 @@ export const Contact = () => {
 							<SvgIcon name={'phone'} size={50} />
 						</div>
 						<div>
-							<p className="font-semibold sm:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
+							<p className="font-semibold sm:text-[20px] lg:text-2xl text-4xl dark:text-light mb-[5px] font-Raleway duration-500">
 								{contacts.items[2].title}
 							</p>
 							<a
 								href={'tel:78005553535'}
-								className="font-normal hover:text-primary duration-300 sm:text-base text-2xl text-gray-300 font-OpenSans font-400"
+								className="font-normal hover:text-primary duration-300 sm:text-[16px] xl:text-base  text-[14px] text-gray-300 font-OpenSans font-400"
 							>
 								{contacts.items[2].description}
 							</a>

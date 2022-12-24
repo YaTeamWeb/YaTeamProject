@@ -1,4 +1,4 @@
-import aboutMainPage from '../../assets/images/MainPageImages/aboutMainPage.jpg';
+import aboutMainPage from '../../assets/images/MainPageImages/aboutMainPage.webp';
 import React from 'react';
 import { SvgIcon } from '../UI/SvgIcon.jsx';
 import { Heading2 } from '../UI/Heading2.jsx';

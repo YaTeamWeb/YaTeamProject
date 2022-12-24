@@ -1,7 +1,7 @@
 import React from 'react';
 import { SupTitle } from '../UI/SupTitle.jsx';
 import { Heading2 } from '../UI/Heading2.jsx';
-import work from '../../assets/images/MainPageImages/benefits.png';
+import work from '../../assets/images/MainPageImages/benefits.webp';
 import { SvgIcon } from '../UI/SvgIcon.jsx';
 import { Heading3 } from '../UI/Heading3.jsx';
 import { Body2 } from '../UI/Body2.jsx';
