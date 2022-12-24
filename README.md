@@ -82,3 +82,12 @@
     <li><h3>Prettier - <a href='https://prettier.io/'>https://prettier.io/</a></h3></li>
 </ul>
 
+<hr/>
+<h2>Запуск скриптов</h2>
+<ul>
+    <li><h3>npm run dev - Запуск локального проекта</h3></li>
+    <li><h3>npm run build - Сборка проекта</h3></li>
+    <li><h3>npm run preview - Запуск собранного проекта</h3></li>
+    <li><h3>npm run lint - Линтирование кода</h3></li>
+    <li><h3>npm run deploy - Линтирование кода + Сборка проекта</h3></li>
+</ul>
